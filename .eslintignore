@@ -6,3 +6,4 @@
 /.prettierrc.js
 /.eslintcache
 /next.config.js
+/yarn.lock
