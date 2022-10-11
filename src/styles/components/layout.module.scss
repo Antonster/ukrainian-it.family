@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+
+  &.filled-background {
+    background: #f2f7fa;
+  }
+}
+
+.layout {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+}

@@ -1,7 +1,10 @@
+import AboutUsNumbers from '@components/about-us-numbers';
+import ExpertiseList from '@components/expertise-list';
+import Layout from '@components/layout';
+import SectionWrapper from '@components/section-wrapper';
+import ServiceList from '@components/service-list';
+import styles from '@styles/pages/home.module.scss';
 import Head from 'next/head';
-import Image from 'next/image';
-
-import styles from '../styles/home.module.scss';
 
 const Home = () => (
   <div className={styles.container}>
@@ -18,7 +21,40 @@ const Home = () => (
       <meta name="theme-color" content="#ffffff" />
     </Head>
 
-    <footer>asd</footer>
+    <Layout>
+      <SectionWrapper big name="Services" titles={['This is what we do best']}>
+        <ServiceList />
+      </SectionWrapper>
+    </Layout>
+
+    <Layout filled>
+      <SectionWrapper name="Expertise" titles={['You have an idea', 'We have a solution']}>
+        <ExpertiseList />
+      </SectionWrapper>
+    </Layout>
+
+    <Layout>
+      <SectionWrapper big name="Case studies" titles={['Portfolio']}>
+        {' '}
+      </SectionWrapper>
+    </Layout>
+
+    <Layout filled>
+      <SectionWrapper
+        name="About us"
+        titles={['In numbers']}
+        link="/about"
+        linkText="read about us"
+      >
+        <AboutUsNumbers />
+      </SectionWrapper>
+    </Layout>
+
+    <Layout>
+      <SectionWrapper big name="Testimonials" titles={['Our partners say']} link="/testimonials">
+        {' '}
+      </SectionWrapper>
+    </Layout>
   </div>
 );
 

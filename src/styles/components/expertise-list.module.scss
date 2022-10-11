@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.item {
+  width: calc(20% - 9.6px);
+  height: 216px;
+  background: #ffffff;
+  padding: 32px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    margin: 0 0 24px;
+  }
+
+  &__name {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #01669c;
+    margin: 0 0 8px;
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #80b3ce;
+  }
+
+  &:not(:nth-child(5n)) {
+    margin-right: 12px;
+  }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:not(:nth-last-child(-n + 5)) {
+    margin-bottom: 12px;
+  }
+}
