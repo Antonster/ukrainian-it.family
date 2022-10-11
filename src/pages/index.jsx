@@ -3,6 +3,8 @@ import ExpertiseList from '@components/expertise-list';
 import Layout from '@components/layout';
 import SectionWrapper from '@components/section-wrapper';
 import ServiceList from '@components/service-list';
+import TestimonialList from '@components/testimonials-list';
+import { testimonialListData } from '@constants/index';
 import styles from '@styles/pages/home.module.scss';
 import Head from 'next/head';
 
@@ -52,7 +54,7 @@ const Home = () => (
 
     <Layout>
       <SectionWrapper big name="Testimonials" titles={['Our partners say']} link="/testimonials">
-        {' '}
+        <TestimonialList data={testimonialListData} />
       </SectionWrapper>
     </Layout>
   </div>

@@ -66,3 +66,27 @@ export const aboutUsNumbersData = [
     description: 'Team members',
   },
 ];
+
+export const testimonialListData = [
+  {
+    image: '/static/images/testimonials-figure-1.svg',
+    name: 'Name 1',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+  {
+    image: '/static/images/testimonials-figure-2.svg',
+    name: 'Name 2',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+  {
+    image: '/static/images/testimonials-figure-3.svg',
+    name: 'Name 3',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+];
