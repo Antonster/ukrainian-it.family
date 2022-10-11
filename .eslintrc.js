@@ -31,6 +31,14 @@ module.exports = {
     'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['state'] }],
     'react/jsx-no-useless-fragment': ['error', { allowExpressions: true }],
     'react/jsx-filename-extension': [1, { extensions: ['.test.js', '.jsx'] }],
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
     'jsx-a11y/label-has-associated-control': [
       'error',
       {
