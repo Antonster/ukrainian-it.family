@@ -1,0 +1,28 @@
+.header {
+  padding: 12px 0;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__languages {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #01669c;
+  }
+
+  &__active-language {
+  }
+
+  &__separator {
+  }
+}

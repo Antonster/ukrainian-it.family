@@ -1,25 +1,30 @@
 export const expertiseListData = [
   {
+    id: '1',
     image: '/static/images/react-logo.svg',
     name: 'React',
     description: 'Efficient web development',
   },
   {
+    id: '2',
     image: '/static/images/vue-logo.svg',
     name: 'Vue',
     description: 'Efficient web development',
   },
   {
+    id: '3',
     image: '/static/images/node-logo.svg',
     name: 'Node.js',
     description: 'Back-end',
   },
   {
+    id: '4',
     image: '/static/images/laravel-logo.svg',
     name: 'Laravel',
     description: 'Back-end',
   },
   {
+    id: '5',
     image: '/static/images/flutter-logo.svg',
     name: 'Flutter',
     description: 'Mobile development',
@@ -32,7 +37,6 @@ export const serviceListData = [
     name: 'Outsourcing team',
     description: 'Have an idea? Rely on us with finding the best solution.',
     image: '/static/images/logo.svg',
-    buttonImage: '/static/images/arrow-white.svg',
   },
   {
     link: '/services/outstaff',
@@ -40,27 +44,30 @@ export const serviceListData = [
     description:
       'Outstaffing is a type of remote employments when a hired person carries out all the job duties.',
     image: '/static/images/outstaff-icon.svg',
-    buttonImage: '/static/images/arrow-blue.svg',
   },
 ];
 
 export const aboutUsNumbersData = [
   {
+    id: '1',
     image: '/static/images/in-numbers-figure-1.svg',
     name: 'UA',
     description: 'Soul and dedication',
   },
   {
+    id: '2',
     image: '/static/images/in-numbers-figure-2.svg',
     name: '6 years',
     description: 'Writing excellent code',
   },
   {
+    id: '3',
     image: '/static/images/in-numbers-figure-3.svg',
     name: '100',
     description: 'Projects',
   },
   {
+    id: '4',
     image: '/static/images/in-numbers-figure-4.svg',
     name: '15',
     description: 'Team members',
@@ -69,6 +76,7 @@ export const aboutUsNumbersData = [
 
 export const testimonialListData = [
   {
+    id: '1',
     image: '/static/images/testimonials-figure-1.svg',
     name: 'Name 1',
     company: 'CEO | Company very very long name',
@@ -76,6 +84,7 @@ export const testimonialListData = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
   },
   {
+    id: '2',
     image: '/static/images/testimonials-figure-2.svg',
     name: 'Name 2',
     company: 'CEO | Company very very long name',
@@ -83,10 +92,78 @@ export const testimonialListData = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
   },
   {
+    id: '3',
     image: '/static/images/testimonials-figure-3.svg',
     name: 'Name 3',
     company: 'CEO | Company very very long name',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+];
+
+export const portfolioListData = [
+  {
+    id: '1',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-1.png',
+  },
+  {
+    id: '2',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-2.png',
+  },
+  {
+    id: '3',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-2.png',
+  },
+  {
+    id: '4',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-1.png',
+  },
+];
+
+export const headerData = [
+  {
+    type: 'menu-list',
+    text: 'Company',
+    list: [
+      {
+        text: 'About us',
+        link: '/about',
+      },
+      {
+        text: 'Careers',
+        link: '/career',
+      },
+    ],
+  },
+  {
+    type: 'link',
+    text: 'Services',
+    link: '/services',
+  },
+  {
+    type: 'link',
+    text: 'Case Studies',
+    link: '/portfolio',
+  },
+  {
+    type: 'link',
+    text: 'Testimonials',
+    link: '/testimonials',
   },
 ];

@@ -1,10 +1,12 @@
 import AboutUsNumbers from '@components/about-us-numbers';
 import ExpertiseList from '@components/expertise-list';
+import Header from '@components/header';
 import Layout from '@components/layout';
+import PortfolioList from '@components/portfolio-list';
 import SectionWrapper from '@components/section-wrapper';
 import ServiceList from '@components/service-list';
 import TestimonialList from '@components/testimonials-list';
-import { testimonialListData } from '@constants/index';
+import { portfolioListData, testimonialListData } from '@constants/index';
 import styles from '@styles/pages/home.module.scss';
 import Head from 'next/head';
 
@@ -37,7 +39,7 @@ const Home = () => (
 
     <Layout>
       <SectionWrapper big name="Case studies" titles={['Portfolio']}>
-        {' '}
+        <PortfolioList data={portfolioListData.slice(0, 4)} moreButton />
       </SectionWrapper>
     </Layout>
 

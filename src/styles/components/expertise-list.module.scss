@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  gap: 12px;
 }
 
 .item {
@@ -36,17 +37,5 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #80b3ce;
-  }
-
-  &:not(:nth-child(5n)) {
-    margin-right: 12px;
-  }
-
-  &:last-child {
-    margin-right: 0px;
-  }
-
-  &:not(:nth-last-child(-n + 5)) {
-    margin-bottom: 12px;
   }
 }
