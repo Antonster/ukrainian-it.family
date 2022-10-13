@@ -1,0 +1,53 @@
+.navigation-item {
+  display: flex;
+  align-items: center;
+  gap: 0 4px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #01669c;
+  cursor: pointer;
+
+  &:hover {
+    .navigation-item__text {
+      color: #80b3ce;
+    }
+
+    .navigation-item__image {
+      filter: brightness(0) saturate(100%) invert(68%) sepia(18%) saturate(644%) hue-rotate(156deg)
+        brightness(96%) contrast(94%);
+    }
+  }
+
+  &__text {
+    transition: all 0.5s;
+  }
+
+  &__image {
+    transition: all 0.5s;
+
+    &.active {
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__popover-link {
+    padding: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #01669c;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      background: #dbeaf1;
+    }
+  }
+}

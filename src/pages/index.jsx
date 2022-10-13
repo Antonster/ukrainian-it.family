@@ -25,6 +25,8 @@ const Home = () => (
       <meta name="theme-color" content="#ffffff" />
     </Head>
 
+    <Header />
+
     <Layout>
       <SectionWrapper big name="Services" titles={['This is what we do best']}>
         <ServiceList />

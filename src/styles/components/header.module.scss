@@ -1,13 +1,41 @@
-.header {
-  padding: 12px 0;
+.container {
+  width: 100%;
+  height: 94px;
+  background: #ffffff;
+}
 
-  &__logo {
+.fixed-container {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  padding: 12px 64px;
+
+  &__logo-wrapper {
     display: flex;
     align-items: center;
     gap: 48px;
   }
 
-  &__languages {
+  &__logo {
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__languages-wrapper {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -17,12 +45,59 @@
     line-height: 17px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #01669c;
   }
 
-  &__active-language {
+  &__language {
+    color: #80b3ce;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &.active,
+    &:hover {
+      color: #01669c;
+    }
   }
 
   &__separator {
+    color: #01669c;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+
+  &__navigation-get-item {
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    cursor: pointer;
+
+    &:hover {
+      .header__navigation-get-item-text {
+        color: #b3880b;
+      }
+
+      .header__navigation-get-item-image {
+        filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(1043%)
+          hue-rotate(14deg) brightness(86%) contrast(91%);
+      }
+    }
+  }
+
+  &__navigation-get-item-text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #ffc20f;
+    transition: all 0.5s;
+  }
+
+  &__navigation-get-item-image {
+    transition: all 0.5s;
   }
 }

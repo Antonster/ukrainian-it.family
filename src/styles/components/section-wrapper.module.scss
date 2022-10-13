@@ -56,7 +56,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0 4px;
     cursor: pointer;
+
+    &:hover {
+      .titles-wrapper__link-text {
+        color: #b3880b;
+      }
+
+      .titles-wrapper__link-image {
+        filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(1043%)
+          hue-rotate(14deg) brightness(86%) contrast(91%);
+      }
+    }
   }
 
   &__link-text {
@@ -68,10 +80,9 @@
     text-transform: uppercase;
     color: #ffc20f;
     transition: all 0.5s;
-    margin: 0 4px 0 0;
+  }
 
-    &:hover {
-      color: #b3880b;
-    }
+  &__link-image {
+    transition: all 0.5s;
   }
 }

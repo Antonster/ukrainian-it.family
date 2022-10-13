@@ -26,7 +26,11 @@ const SectionWrapper = ({ big, name, titles, link, linkText = 'see all', childre
         <Link href={link}>
           <a className={styles['titles-wrapper__link']}>
             <div className={styles['titles-wrapper__link-text']}>{linkText}</div>
-            <img src="/static/images/arrow-yellow.svg" alt="arrow icon" />
+            <img
+              className={styles['titles-wrapper__link-image']}
+              src="/static/images/arrow-yellow.svg"
+              alt="arrow icon"
+            />
           </a>
         </Link>
       )}
