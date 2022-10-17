@@ -1,7 +1,7 @@
 import AboutUsNumbers from '@components/about-us-numbers';
 import ExpertiseList from '@components/expertise-list';
-import Header from '@components/header';
 import Layout from '@components/layout';
+import MainSection from '@components/main-section';
 import PortfolioList from '@components/portfolio-list';
 import SectionWrapper from '@components/section-wrapper';
 import ServiceList from '@components/service-list';
@@ -25,7 +25,9 @@ const Home = () => (
       <meta name="theme-color" content="#ffffff" />
     </Head>
 
-    <Header />
+    <Layout>
+      <MainSection />
+    </Layout>
 
     <Layout>
       <SectionWrapper big name="Services" titles={['This is what we do best']}>

@@ -1,8 +1,1 @@
-<svg width="500" height="881" viewBox="0 0 500 881" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="327.345" y="0.878174" width="172.655" height="878.244" fill="#01669C"/>
-<path d="M500 539.801C444.882 539.801 400.2 495.118 400.2 440C400.2 384.882 444.882 340.2 500 340.2C500 432.496 500 474.518 500 539.801Z" fill="#01486E"/>
-<rect y="440" width="327.345" height="439.122" fill="#FFF3CF"/>
-<rect y="0.878174" width="327.345" height="439.122" fill="#FFCE3F"/>
-<path d="M0 440H327.345L0 0.878235V440Z" fill="#FFE187"/>
-<path d="M327.345 879.122H3.05176e-05L327.345 440V879.122Z" fill="#FFC20F"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 878.24"><defs><style>.cls-1{fill:#01669c;}.cls-2{fill:#01486e;}.cls-3{fill:#fff3cf;}.cls-4{fill:#ffce3f;}.cls-5{fill:#ffe187;}.cls-6{fill:#ffc20f;}</style></defs><g id="Шар_2" data-name="Шар 2"><g id="Шар_1-2" data-name="Шар 1"><rect class="cls-1" x="327.35" width="172.65" height="878.24"/><path class="cls-2" d="M500,538.92a99.8,99.8,0,0,1,0-199.6Z"/><rect class="cls-3" y="439.12" width="327.35" height="439.12"/><rect class="cls-4" width="327.35" height="439.12"/><path class="cls-5" d="M0,439.12H327.35L0,0Z"/><path class="cls-6" d="M327.35,878.24H0L327.35,439.12Z"/></g></g></svg>

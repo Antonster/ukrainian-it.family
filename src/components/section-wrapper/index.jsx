@@ -14,10 +14,10 @@ const SectionWrapper = ({ big, name, titles, link, linkText = 'see all', childre
       <div>
         {titles.map((item) => (
           <Fragment key={item}>
-            <div className={styles['titles-wrapper__name']}>
+            <h3 className={styles['titles-wrapper__name']}>
               {item}
               <span className={styles['titles-wrapper__dot']}>.</span>
-            </div>
+            </h3>
           </Fragment>
         ))}
       </div>

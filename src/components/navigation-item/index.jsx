@@ -30,7 +30,7 @@ const NavigationItem = ({ item }) => {
 
   if (item.type === 'menu-list') {
     return (
-      <>
+      <li className={styles['navigation-item']}>
         <button
           aria-describedby={item.text}
           type="button"
@@ -65,12 +65,12 @@ const NavigationItem = ({ item }) => {
             </Link>
           ))}
         </StyledPopover>
-      </>
+      </li>
     );
   }
 
   return (
-    <li key={item.text} className={styles['navigation-item']}>
+    <li className={styles['navigation-item']}>
       <Link href={item.link}>
         <a className={styles['navigation-item__text']}>{item.text}</a>
       </Link>
