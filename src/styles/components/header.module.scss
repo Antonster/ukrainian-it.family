@@ -35,33 +35,6 @@
     }
   }
 
-  &__languages-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  &__language {
-    color: #80b3ce;
-    cursor: pointer;
-    transition: all 0.5s;
-
-    &.active,
-    &:hover {
-      color: #01669c;
-    }
-  }
-
-  &__separator {
-    color: #01669c;
-  }
-
   &__navigation {
     display: flex;
     align-items: center;

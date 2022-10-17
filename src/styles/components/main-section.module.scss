@@ -21,38 +21,12 @@
     }
   }
 
-  &__languages-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-  }
-
-  &__language {
-    color: #80b3ce;
-    cursor: pointer;
-    transition: all 0.5s;
-
-    &.active,
-    &:hover {
-      color: #01669c;
-    }
-  }
-
-  &__separator {
-    color: #01669c;
-  }
-
   &__navigation {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: column;
     justify-items: end;
+    align-items: center;
     gap: 16px 80px;
   }
 

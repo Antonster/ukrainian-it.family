@@ -1,3 +1,4 @@
+import LanguageSelection from '@components/language-selection';
 import Layout from '@components/layout';
 import MainButton from '@components/main-button';
 import NavigationItem from '@components/navigation-item';
@@ -26,22 +27,8 @@ const MainSection = () => {
               {headerData.map((item) => (
                 <NavigationItem key={item.text} item={item} />
               ))}
-              <li className={styles['header__languages-wrapper']}>
-                <button
-                  className={`${styles.header__language} ${lang === 'ua' ? styles.active : ''}`}
-                  type="button"
-                  onClick={() => setLang('ua')}
-                >
-                  UA
-                </button>
-                <div className={styles.header__separator}>|</div>
-                <button
-                  className={`${styles.header__language} ${lang === 'en' ? styles.active : ''}`}
-                  type="button"
-                  onClick={() => setLang('en')}
-                >
-                  EN
-                </button>
+              <li>
+                <LanguageSelection />
               </li>
               <li className={styles['header__navigation-get-item']}>
                 <div className={styles['header__navigation-get-item-text']}>Get in touch</div>

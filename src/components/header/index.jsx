@@ -1,3 +1,4 @@
+import LanguageSelection from '@components/language-selection';
 import Layout from '@components/layout';
 import NavigationItem from '@components/navigation-item';
 import { headerData } from '@constants/index';
@@ -19,23 +20,8 @@ const Header = () => {
                   <img src="/static/images/logo-full.svg" alt="logo" />
                 </a>
               </Link>
-              <div className={styles['header__languages-wrapper']}>
-                <button
-                  className={`${styles.header__language} ${lang === 'ua' ? styles.active : ''}`}
-                  type="button"
-                  onClick={() => setLang('ua')}
-                >
-                  UA
-                </button>
-                <div className={styles.header__separator}>|</div>
-                <button
-                  className={`${styles.header__language} ${lang === 'en' ? styles.active : ''}`}
-                  type="button"
-                  onClick={() => setLang('en')}
-                >
-                  EN
-                </button>
-              </div>
+
+              <LanguageSelection />
             </div>
 
             <nav>

@@ -1,5 +1,6 @@
 import AboutUsNumbers from '@components/about-us-numbers';
 import ExpertiseList from '@components/expertise-list';
+import Footer from '@components/footer';
 import Layout from '@components/layout';
 import MainSection from '@components/main-section';
 import PortfolioList from '@components/portfolio-list';
@@ -63,6 +64,8 @@ const Home = () => (
         <TestimonialList data={testimonialListData} />
       </SectionWrapper>
     </Layout>
+
+    <Footer />
   </div>
 );
 
