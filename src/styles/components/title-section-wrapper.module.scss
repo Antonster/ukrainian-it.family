@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  padding: 0 64px 48px;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #01486e;
+    margin: 0 0 16px;
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #01486e;
+    margin: 0 0 96px;
+  }
+}
