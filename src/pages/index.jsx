@@ -61,7 +61,7 @@ const Home = () => (
 
     <Layout>
       <SectionWrapper big name="Testimonials" titles={['Our partners say']} link="/testimonials">
-        <TestimonialList data={testimonialListData} />
+        <TestimonialList data={testimonialListData.slice(0, 3)} />
       </SectionWrapper>
     </Layout>
 

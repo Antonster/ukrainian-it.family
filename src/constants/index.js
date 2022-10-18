@@ -99,6 +99,46 @@ export const testimonialListData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
   },
+  {
+    id: '4',
+    image: '/static/images/testimonials-figure-1.svg',
+    name: 'Name 4',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+  {
+    id: '5',
+    image: '/static/images/testimonials-figure-2.svg',
+    name: 'Name 5',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+  {
+    id: '6',
+    image: '/static/images/testimonials-figure-3.svg',
+    name: 'Name 6',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+  {
+    id: '7',
+    image: '/static/images/testimonials-figure-1.svg',
+    name: 'Name 7',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
+  {
+    id: '8',
+    image: '/static/images/testimonials-figure-2.svg',
+    name: 'Name 8',
+    company: 'CEO | Company very very long name',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+  },
 ];
 
 export const portfolioListData = [

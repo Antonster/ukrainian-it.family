@@ -11,7 +11,7 @@ import Head from 'next/head';
 import { useMemo } from 'react';
 
 const Services = () => {
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'services'], []);
+  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Services'], []);
 
   return (
     <div className={styles.container}>
