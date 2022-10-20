@@ -27,6 +27,10 @@ textarea {
   white-space: revert;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url('/static/fonts/Montserrat-Regular.ttf');

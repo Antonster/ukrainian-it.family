@@ -1,0 +1,125 @@
+.history {
+  &__top-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0 24px;
+    padding: 32px 0;
+  }
+
+  &__top-row-item,
+  &__bottom-row-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    width: 226px;
+
+    &.primary {
+      color: #01669c;
+    }
+
+    &.secondary {
+      color: #80b3ce;
+    }
+
+    &.yellow {
+      color: #ffc20f;
+    }
+  }
+
+  &__top-row-item {
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -38px;
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #01669c;
+    }
+
+    &:last-child {
+      width: 187px;
+    }
+  }
+
+  &__separator {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #01669c;
+  }
+
+  &__separator-arrow {
+    position: absolute;
+    right: -5px;
+    top: -7px;
+    transform: rotate(-90deg) scale(1.5);
+    filter: brightness(0) saturate(100%) invert(27%) sepia(97%) saturate(1092%) hue-rotate(174deg)
+      brightness(90%) contrast(99%);
+  }
+
+  &__bottom-row {
+    display: flex;
+    gap: 0 24px;
+    padding: 32px 0;
+  }
+
+  &__bottom-row-item {
+    &::after {
+      position: absolute;
+      left: 0;
+      top: -38px;
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #01669c;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__location-image {
+    &.primary {
+      filter: brightness(0) saturate(100%) invert(27%) sepia(97%) saturate(1092%) hue-rotate(174deg)
+        brightness(90%) contrast(99%);
+    }
+
+    &.secondary {
+      filter: brightness(0) saturate(100%) invert(69%) sepia(42%) saturate(303%) hue-rotate(156deg)
+        brightness(92%) contrast(87%);
+    }
+
+    &.yellow {
+      filter: brightness(0) saturate(100%) invert(72%) sepia(77%) saturate(545%) hue-rotate(347deg)
+        brightness(101%) contrast(102%);
+    }
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.04em;
+  }
+}

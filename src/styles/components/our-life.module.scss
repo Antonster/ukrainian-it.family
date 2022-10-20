@@ -1,0 +1,24 @@
+.container {
+  .swiper {
+    overflow: visible;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+
+    &.big {
+      height: 460px;
+    }
+
+    &.small {
+      height: 226px;
+    }
+  }
+}

@@ -5,7 +5,7 @@ import Layout from '@components/layout';
 import TestimonialList from '@components/testimonials-list';
 import TitleSectionWrapper from '@components/title-section-wrapper';
 import { testimonialListData } from '@constants/index';
-import styles from '@styles/pages/services.module.scss';
+import styles from '@styles/pages/testimonials.module.scss';
 import Head from 'next/head';
 import { useMemo } from 'react';
 

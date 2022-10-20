@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.image {
+  width: calc(20% - 160px / 5);
+  background: #ffffff;
+  padding: 30px 36px;
+}

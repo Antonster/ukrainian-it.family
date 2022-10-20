@@ -309,3 +309,145 @@ export const footerTermsData = [
     text: '© UITF 2022',
   },
 ];
+
+export const principlesListData = [
+  {
+    id: '1',
+    name: 'Ownership',
+    description:
+      'Our team is dedicated to projects we do. We don’t line doing projects blindly and always try to find the best solution.',
+  },
+  {
+    id: '2',
+    name: 'Meeting deadlines',
+    description: 'We’ve built our processes to get results on time.',
+  },
+  {
+    id: '3',
+    name: 'Communication',
+    description:
+      'We love arranging meetings with stakeholders throughout the process. Drop a line and we’ll see you at the meeting.',
+  },
+  {
+    id: '4',
+    name: 'Brining maximum value',
+    description: 'We dive into your project and do our best to help you get maximum result.',
+  },
+];
+
+export const historyData = {
+  topRow: [
+    {
+      title: 'Aug 2013',
+      description: 'Hired 6 developers and rented a cool office.',
+      color: 'secondary',
+    },
+    {
+      title: '😢 Apr 2014',
+      location: 'Donetsk',
+      description: 'War started in Donesk and we were forced to move to the West of Ukraine.',
+      color: 'secondary',
+    },
+    {
+      title: 'Feb 2016',
+      location: 'Ivano-Frankivsk',
+      description: 'Rented office in Ivano-Frankivsk and got our first international client.',
+      color: 'primary',
+    },
+    {
+      title: 'Dec 2021',
+      description: 'We have branches in 7 cities of Ukraine.',
+      color: 'primary',
+    },
+    {
+      title: 'Mar 2022',
+      description: 'We run a programming academy for Laravel, Vue, React directions.',
+      color: 'yellow',
+    },
+  ],
+  bottomRow: [
+    {
+      title: 'Oct 2013',
+      description: 'Launched a programming school.',
+      color: 'secondary',
+    },
+    {
+      title: 'Feb 2012',
+      location: 'Donetsk',
+      description: 'Got money for our first project.',
+      color: 'secondary',
+    },
+    {
+      title: 'Dec 2014',
+      description: 'Hired the first remote developer before it became a COVID-mainstream.',
+      color: 'primary',
+    },
+    {
+      title: 'Mar 2018',
+      description: 'Move to new technologies, create Laravel, Vue.js and React departments.',
+      color: 'primary',
+    },
+    {
+      title: '😢 Feb 24, 2022',
+      location: 'Ivano-Frankivsk',
+      description: 'Full-scale war started in Ukraine, we reform our business during it.',
+      color: 'yellow',
+    },
+  ],
+};
+
+export const ourLifeListData = [
+  {
+    id: '1',
+    images: ['/static/images/our-life-slide-1.webp'],
+  },
+  {
+    id: '2',
+    images: ['/static/images/our-life-slide-2.webp', '/static/images/our-life-slide-3.webp'],
+  },
+  {
+    id: '3',
+    images: ['/static/images/our-life-slide-4.webp'],
+  },
+  {
+    id: '4',
+    images: ['/static/images/our-life-slide-5.webp', '/static/images/our-life-slide-6.webp'],
+  },
+  {
+    id: '5',
+    images: ['/static/images/our-life-slide-7.webp'],
+  },
+];
+
+export const ourPartnerListData = [
+  {
+    id: '1',
+    image: '/static/images/logo.svg',
+    alt: 'logo',
+  },
+  {
+    id: '2',
+    image: '/static/images/facebook-logo.svg',
+    alt: 'logo',
+  },
+  {
+    id: '3',
+    image: '/static/images/logo.svg',
+    alt: 'logo',
+  },
+  {
+    id: '4',
+    image: '/static/images/youtube-logo.svg',
+    alt: 'logo',
+  },
+  {
+    id: '5',
+    image: '/static/images/logo-full.svg',
+    alt: 'logo',
+  },
+  {
+    id: '6',
+    image: '/static/images/logo.svg',
+    alt: 'logo',
+  },
+];
