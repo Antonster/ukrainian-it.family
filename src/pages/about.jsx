@@ -31,7 +31,7 @@ const About = () => {
         <Breadcrumbs crumbs={crumbs} centered />
       </Layout>
 
-      <Layout>
+      <Layout small>
         <TitleSectionWrapper title="We are UKRAINIAN IT FAMILY" description="Lorem ipsum">
           <img className={styles.map} src="/static/images/ukraine-map.svg" alt="ukraine map" />
         </TitleSectionWrapper>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
 
-const SectionWrapper = ({ big, name, titles, link, linkText = 'see all', children }) => (
+const SectionWrapper = ({ big, question, name, titles, link, linkText = 'see all', children }) => (
   <div className={`${styles.container} ${big ? styles.big : styles.small}`}>
     <div className={styles['name-wrapper']}>
       <div className={styles['name-wrapper__dot']} />
@@ -16,7 +16,7 @@ const SectionWrapper = ({ big, name, titles, link, linkText = 'see all', childre
           <Fragment key={item}>
             <h3 className={styles['titles-wrapper__name']}>
               {item}
-              <span className={styles['titles-wrapper__dot']}>.</span>
+              <span className={styles['titles-wrapper__dot']}>{question ? '?' : '.'}</span>
             </h3>
           </Fragment>
         ))}
@@ -42,6 +42,7 @@ const SectionWrapper = ({ big, name, titles, link, linkText = 'see all', childre
 
 SectionWrapper.propTypes = {
   big: PropTypes.bool,
+  question: PropTypes.bool,
   name: PropTypes.string.isRequired,
   titles: PropTypes.arrayOf(PropTypes.string).isRequired,
   link: PropTypes.string,

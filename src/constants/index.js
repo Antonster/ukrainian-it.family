@@ -186,7 +186,7 @@ export const headerData = [
         link: '/about',
       },
       {
-        text: 'Careers',
+        text: 'Career',
         link: '/career',
       },
     ],
@@ -247,7 +247,7 @@ export const footerLinksData = {
       link: '/team',
     },
     {
-      text: 'Careers',
+      text: 'Career',
       link: '/career',
     },
     {
@@ -449,5 +449,176 @@ export const ourPartnerListData = [
     id: '6',
     image: '/static/images/logo.svg',
     alt: 'logo',
+  },
+];
+
+export const careerData = [
+  {
+    id: '1',
+    title: 'Junior Java Software Engineer',
+    description:
+      'Ukrainian IT Family is looking for an experienced Middle Java Software Engineer to join our skilled and thinking out of the box team.',
+    location: 'Remote',
+    time: 'Full-time',
+    items: [
+      {
+        type: 'text',
+        title: 'Description',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit pulvinar elit eu, ultricies pellentesque ac. Accumsan donec diam ultrices scelerisque quis. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu.',
+      },
+      {
+        type: 'list',
+        title: 'Requirements',
+        content: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Elit pulvinar elit eu, ultricies pellentesque ac.',
+          'Accumsan donec diam ultrices scelerisque quis.',
+          'Purus nulla risus fermentum, cursus.',
+          'Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus.',
+          'Interdum venenatis fermentum eget tempor.',
+          'Arcu diam netus nibh arcu egestas eu.',
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Job Responsibilities',
+        content: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Elit pulvinar elit eu, ultricies pellentesque ac.',
+          'Accumsan donec diam ultrices scelerisque quis.',
+          'Purus nulla risus fermentum, cursus.',
+          'Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus.',
+        ],
+      },
+      {
+        type: 'text',
+        title: 'What we offer',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit pulvinar elit eu, ultricies pellentesque ac. Accumsan donec diam ultrices scelerisque quis. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu.',
+      },
+    ],
+    links: [
+      {
+        text: 'See us on dou.ua',
+        href: 'https://dou.ua/',
+      },
+      {
+        text: 'See this vacancy on djinni',
+        href: 'https://djinni.co/',
+      },
+    ],
+  },
+  {
+    id: '2',
+    title: 'Middle Java Software Engineer',
+    description:
+      'Ukrainian IT Family is looking for an experienced Middle Java Software Engineer to join our skilled and thinking out of the box team.',
+    location: 'Remote',
+    time: 'Full-time',
+    items: [
+      {
+        type: 'text',
+        title: 'Description',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit pulvinar elit eu, ultricies pellentesque ac. Accumsan donec diam ultrices scelerisque quis. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu.',
+      },
+      {
+        type: 'list',
+        title: 'Requirements',
+        content: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Elit pulvinar elit eu, ultricies pellentesque ac.',
+          'Accumsan donec diam ultrices scelerisque quis.',
+          'Purus nulla risus fermentum, cursus.',
+          'Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus.',
+          'Interdum venenatis fermentum eget tempor.',
+          'Arcu diam netus nibh arcu egestas eu.',
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Job Responsibilities',
+        content: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Elit pulvinar elit eu, ultricies pellentesque ac.',
+          'Accumsan donec diam ultrices scelerisque quis.',
+          'Purus nulla risus fermentum, cursus.',
+          'Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus.',
+        ],
+      },
+      {
+        type: 'text',
+        title: 'What we offer',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit pulvinar elit eu, ultricies pellentesque ac. Accumsan donec diam ultrices scelerisque quis. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu.',
+      },
+    ],
+    links: [
+      {
+        text: 'See us on dou.ua',
+        href: 'https://dou.ua/',
+      },
+      {
+        text: 'See this vacancy on djinni',
+        href: 'https://djinni.co/',
+      },
+    ],
+  },
+  {
+    id: '3',
+    title: 'Senior Java Software Engineer',
+    description:
+      'Ukrainian IT Family is looking for an experienced Middle Java Software Engineer to join our skilled and thinking out of the box team.',
+    location: 'Remote',
+    time: 'Full-time',
+    items: [
+      {
+        type: 'text',
+        title: 'Description',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit pulvinar elit eu, ultricies pellentesque ac. Accumsan donec diam ultrices scelerisque quis. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu.',
+      },
+      {
+        type: 'list',
+        title: 'Requirements',
+        content: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Elit pulvinar elit eu, ultricies pellentesque ac.',
+          'Accumsan donec diam ultrices scelerisque quis.',
+          'Purus nulla risus fermentum, cursus.',
+          'Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus.',
+          'Interdum venenatis fermentum eget tempor.',
+          'Arcu diam netus nibh arcu egestas eu.',
+        ],
+      },
+      {
+        type: 'list',
+        title: 'Job Responsibilities',
+        content: [
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Elit pulvinar elit eu, ultricies pellentesque ac.',
+          'Accumsan donec diam ultrices scelerisque quis.',
+          'Purus nulla risus fermentum, cursus.',
+          'Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus.',
+        ],
+      },
+      {
+        type: 'text',
+        title: 'What we offer',
+        content:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit pulvinar elit eu, ultricies pellentesque ac. Accumsan donec diam ultrices scelerisque quis. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu. Purus nulla risus fermentum, cursus. Vestibulum auctor vitae sit nisi, orci diam donec in rhoncus. Interdum venenatis fermentum eget tempor. Arcu diam netus nibh arcu egestas eu.',
+      },
+    ],
+    links: [
+      {
+        text: 'See us on dou.ua',
+        href: 'https://dou.ua/',
+      },
+      {
+        text: 'See this vacancy on djinni',
+        href: 'https://djinni.co/',
+      },
+    ],
   },
 ];
