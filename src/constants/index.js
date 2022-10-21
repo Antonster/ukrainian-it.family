@@ -571,7 +571,7 @@ export const careerData = [
     description:
       'Ukrainian IT Family is looking for an experienced Middle Java Software Engineer to join our skilled and thinking out of the box team.',
     location: 'Remote',
-    time: 'Full-time',
+    time: 'Part-time',
     items: [
       {
         type: 'text',

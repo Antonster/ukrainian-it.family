@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useMemo } from 'react';
 
 const MainButton = ({
-  type = 'button',
+  type,
   href,
   buttonStyle = 'primary',
   size = 'small',
@@ -39,7 +39,12 @@ const MainButton = ({
   }
 
   return (
-    <button className={classes} style={{ width }} type="button" onClick={onClick}>
+    <button
+      className={classes}
+      style={{ width }}
+      type={type === 'submit' ? 'submit' : 'button'}
+      onClick={onClick}
+    >
       <div>{text}</div>
       <img src={image} alt="arrow icon" />
     </button>
@@ -47,7 +52,7 @@ const MainButton = ({
 };
 
 MainButton.propTypes = {
-  type: PropTypes.oneOf(['button', 'link']),
+  type: PropTypes.oneOf(['button', 'submit', 'link']),
   href: PropTypes.string,
   buttonStyle: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
   size: PropTypes.oneOf(['small', 'big']),
