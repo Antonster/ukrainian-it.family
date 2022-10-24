@@ -34,9 +34,9 @@ const VacancyList = () => {
   return (
     <div className={styles.container}>
       <div className={styles.search}>
-        <button className={styles.search__button} type="button">
+        <div className={styles.search__button}>
           <img src="/static/images/loupe.svg" alt="loupe icon" />
-        </button>
+        </div>
         <input
           className={styles.search__input}
           type="text"

@@ -32,7 +32,7 @@ const DropALine = () => {
         onClose={onCloseModal}
       >
         <div>
-          <ContactUsForm />
+          <ContactUsForm onCloseModal={onCloseModal} />
         </div>
       </Modal>
     </div>

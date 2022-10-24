@@ -1,7 +1,8 @@
 import MainButton from '@components/main-button';
 import { yupResolver } from '@hookform/resolvers/yup';
 import styles from '@styles/components/contact-us-form.module.scss';
-import { useCallback } from 'react';
+import PropTypes from 'prop-types';
+import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
@@ -13,22 +14,73 @@ const schema = yup.object({
   link: yup.string(),
 });
 
-const ContactUsForm = () => {
+const imageMimeType = /(document|pdf|plain)/i;
+
+const ContactUsForm = ({ onCloseModal }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    setValue,
+    watch,
   } = useForm({
     resolver: yupResolver(schema),
   });
-  const { getRootProps, getInputProps } = useDropzone({ onDrop: () => {} });
 
-  const onSubmit = useCallback((data) => {
-    console.log(data);
-  }, []);
+  const currentFile = watch('curriculumVitae');
+
+  const [fileError, setFileError] = useState();
+
+  const onSubmit = useCallback(
+    (formData) => {
+      const data = new FormData();
+
+      Object.keys(formData).forEach((key) => {
+        data.append(key, formData[key]);
+      });
+
+      console.log(formData);
+
+      if (onCloseModal) {
+        onCloseModal();
+      }
+    },
+    [onCloseModal],
+  );
+
+  const onUploadFile = useCallback(
+    (file) => {
+      const newFile = file[0];
+
+      if (!newFile.type.match(imageMimeType)) {
+        setFileError('Valid formats .doc, .docx, .pdf, .txt');
+        return;
+      }
+      if (newFile.size >= 8000000) {
+        setFileError('Max file size 8MB');
+        return;
+      }
+
+      setFileError();
+      setValue('curriculumVitae', file[0]);
+    },
+    [setValue],
+  );
+
+  const onDeleteFile = useCallback(() => {
+    setValue('curriculumVitae', '');
+  }, [setValue]);
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop: onUploadFile });
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      {onCloseModal && (
+        <button className={styles['form__close-button']} type="button" onClick={onCloseModal}>
+          <img src="/static/images/cross-blue.svg" alt="cross icon" />
+        </button>
+      )}
+
       <div className={styles.form__content}>
         <div className={styles['form__content-title']}>
           Contact us<span className={styles['form__content-title-dot']}>.</span>
@@ -69,10 +121,31 @@ const ContactUsForm = () => {
         <div className={styles['form__curriculum-vitae']}>
           <div className={styles['form__content-field']}>
             <div className={styles['form__content-field-label']}>CV</div>
-            <div className={styles['form__content-field-dropzone']} {...getRootProps()}>
-              <input {...getInputProps()} {...register('curriculumVitae')} />
-              <div>upload CV</div>
-            </div>
+            {currentFile ? (
+              <div className={styles['form__content-field-file']}>
+                <div className={styles['form__content-field-file-title-wrapper']}>
+                  <div className={styles['form__content-field-file-title']}>{currentFile.name}</div>
+                </div>
+                <button
+                  className={styles['form__content-field-file-delete']}
+                  type="button"
+                  onClick={onDeleteFile}
+                >
+                  delete
+                </button>
+              </div>
+            ) : (
+              <>
+                <div className={styles['form__content-field-dropzone']} {...getRootProps()}>
+                  <input {...getInputProps()} />
+                  <div className={styles['form__content-field-dropzone-text']}>
+                    <div>upload CV</div>
+                    <img src="/static/images/arrow-blue.svg" alt="arrow icon" />
+                  </div>
+                </div>
+                {fileError && <div className={styles['form__field-error']}>{fileError}</div>}
+              </>
+            )}
           </div>
 
           <div className={styles.form__separator}>
@@ -105,6 +178,10 @@ const ContactUsForm = () => {
       <MainButton type="submit" width="100%" text="send" size="big" />
     </form>
   );
+};
+
+ContactUsForm.propTypes = {
+  onCloseModal: PropTypes.func,
 };
 
 export default ContactUsForm;
