@@ -1,15 +1,9 @@
 .container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   width: 100%;
   height: 94px;
-  background: #ffffff;
-}
-
-.fixed-container {
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  width: 100%;
   background: #ffffff;
 }
 

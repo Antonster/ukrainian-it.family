@@ -6,7 +6,7 @@ import Layout from '@components/layout';
 import SectionWrapper from '@components/section-wrapper';
 import TitleSectionWrapper from '@components/title-section-wrapper';
 import VacancyList from '@components/vacancy-list';
-import styles from '@styles/pages/testimonials.module.scss';
+import styles from '@styles/pages/career.module.scss';
 import Head from 'next/head';
 import { useMemo } from 'react';
 
