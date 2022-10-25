@@ -174,6 +174,38 @@ export const portfolioListData = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
     image: '/static/images/portfolio-test-1.png',
   },
+  {
+    id: '5',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-1.png',
+  },
+  {
+    id: '6',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-2.png',
+  },
+  {
+    id: '7',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-2.png',
+  },
+  {
+    id: '8',
+    name: 'Title',
+    tags: ['UIUX Design', 'Front-end Development', 'react'],
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+    image: '/static/images/portfolio-test-1.png',
+  },
 ];
 
 export const headerData = [
