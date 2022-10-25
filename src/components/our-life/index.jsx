@@ -20,6 +20,7 @@ const OurLife = () => (
                     layout="fill"
                     quality={100}
                     objectFit="cover"
+                    loading="eager"
                   />
                 </div>
 
@@ -30,6 +31,7 @@ const OurLife = () => (
                     layout="fill"
                     quality={100}
                     objectFit="cover"
+                    loading="eager"
                   />
                 </div>
               </div>
@@ -47,6 +49,7 @@ const OurLife = () => (
                   layout="fill"
                   quality={100}
                   objectFit="cover"
+                  loading="eager"
                 />
               </div>
             </div>
