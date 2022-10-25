@@ -16,7 +16,7 @@ const schema = yup.object({
 
 const imageMimeType = /(document|pdf|plain)/i;
 
-const ContactUsForm = ({ onCloseModal }) => {
+const ContactUsForm = ({ onCloseModal, formGap }) => {
   const {
     register,
     handleSubmit,
@@ -81,7 +81,7 @@ const ContactUsForm = ({ onCloseModal }) => {
         </button>
       )}
 
-      <div className={styles.form__content}>
+      <div className={`${styles.form__content} ${formGap ? styles.gap : ''}`}>
         <div className={styles['form__content-title']}>
           Contact us<span className={styles['form__content-title-dot']}>.</span>
         </div>
@@ -182,6 +182,7 @@ const ContactUsForm = ({ onCloseModal }) => {
 
 ContactUsForm.propTypes = {
   onCloseModal: PropTypes.func,
+  formGap: PropTypes.bool,
 };
 
 export default ContactUsForm;

@@ -13,7 +13,6 @@ import TitleSectionWrapper from '@components/title-section-wrapper';
 import { testimonialListData } from '@constants/index';
 import styles from '@styles/pages/about.module.scss';
 import Head from 'next/head';
-import Image from 'next/image';
 import { useMemo } from 'react';
 
 const About = () => {

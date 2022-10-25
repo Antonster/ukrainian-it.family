@@ -19,7 +19,11 @@
     display: flex;
     flex-direction: column;
     gap: 24px 0;
-    padding: 24px 32px;
+    padding: 24px 0;
+
+    &.gap {
+      padding: 24px 32px;
+    }
   }
 
   &__content-title {
