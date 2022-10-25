@@ -2,7 +2,7 @@ import Breadcrumbs from '@components/breadcrumbs';
 import Footer from '@components/footer';
 import Header from '@components/header';
 import Layout from '@components/layout';
-import PortfolioList from '@components/Portfolio-list';
+import PortfolioList from '@components/portfolio-list';
 import TitleSectionWrapper from '@components/title-section-wrapper';
 import { portfolioListData } from '@constants/index';
 import styles from '@styles/pages/portfolio.module.scss';
