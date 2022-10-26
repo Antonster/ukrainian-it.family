@@ -5,11 +5,12 @@ import { headerData } from '@constants/index';
 import styles from '@styles/components/main-section.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
-const MainSection = () => (
+const MainSection = ({ sectionHeaderRef }) => (
   <div className={styles.container}>
     <div>
-      <header className={styles.header}>
+      <header className={styles.header} ref={sectionHeaderRef}>
         <div className={styles['header__logo-wrapper']}>
           <Link href="/">
             <a className={styles.header__logo}>
@@ -73,5 +74,12 @@ const MainSection = () => (
     </div>
   </div>
 );
+
+MainSection.propTypes = {
+  sectionHeaderRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.object }),
+  ]),
+};
 
 export default MainSection;

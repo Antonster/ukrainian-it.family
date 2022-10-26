@@ -19,6 +19,7 @@ module.exports = {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
+    'react/forbid-prop-types': 'warn',
     'react/jsx-props-no-spreading': 'off',
     'react/require-default-props': 'off',
     'simple-import-sort/imports': 'error',

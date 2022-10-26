@@ -5,9 +5,10 @@ import { headerData } from '@constants/index';
 import styles from '@styles/components/header.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
-const Header = () => (
-  <div className={styles.container}>
+const Header = ({ fixed }) => (
+  <div className={`${styles.container} ${fixed ? styles.fixed : ''}`}>
     <Layout>
       <header className={styles.header}>
         <div className={styles['header__logo-wrapper']}>
@@ -40,5 +41,9 @@ const Header = () => (
     </Layout>
   </div>
 );
+
+Header.propTypes = {
+  fixed: PropTypes.bool,
+};
 
 export default Header;
