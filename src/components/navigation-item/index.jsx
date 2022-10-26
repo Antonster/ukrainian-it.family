@@ -1,6 +1,7 @@
 import Popover from '@mui/material/Popover';
 import { styled } from '@mui/material/styles';
 import styles from '@styles/components/navigation-item.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
@@ -38,11 +39,16 @@ const NavigationItem = ({ item }) => {
           onClick={onClickElement}
         >
           <div className={styles['navigation-item__text']}>{item.text}</div>
-          <img
+          <div
             className={`${styles['navigation-item__image']} ${anchorElement ? styles.active : ''}`}
-            src="/static/images/arrow-down-blue.svg"
-            alt=""
-          />
+          >
+            <Image
+              src="/static/images/arrow-down-blue.svg"
+              alt="arrow icon"
+              width={16}
+              height={16}
+            />
+          </div>
         </button>
         <StyledPopover
           id={item.text}

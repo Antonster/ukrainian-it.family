@@ -1,5 +1,6 @@
 import { historyData } from '@constants/index';
 import styles from '@styles/components/history.module.scss';
+import Image from 'next/image';
 
 const History = () => (
   <div className={styles.history}>
@@ -10,11 +11,14 @@ const History = () => (
 
           {location && (
             <div className={styles.history__location}>
-              <img
-                className={`${styles['history__location-image']} ${styles[color]}`}
-                src="/static/images/location.svg"
-                alt="location icon"
-              />
+              <div className={`${styles['history__location-image']} ${styles[color]}`}>
+                <Image
+                  src="/static/images/location.svg"
+                  alt="location icon"
+                  width={16}
+                  height={24}
+                />
+              </div>
               <div className={styles['history__location-text']}>{location}</div>
             </div>
           )}
@@ -25,11 +29,9 @@ const History = () => (
     </div>
 
     <div className={styles.history__separator}>
-      <img
-        className={styles['history__separator-arrow']}
-        src="/static/images/arrow-down-blue.svg"
-        alt="arrow icon"
-      />
+      <div className={styles['history__separator-arrow']}>
+        <Image src="/static/images/arrow-down-blue.svg" alt="arrow icon" width={16} height={16} />
+      </div>
     </div>
 
     <div className={styles['history__bottom-row']}>
@@ -39,11 +41,14 @@ const History = () => (
 
           {location && (
             <div className={styles.history__location}>
-              <img
-                className={`${styles['history__location-image']} ${styles[color]}`}
-                src="/static/images/location.svg"
-                alt="location icon"
-              />
+              <div className={`${styles['history__location-image']} ${styles[color]}`}>
+                <Image
+                  src="/static/images/location.svg"
+                  alt="location icon"
+                  width={16}
+                  height={24}
+                />
+              </div>
               <div className={styles['history__location-text']}>{location}</div>
             </div>
           )}

@@ -1,6 +1,7 @@
 import { careerData } from '@constants/index';
 import useDebounce from '@hooks/useDebounce';
 import styles from '@styles/components/vacancy-list.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
 
@@ -35,7 +36,7 @@ const VacancyList = () => {
     <div className={styles.container}>
       <div className={styles.search}>
         <div className={styles.search__button}>
-          <img src="/static/images/loupe.svg" alt="loupe icon" />
+          <Image src="/static/images/loupe.svg" alt="loupe icon" width={20} height={20} />
         </div>
         <input
           className={styles.search__input}
@@ -53,12 +54,17 @@ const VacancyList = () => {
               <div className={styles['list__item-title']}>{title}</div>
               <div className={styles['list__item-info']}>
                 <div className={styles['list__item-location']}>
-                  <img src="/static/images/location.svg" alt="location icon" />
+                  <Image
+                    src="/static/images/location.svg"
+                    alt="location icon"
+                    width={16}
+                    height={20}
+                  />
                   <div>{location}</div>
                 </div>
 
                 <div className={styles['list__item-time']}>
-                  <img src="/static/images/clock.svg" alt="clock icon" />
+                  <Image src="/static/images/clock.svg" alt="clock icon" width={24} height={24} />
                   <div>{time}</div>
                 </div>
               </div>
@@ -67,7 +73,12 @@ const VacancyList = () => {
             <Link href={`/career/${id}`}>
               <a className={styles['list__item-link']}>
                 <div>Details</div>
-                <img src="/static/images/arrow-blue.svg" alt="arrow icon" />
+                <Image
+                  src="/static/images/arrow-blue.svg"
+                  alt="arrow icon"
+                  width={25}
+                  height={25}
+                />
               </a>
             </Link>
           </div>

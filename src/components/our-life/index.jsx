@@ -13,27 +13,9 @@ const OurLife = () => (
           return (
             <SwiperSlide key={id}>
               <div className={styles.slide}>
-                <div className={`${styles.slide__image} ${styles.small}`}>
-                  <Image
-                    src={images[0]}
-                    alt="our life"
-                    layout="fill"
-                    quality={100}
-                    objectFit="cover"
-                    loading="eager"
-                  />
-                </div>
+                <Image src={images[0]} alt="our life" width={432} height={226} objectFit="cover" />
 
-                <div className={`${styles.slide__image} ${styles.small}`}>
-                  <Image
-                    src={images[1]}
-                    alt="our life"
-                    layout="fill"
-                    quality={100}
-                    objectFit="cover"
-                    loading="eager"
-                  />
-                </div>
+                <Image src={images[1]} alt="our life" width={432} height={226} objectFit="cover" />
               </div>
             </SwiperSlide>
           );
@@ -42,16 +24,7 @@ const OurLife = () => (
         return (
           <SwiperSlide key={id}>
             <div className={styles.slide}>
-              <div className={`${styles.slide__image} ${styles.big}`}>
-                <Image
-                  src={images[0]}
-                  alt="our life"
-                  layout="fill"
-                  quality={100}
-                  objectFit="cover"
-                  loading="eager"
-                />
-              </div>
+              <Image src={images[0]} alt="our life" width={432} height={460} objectFit="cover" />
             </div>
           </SwiperSlide>
         );

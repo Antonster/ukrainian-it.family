@@ -45,6 +45,7 @@
   &__social-item {
     cursor: pointer;
     transition: all 0.5s;
+    line-height: 0;
 
     &:hover {
       opacity: 0.5;

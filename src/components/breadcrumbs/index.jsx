@@ -1,22 +1,27 @@
-/* eslint-disable react/no-array-index-key */
 import styles from '@styles/components/breadcrumbs.module.scss';
+import { nanoid } from 'nanoid';
+import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const Breadcrumbs = ({ crumbs, centered }) => {
-  const crumbList = crumbs.reduce((acc, item, i) => (i === 0 ? [item] : acc.concat('/', item)), []);
+  const crumbList = crumbs.reduce(
+    (acc, item, index) => (index === 0 ? [item] : acc.concat('/', item)),
+    [],
+  );
 
   return (
     <div className={styles.container}>
       <div className={`${styles.breadcrumbs} ${centered ? styles.centered : ''}`}>
-        {crumbList.map((item, i) => {
+        {crumbList.map((item) => {
           if (item === '/') {
             return (
-              <span key={i}>
-                <img
-                  className={styles.breadcrumbs__separator}
+              <span key={nanoid()} className={styles.breadcrumbs__separator}>
+                <Image
                   src="/static/images/arrow-down-blue.svg"
                   alt="arrow icon"
+                  width={16}
+                  height={16}
                 />
               </span>
             );
@@ -24,14 +29,14 @@ const Breadcrumbs = ({ crumbs, centered }) => {
 
           if (typeof item === 'string') {
             return (
-              <span key={i} className={styles.breadcrumbs__text}>
+              <span key={nanoid()} className={styles.breadcrumbs__text}>
                 {item}
               </span>
             );
           }
 
           return (
-            <Link key={i} href={item.link}>
+            <Link key={nanoid()} href={item.link}>
               <a className={styles.breadcrumbs__link}>{item.text}</a>
             </Link>
           );

@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     gap: 48px;
+    line-height: 0;
   }
 
   &__logo {
@@ -41,12 +42,16 @@
     gap: 0 4px;
     cursor: pointer;
 
+    & img {
+      transition: all 0.5s;
+    }
+
     &:hover {
       .header__navigation-get-item-text {
         color: #b3880b;
       }
 
-      .header__navigation-get-item-image {
+      & img {
         filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(1043%)
           hue-rotate(14deg) brightness(86%) contrast(91%);
       }

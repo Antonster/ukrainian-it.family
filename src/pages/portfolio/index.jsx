@@ -10,12 +10,12 @@ import Head from 'next/head';
 import { useMemo } from 'react';
 
 const Portfolio = () => {
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Portfolio'], []);
+  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Case Studies'], []);
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Portfolio | Ukrainian-IT.Family</title>
+        <title>Case Studies | Ukrainian-IT.Family</title>
         <meta name="description" content="" />
       </Head>
 
@@ -26,10 +26,7 @@ const Portfolio = () => {
       </Layout>
 
       <Layout>
-        <TitleSectionWrapper
-          title="Our partners say"
-          description="Hear what company like yours say"
-        >
+        <TitleSectionWrapper title="Our case studies" description="Projects we have worked on">
           <PortfolioList data={portfolioListData} />
         </TitleSectionWrapper>
       </Layout>

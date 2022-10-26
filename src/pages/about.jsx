@@ -13,6 +13,7 @@ import TitleSectionWrapper from '@components/title-section-wrapper';
 import { testimonialListData } from '@constants/index';
 import styles from '@styles/pages/about.module.scss';
 import Head from 'next/head';
+import Image from 'next/image';
 import { useMemo } from 'react';
 
 const About = () => {
@@ -33,7 +34,7 @@ const About = () => {
 
       <Layout small>
         <TitleSectionWrapper title="We are UKRAINIAN IT FAMILY" description="Lorem ipsum">
-          <img src="/static/images/ukraine-map.svg" alt="ukraine map" />
+          <Image src="/static/images/ukraine-map.svg" alt="ukraine map" width={874} height={583} />
         </TitleSectionWrapper>
       </Layout>
 

@@ -1,4 +1,5 @@
 import styles from '@styles/components/portfolio-card.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
@@ -23,15 +24,13 @@ const PortfolioCard = ({ id, big, name, tags, description, image }) => (
         <a className={`${styles['image-wrapper__link-wrapper']} ${big ? styles.big : ''}`}>
           <div className={styles['image-wrapper__link']}>
             <div className={styles['image-wrapper__link-text']}>go to case</div>
-            <img src="/static/images/arrow-blue.svg" alt="arrow icon" />
+            <Image src="/static/images/arrow-blue.svg" alt="arrow icon" width={25} height={25} />
           </div>
         </a>
       </Link>
-      <img
-        className={`${styles['image-wrapper__image']} ${big ? styles.big : ''}`}
-        src={image}
-        alt={`${name}`}
-      />
+      <div className={`${styles['image-wrapper__image']} ${big ? styles.big : ''}`}>
+        <Image src={image} alt={`${name}`} layout="fill" />
+      </div>
     </div>
   </div>
 );

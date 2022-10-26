@@ -90,12 +90,7 @@
     display: flex;
     align-items: center;
     gap: 0 8px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    line-height: 0;
   }
 
   &__location-image {
@@ -113,6 +108,15 @@
       filter: brightness(0) saturate(100%) invert(72%) sepia(77%) saturate(545%) hue-rotate(347deg)
         brightness(101%) contrast(102%);
     }
+  }
+
+  &__location-text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
 
   &__description {

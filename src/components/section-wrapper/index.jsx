@@ -1,4 +1,5 @@
 import styles from '@styles/components/section-wrapper.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
@@ -26,11 +27,7 @@ const SectionWrapper = ({ big, question, name, titles, link, linkText = 'see all
         <Link href={link}>
           <a className={styles['titles-wrapper__link']}>
             <div className={styles['titles-wrapper__link-text']}>{linkText}</div>
-            <img
-              className={styles['titles-wrapper__link-image']}
-              src="/static/images/arrow-yellow.svg"
-              alt="arrow icon"
-            />
+            <Image src="/static/images/arrow-yellow.svg" alt="arrow icon" width={16} height={17} />
           </a>
         </Link>
       )}

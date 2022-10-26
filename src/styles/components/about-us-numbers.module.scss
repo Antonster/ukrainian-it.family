@@ -12,6 +12,9 @@
   align-items: center;
 
   &__image {
+    position: relative;
+    height: 160px;
+    width: 100%;
     margin: 0 0 24px;
   }
 

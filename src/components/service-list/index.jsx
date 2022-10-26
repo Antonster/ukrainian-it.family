@@ -1,6 +1,7 @@
 import MainButton from '@components/main-button';
 import { serviceListData } from '@constants/index';
 import styles from '@styles/components/service-list.module.scss';
+import Image from 'next/image';
 
 const ServiceList = () => (
   <div className={styles.container}>
@@ -16,7 +17,7 @@ const ServiceList = () => (
             <div className={styles.item__name}>{name}</div>
             <div className={styles.item__description}>{description}</div>
           </div>
-          <img className={styles.item__image} src={image} alt={`${name} icon`} />
+          <Image src={image} alt={`${name} icon`} width={240} height={240} />
           <div className={styles.item__button}>
             <MainButton
               type="link"

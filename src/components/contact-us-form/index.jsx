@@ -1,6 +1,7 @@
 import MainButton from '@components/main-button';
 import { yupResolver } from '@hookform/resolvers/yup';
 import styles from '@styles/components/contact-us-form.module.scss';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
@@ -77,7 +78,7 @@ const ContactUsForm = ({ onCloseModal, formGap }) => {
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
       {onCloseModal && (
         <button className={styles['form__close-button']} type="button" onClick={onCloseModal}>
-          <img src="/static/images/cross-blue.svg" alt="cross icon" />
+          <Image src="/static/images/cross-blue.svg" alt="cross icon" width={20} height={20} />
         </button>
       )}
 
@@ -140,7 +141,12 @@ const ContactUsForm = ({ onCloseModal, formGap }) => {
                   <input {...getInputProps()} />
                   <div className={styles['form__content-field-dropzone-text']}>
                     <div>upload CV</div>
-                    <img src="/static/images/arrow-blue.svg" alt="arrow icon" />
+                    <Image
+                      src="/static/images/arrow-blue.svg"
+                      alt="arrow icon"
+                      width={25}
+                      height={25}
+                    />
                   </div>
                 </div>
                 {fileError && <div className={styles['form__field-error']}>{fileError}</div>}

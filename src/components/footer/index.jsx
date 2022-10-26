@@ -2,6 +2,7 @@ import LanguageSelection from '@components/language-selection';
 import Layout from '@components/layout';
 import { footerLinksData, footerTermsData, socialLogoListData } from '@constants/index';
 import styles from '@styles/components/footer.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useMemo } from 'react';
 
@@ -15,7 +16,7 @@ const Footer = () => {
           <div className={styles.main__info}>
             <Link href="/">
               <a className={styles.main__logo}>
-                <img src="/static/images/logo-full.svg" alt="logo" />
+                <Image src="/static/images/logo-full.svg" alt="logo" width={120} height={70} />
               </a>
             </Link>
 
@@ -33,7 +34,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   href={link}
                 >
-                  <img src={image} alt={alt} />
+                  <Image src={image} alt={alt} width={24} height={24} />
                 </a>
               ))}
             </div>
@@ -70,7 +71,7 @@ const Footer = () => {
 
         <div className={styles.terms}>
           <div className={styles.terms__clutch}>
-            <img src="/static/images/clutch.svg" alt="clutch logo" />
+            <Image src="/static/images/clutch.svg" alt="clutch logo" width={100} height={64} />
           </div>
           <ul className={styles['terms__link-list']}>
             {footerTermsData.map(({ text }) => (

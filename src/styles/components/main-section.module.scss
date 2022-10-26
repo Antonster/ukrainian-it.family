@@ -12,6 +12,10 @@
   padding: 24px 24px 24px 64px;
   margin: 0 0 136px;
 
+  &__logo-wrapper {
+    line-height: 0;
+  }
+
   &__logo {
     cursor: pointer;
     transition: all 0.5s;
@@ -36,12 +40,16 @@
     gap: 0 4px;
     cursor: pointer;
 
+    & img {
+      transition: all 0.5s;
+    }
+
     &:hover {
       .header__navigation-get-item-text {
         color: #b3880b;
       }
 
-      .header__navigation-get-item-image {
+      & img {
         filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(1043%)
           hue-rotate(14deg) brightness(86%) contrast(91%);
       }
@@ -56,10 +64,6 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #ffc20f;
-    transition: all 0.5s;
-  }
-
-  &__navigation-get-item-image {
     transition: all 0.5s;
   }
 }
@@ -81,6 +85,11 @@
   &__flag-emblem {
     display: flex;
     align-items: center;
+  }
+
+  &__emblem {
+    display: flex;
+    align-items: flex-start;
   }
 
   &__subtitle {
@@ -120,6 +129,5 @@
 }
 
 .main-background {
-  width: 500px;
-  object-fit: cover;
+  line-height: 0;
 }

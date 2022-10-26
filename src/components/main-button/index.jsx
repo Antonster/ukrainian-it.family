@@ -1,4 +1,5 @@
 import styles from '@styles/components/main-button.module.scss';
+import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import { useMemo } from 'react';
@@ -32,7 +33,7 @@ const MainButton = ({
       <Link href={href}>
         <a className={classes} style={{ width }}>
           <div>{text}</div>
-          <img src={image} alt="arrow icon" />
+          <Image src={image} alt="arrow icon" width={24} height={24} />
         </a>
       </Link>
     );
@@ -46,7 +47,7 @@ const MainButton = ({
       onClick={onClick}
     >
       <div>{text}</div>
-      <img src={image} alt="arrow icon" />
+      <Image src={image} alt="arrow icon" width={24} height={24} />
     </button>
   );
 };

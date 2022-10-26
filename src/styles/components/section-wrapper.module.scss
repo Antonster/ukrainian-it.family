@@ -59,12 +59,16 @@
     gap: 0 4px;
     cursor: pointer;
 
+    & img {
+      transition: all 0.5s;
+    }
+
     &:hover {
       .titles-wrapper__link-text {
         color: #b3880b;
       }
 
-      .titles-wrapper__link-image {
+      & img {
         filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(1043%)
           hue-rotate(14deg) brightness(86%) contrast(91%);
       }
@@ -79,10 +83,6 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #ffc20f;
-    transition: all 0.5s;
-  }
-
-  &__link-image {
     transition: all 0.5s;
   }
 }

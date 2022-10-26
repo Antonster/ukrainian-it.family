@@ -1,5 +1,6 @@
 import MainButton from '@components/main-button';
 import styles from '@styles/components/vacancy-description.module.scss';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 
 const VacancyDescription = ({ title, description, location, time }) => (
@@ -9,12 +10,12 @@ const VacancyDescription = ({ title, description, location, time }) => (
       <div className={styles['vacancy-description__description']}>{description}</div>
       <div className={styles['vacancy-description__info']}>
         <div className={styles['vacancy-description__location']}>
-          <img src="/static/images/location.svg" alt="location icon" />
+          <Image src="/static/images/location.svg" alt="location icon" width={16} height={20} />
           <div>{location}</div>
         </div>
 
         <div className={styles['vacancy-description__time']}>
-          <img src="/static/images/clock.svg" alt="clock icon" />
+          <Image src="/static/images/clock.svg" alt="clock icon" width={24} height={24} />
           <div>{time}</div>
         </div>
       </div>

@@ -12,12 +12,6 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  &__image {
-    width: 88px;
-    height: 88px;
-    margin: 0 16px 0 0;
-  }
-
   &__content-wrapper {
     width: calc(100% - 88px - 16px);
     padding: 24px 0;
