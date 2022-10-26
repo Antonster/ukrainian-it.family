@@ -8,18 +8,4 @@
   display: flex;
   flex-direction: column;
   gap: 8px 0;
-
-  &__image {
-    position: relative;
-    width: 100%;
-    background: #f2f7fa;
-
-    &.big {
-      height: 460px;
-    }
-
-    &.small {
-      height: 226px;
-    }
-  }
 }

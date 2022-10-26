@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 25%;
+  height: 250px;
+  padding: 40px;
+  background: #f2f7fa;
+
+  &:nth-child(2n) {
+    background: #fffcf3;
+  }
+
+  &__name {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #01669c;
+    margin: 0 0 24px;
+  }
+
+  &__description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: 0.04em;
+    color: #01669c;
+  }
+}

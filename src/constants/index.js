@@ -221,6 +221,10 @@ export const headerData = [
         text: 'Career',
         link: '/career',
       },
+      {
+        text: 'Our team',
+        link: '/team',
+      },
     ],
   },
   {
@@ -652,5 +656,80 @@ export const careerData = [
         href: 'https://djinni.co/',
       },
     ],
+  },
+];
+
+export const whyUsData = [
+  {
+    id: '1',
+    name: 'Project ownership',
+    description: 'We care about successful project result.',
+  },
+  {
+    id: '2',
+    name: 'High English level',
+    description:
+      'We know that usually there is a dilemma: either skills or sufficient English level. We provide both.',
+  },
+  {
+    id: '3',
+    name: 'Happy team',
+    description: 'We are honest with our team members.',
+  },
+  {
+    id: '4',
+    name: 'Constinuous team growth',
+    description: 'We encourage studying and research stages to look for the best results.',
+  },
+];
+
+export const teamListData = [
+  {
+    id: '1',
+    name: 'Turovets Yevhen',
+    position: 'CEO',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '2',
+    name: 'Mykola Piddubnyi',
+    position: 'CTO',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '3',
+    name: 'Anton Titov',
+    position: 'CTO',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '4',
+    name: 'Olexandr Stadnik',
+    position: 'React Developer',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '5',
+    name: 'Dmytro Yahuza',
+    position: 'PHP Full-stack Developer',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '6',
+    name: 'Denis Velykyi',
+    position: 'PHP Full-stack developer',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '7',
+    name: 'Andrey Oleinych',
+    position: 'PHP Developer',
+    photo: '/static/images/avatar.png',
+  },
+  {
+    id: '8',
+    name: 'Anastasiia Titova',
+    position: 'Project Manager',
+    photo: '/static/images/avatar.png',
   },
 ];
