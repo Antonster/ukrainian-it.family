@@ -24,7 +24,7 @@ const VacancyContent = ({ items, links }) => (
 
     <div className={styles['vacancy-content__links']}>
       {links.map(({ text, href }) => (
-        <MainButton key={text} type="link" href={href} text={text} buttonStyle="outlined" />
+        <MainButton key={text} type="link" href={href} text={text} blank buttonStyle="outlined" />
       ))}
     </div>
   </div>

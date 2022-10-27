@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 const MainButton = ({
   type,
   href,
+  blank,
   buttonStyle = 'primary',
   size = 'small',
   width = 'auto',
@@ -30,12 +31,27 @@ const MainButton = ({
 
   if (type === 'link') {
     return (
-      <Link href={href}>
-        <a className={classes} style={{ width }}>
-          <div>{text}</div>
-          <Image src={image} alt="arrow icon" width={24} height={24} />
-        </a>
-      </Link>
+      <>
+        {blank ? (
+          <a
+            className={classes}
+            style={{ width }}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>{text}</div>
+            <Image src={image} alt="arrow icon" width={24} height={24} />
+          </a>
+        ) : (
+          <Link href={href}>
+            <a className={classes} style={{ width }}>
+              <div>{text}</div>
+              <Image src={image} alt="arrow icon" width={24} height={24} />
+            </a>
+          </Link>
+        )}
+      </>
     );
   }
 
@@ -55,6 +71,7 @@ const MainButton = ({
 MainButton.propTypes = {
   type: PropTypes.oneOf(['button', 'submit', 'link']),
   href: PropTypes.string,
+  blank: PropTypes.bool,
   buttonStyle: PropTypes.oneOf(['primary', 'secondary', 'outlined']),
   size: PropTypes.oneOf(['small', 'big']),
   width: PropTypes.string,
