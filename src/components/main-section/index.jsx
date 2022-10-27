@@ -24,17 +24,23 @@ const MainSection = ({ sectionHeaderRef }) => (
             {headerData.map((item) => (
               <NavigationItem key={item.text} item={item} />
             ))}
+
             <li>
               <LanguageSelection />
             </li>
-            <li className={styles['header__navigation-get-item']}>
-              <div className={styles['header__navigation-get-item-text']}>Get in touch</div>
-              <Image
-                src="/static/images/arrow-yellow.svg"
-                alt="arrow icon"
-                width={16}
-                height={16}
-              />
+
+            <li>
+              <Link href="/contacts">
+                <a className={styles['header__navigation-get-item']}>
+                  <div className={styles['header__navigation-get-item-text']}>Get in touch</div>
+                  <Image
+                    src="/static/images/arrow-yellow.svg"
+                    alt="arrow icon"
+                    width={16}
+                    height={16}
+                  />
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>

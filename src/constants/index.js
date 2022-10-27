@@ -47,6 +47,83 @@ export const serviceListData = [
   },
 ];
 
+export const serviceOutsourceProcessData = [
+  {
+    image: '/static/images/service-meeting-icon.svg',
+    title: 'Meeting the project',
+    content: [
+      'Drop us a line here.',
+      'First meeting. Let’s get to know better.',
+      'Tell us about your request.',
+      'Keeping everything transparent from the very beginning. Let’s negotiate all organizational questions.',
+    ],
+  },
+  {
+    image: '/static/images/service-planning-icon.svg',
+    title: 'Planning',
+    content: [
+      'Briefing.',
+      'We brainstorm the best solutions for your project.',
+      'Assigning a team.',
+      'Presenting you the plan.',
+    ],
+  },
+  {
+    image: '/static/images/service-code-icon.svg',
+    title: 'Realization',
+    content: [
+      'Development.',
+      'Meetings throughout the process.',
+      'Regular progress demonstrations and feedback sessions.',
+      'Plans corrections if necessary.',
+    ],
+  },
+  {
+    image: '/static/images/service-check-icon.svg',
+    title: 'Finalization',
+    content: ['Demonstration.', 'Acceptance testing.'],
+  },
+  {
+    image: '/static/images/service-light-icon.svg',
+    title: 'Planning next project together',
+  },
+];
+
+export const serviceOutstaffProcessData = [
+  {
+    image: '/static/images/service-meeting-icon.svg',
+    title: 'Getting acquainted',
+    content: [
+      'Drop us a line here.',
+      'First meeting. Let’s get to know better.',
+      'Tell us about your request.',
+      'Negotiating the outstaff.',
+    ],
+  },
+  {
+    image: '/static/images/service-team-icon.svg',
+    title: 'Kickoff meeting',
+    content: [
+      'We introduce the developers to you.',
+      'Then we help developers onboard to your project.',
+    ],
+  },
+  {
+    image: '/static/images/service-check-icon.svg',
+    title: 'First check in meeting',
+    content: ['We want to know how your first sprint has been.'],
+  },
+  {
+    image: '/static/images/service-double-check-icon.svg',
+    title: 'Second check in meetings',
+    content: ['Has your first month been successful?'],
+  },
+  {
+    image: '/static/images/service-people-icon.svg',
+    title: 'Extending the team',
+  },
+];
+
 export const aboutUsNumbersData = [
   {
     id: '1',

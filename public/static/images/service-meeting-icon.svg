@@ -1,0 +1,19 @@
+<svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40.1992" cy="40" r="2" fill="#01669C"/>
+<circle cx="11.1992" cy="40" r="1" fill="#01669C"/>
+<circle cx="77.1992" cy="40" r="1" fill="#01669C"/>
+<circle cx="7.19922" cy="40" r="1" fill="#01669C"/>
+<circle cx="73.1992" cy="40" r="1" fill="#01669C"/>
+<circle cx="3.19922" cy="40" r="1" fill="#01669C"/>
+<circle cx="69.1992" cy="40" r="1" fill="#01669C"/>
+<circle cx="40.1992" cy="69" r="1" fill="#01669C"/>
+<circle cx="40.1992" cy="3" r="1" fill="#01669C"/>
+<circle cx="40.1992" cy="73" r="1" fill="#01669C"/>
+<circle cx="40.1992" cy="7" r="1" fill="#01669C"/>
+<circle cx="40.1992" cy="77" r="1" fill="#01669C"/>
+<circle cx="40.1992" cy="11" r="1" fill="#01669C"/>
+<path d="M26.7992 46L32.1992 40M32.1992 40L26.7992 34M32.1992 40H14.1992" stroke="#01669C" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M53.5992 46L48.1992 40M48.1992 40L53.5992 34M48.1992 40H66.1992" stroke="#01669C" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M34.1992 53.4L40.1992 48M40.1992 48L46.1992 53.4M40.1992 48V66" stroke="#01669C" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M46.1992 26.6L40.1992 32M40.1992 32L34.1992 26.6M40.1992 32V14" stroke="#01669C" stroke-width="1.5" stroke-linecap="square"/>
+</svg>

@@ -1,6 +1,10 @@
 .container {
   width: 100%;
   padding: 0 64px 120px;
+
+  &.small {
+    padding: 0 64px 56px;
+  }
 }
 
 .title-wrapper {
@@ -26,5 +30,9 @@
     letter-spacing: 0.04em;
     color: #01486e;
     margin: 0 0 96px;
+
+    &.small {
+      margin: 0;
+    }
   }
 }

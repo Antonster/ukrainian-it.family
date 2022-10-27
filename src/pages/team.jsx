@@ -6,7 +6,6 @@ import Layout from '@components/layout';
 import SectionWrapper from '@components/section-wrapper';
 import TeamList from '@components/team-list';
 import TitleSectionWrapper from '@components/title-section-wrapper';
-import VacancyList from '@components/vacancy-list';
 import WhyUs from '@components/why-us';
 import styles from '@styles/pages/team.module.scss';
 import Head from 'next/head';
