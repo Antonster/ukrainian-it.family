@@ -82,4 +82,14 @@
     letter-spacing: 0.04em;
     color: #01669c;
   }
+
+  &__link {
+    color: #ffc20f;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: #b3880b;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import styles from '@styles/components/service-process.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 const ServiceProcess = ({ data }) => (
@@ -43,6 +44,15 @@ const ServiceProcess = ({ data }) => (
 
             {content && content.length > 1 && (
               <ul className={styles['process-item__list']}>
+                {index === 0 && (
+                  <li className={styles['process-item__text']}>
+                    Drop us a line{' '}
+                    <Link href="/contacts">
+                      <a className={styles['process-item__link']}>here.</a>
+                    </Link>
+                  </li>
+                )}
+
                 {content.map((item) => (
                   <li key={item} className={styles['process-item__text']}>
                     {item}

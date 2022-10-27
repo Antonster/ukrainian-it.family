@@ -52,7 +52,6 @@ export const serviceOutsourceProcessData = [
     image: '/static/images/service-meeting-icon.svg',
     title: 'Meeting the project',
     content: [
-      'Drop us a line here.',
       'First meeting. Let’s get to know better.',
       'Tell us about your request.',
       'Keeping everything transparent from the very beginning. Let’s negotiate all organizational questions.',
@@ -94,7 +93,6 @@ export const serviceOutstaffProcessData = [
     image: '/static/images/service-meeting-icon.svg',
     title: 'Getting acquainted',
     content: [
-      'Drop us a line here.',
       'First meeting. Let’s get to know better.',
       'Tell us about your request.',
       'Negotiating the outstaff.',
@@ -458,7 +456,7 @@ export const historyData = {
     {
       title: '😢 Apr 2014',
       location: 'Donetsk',
-      description: 'War started in Donesk and we were forced to move to the West of Ukraine.',
+      description: 'War started in Donetsk and we were forced to move to the West of Ukraine.',
       color: 'secondary',
     },
     {
