@@ -1,5 +1,5 @@
 import { portfolioListData, testimonialListData } from '@constants';
-import useOnScreen from '@hooks/useOnScreen';
+import { useOnScreen } from '@hooks';
 import { SectionWrapper, WidthBox } from '@layouts';
 import {
   AboutUsNumbers,

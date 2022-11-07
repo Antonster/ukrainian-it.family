@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 import { useEffect, useState } from 'react';
 
-const useOnScreen = (ref, rootMargin = '0px') => {
+export const useOnScreen = (ref, rootMargin = '0px') => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -25,5 +25,3 @@ const useOnScreen = (ref, rootMargin = '0px') => {
 
   return isVisible;
 };
-
-export default useOnScreen;

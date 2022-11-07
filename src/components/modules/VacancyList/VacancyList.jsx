@@ -1,5 +1,5 @@
 import { careerData } from '@constants';
-import useDebounce from '@hooks/useDebounce';
+import { useDebounce } from '@hooks';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
