@@ -421,7 +421,7 @@ export const footerTermsData = [
   },
 ];
 
-export const principlesListData = [
+export const principleListData = [
   {
     id: '1',
     name: 'Ownership',

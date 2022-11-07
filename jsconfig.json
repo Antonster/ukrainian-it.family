@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
+    // "module": "commonjs",
     "baseUrl": ".",
     "paths": {
       "@api": ["./src/api/*"],
-      "@components/*": ["./src/components/*"],
-      "@constants/*": ["./src/constants/*"],
+      "@elements": ["./src/components/elements/index.js"],
+      "@layouts": ["./src/components/layouts/index.js"],
+      "@modules": ["./src/components/modules/index.js"],
+      "@templates": ["./src/components/templates/index.js"],
+      "@constants": ["./src/constants/index.js"],
       "@hooks/*": ["./src/hooks/*"],
       "@pages/*": ["./src/pages/*"],
       "@styles/*": ["./src/styles/*"],

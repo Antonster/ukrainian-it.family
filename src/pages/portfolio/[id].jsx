@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import { PortfolioId } from '@templates';
 
-const PortfolioDetailed = () => <div>PortfolioDetailed</div>;
-
-export default PortfolioDetailed;
+export default PortfolioId;
