@@ -71,13 +71,20 @@ export const Footer = () => {
         <div className={styles.separator} />
 
         <div className={styles.terms}>
-          <div className={styles.terms__clutch}>
+          <a href="/" className={styles.terms__clutch} target="_blank" rel="noopener noreferrer">
             <Image src="/static/images/clutch.svg" alt="clutch logo" width={100} height={64} />
-          </div>
+          </a>
+
           <ul className={styles['terms__link-list']}>
-            {footerTermsData.map(({ text }) => (
+            {footerTermsData.map(({ text, link }) => (
               <li key={text} className={styles['terms__link-item']}>
-                {text}
+                {link ? (
+                  <Link href={link}>
+                    <a>{text}</a>
+                  </Link>
+                ) : (
+                  <>{text}</>
+                )}
               </li>
             ))}
           </ul>

@@ -41,7 +41,7 @@ const CareerId = ({ vacancy: { id, title, description, location, time, items, li
       </WidthBox>
 
       <WidthBox small filled>
-        <div className={styles['form-wrapper']}>
+        <div id="career-form" className={styles['form-wrapper']}>
           <ContactUsForm />
         </div>
       </WidthBox>

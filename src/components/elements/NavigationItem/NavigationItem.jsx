@@ -12,7 +12,7 @@ const StyledPopover = styled(Popover)(() => ({
     display: 'flex',
     minWidth: '320px',
     flexDirection: 'column',
-    padding: '8px 0',
+    padding: '0',
     background: '#FFFFFF',
     boxShadow: '0px 12px 24px rgba(1, 72, 110, 0.2)',
     borderRadius: '0px',

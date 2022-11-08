@@ -406,15 +406,19 @@ export const footerLinksData = {
 export const footerTermsData = [
   {
     text: 'Privacy policy',
+    link: '/',
   },
   {
     text: 'Legal notice',
+    link: '/',
   },
   {
     text: 'Cookies',
+    link: '/',
   },
   {
     text: 'Terms of use',
+    link: '/',
   },
   {
     text: '© UITF 2022',
@@ -824,7 +828,7 @@ export const contactsListData = [
     id: '2',
     image: '/static/images/contacts-email.svg',
     mainText: 'contact@uitf.com',
-    secondaryText: '',
+    secondaryText: 'Email us',
     arrow: true,
     mainColor: '#01669C',
     secondaryColor: '#F2F7FA',
@@ -834,7 +838,7 @@ export const contactsListData = [
     id: '3',
     image: '/static/images/contacts-viber.svg',
     mainText: 'Viber',
-    secondaryText: '',
+    secondaryText: 'Open',
     arrow: true,
     mainColor: '#7E5AED',
     secondaryColor: '#F3EFFE',
@@ -844,7 +848,7 @@ export const contactsListData = [
     id: '4',
     image: '/static/images/contacts-whatsapp.svg',
     mainText: 'Whatsapp',
-    secondaryText: '',
+    secondaryText: 'Open',
     arrow: true,
     mainColor: '#2DB942',
     secondaryColor: '#EAF8ED',

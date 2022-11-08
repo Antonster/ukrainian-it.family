@@ -27,11 +27,6 @@
 
   &__logo {
     cursor: pointer;
-    transition: all 0.5s;
-
-    &:hover {
-      opacity: 0.7;
-    }
   }
 
   &__navigation {

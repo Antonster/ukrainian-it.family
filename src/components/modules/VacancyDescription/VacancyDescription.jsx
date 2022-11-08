@@ -22,7 +22,7 @@ export const VacancyDescription = ({ title, description, location, time }) => (
       </div>
     </div>
 
-    <MainButton onClick={() => {}} text="apply" size="big" width="240px" />
+    <MainButton href="#career-form" type="link" text="apply" size="big" width="240px" />
   </div>
 );
 

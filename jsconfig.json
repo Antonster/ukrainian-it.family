@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // "module": "commonjs",
     "baseUrl": ".",
     "paths": {
       "@api": ["./src/api/*"],

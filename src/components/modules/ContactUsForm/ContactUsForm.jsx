@@ -12,7 +12,7 @@ import styles from './ContactUsForm.module.scss';
 const schema = yup.object({
   name: yup.string().required('Required field'),
   email: yup.string().email('Email must be valid').required('Required field'),
-  curriculumVitae: yup.string(),
+  curriculumVitae: yup.object(),
   link: yup.string(),
 });
 

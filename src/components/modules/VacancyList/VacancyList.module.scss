@@ -66,6 +66,12 @@
     font-size: 24px;
     line-height: 29px;
     color: #01669c;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #80b3ce;
+    }
   }
 
   &__item-info {

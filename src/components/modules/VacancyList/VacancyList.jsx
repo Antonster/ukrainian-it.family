@@ -52,7 +52,10 @@ export const VacancyList = () => {
         {filteredCareerData.map(({ id, title, location, time }) => (
           <div key={id} className={styles.list__item}>
             <div className={styles['list__item-content']}>
-              <div className={styles['list__item-title']}>{title}</div>
+              <Link href={`/career/${id}`}>
+                <a className={styles['list__item-title']}>{title}</a>
+              </Link>
+
               <div className={styles['list__item-info']}>
                 <div className={styles['list__item-location']}>
                   <Image

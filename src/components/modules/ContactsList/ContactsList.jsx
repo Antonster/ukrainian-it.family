@@ -7,18 +7,12 @@ export const ContactsList = () => (
   <div className={styles.container}>
     {contactsListData.map(
       ({ id, image, arrow, link, mainColor, mainText, secondaryColor, secondaryText }) => (
-        <div key={id} className={styles.item}>
+        <a key={id} className={styles.item} href={link} target="_blank" rel="noopener noreferrer">
           <div className={styles['item__image-container']} style={{ background: mainColor }}>
             <Image src={image} alt="contact icon" width={24} height={24} />
           </div>
 
-          <a
-            className={styles.item__link}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ background: secondaryColor }}
-          >
+          <div className={styles.item__link} style={{ background: secondaryColor }}>
             <div className={styles['item__main-text']}>{mainText}</div>
 
             <div className={styles.item__secondary}>
@@ -33,8 +27,8 @@ export const ContactsList = () => (
                 />
               )}
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       ),
     )}
   </div>
