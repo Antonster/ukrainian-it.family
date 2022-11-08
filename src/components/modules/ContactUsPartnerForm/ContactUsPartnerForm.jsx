@@ -11,7 +11,7 @@ import styles from './ContactUsPartnerForm.module.scss';
 const schema = yup.object({
   name: yup.string().required('Required field'),
   email: yup.string().email('Email must be valid').required('Required field'),
-  task: yup.object(),
+  brief: yup.object(),
   description: yup.string(),
 });
 
@@ -28,7 +28,7 @@ export const ContactUsPartnerForm = () => {
     resolver: yupResolver(schema),
   });
 
-  const currentFile = watch('curriculumVitae');
+  const currentFile = watch('brief');
 
   const [fileError, setFileError] = useState();
 
@@ -56,13 +56,13 @@ export const ContactUsPartnerForm = () => {
       }
 
       setFileError();
-      setValue('curriculumVitae', file[0]);
+      setValue('brief', file[0]);
     },
     [setValue],
   );
 
   const onDeleteFile = useCallback(() => {
-    setValue('curriculumVitae', '');
+    setValue('brief', '');
   }, [setValue]);
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop: onUploadFile });
