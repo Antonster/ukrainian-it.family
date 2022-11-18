@@ -40,7 +40,12 @@ export const Team = () => {
 
       <WidthBox filled>
         <SectionWrapper name="Drop a line" titles={['Credit us your project']}>
-          <DropALine />
+          <DropALine
+            descriptionField
+            fileLabel="Brief"
+            formDescription="Drop us a line and we’ll contact you as soon as possible"
+            formLabel="Contact Us"
+          />
         </SectionWrapper>
       </WidthBox>
 

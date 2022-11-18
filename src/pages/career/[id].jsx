@@ -1,6 +1,6 @@
 import { careerData } from '@constants';
 import { CareerId } from '@views';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export const getStaticPaths = async () => {
   const paths = careerData.map(({ id }) => ({ params: { id } }));

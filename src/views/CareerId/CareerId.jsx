@@ -13,7 +13,7 @@ import { useMemo } from 'react';
 
 import styles from './CareerId.module.scss';
 
-const CareerId = ({ vacancy: { id, title, description, location, time, items, links } }) => {
+export const CareerId = ({ vacancy: { id, title, description, location, time, items, links } }) => {
   const headTitle = useMemo(() => `${title} | Ukrainian-IT.Family`, [title]);
   const crumbs = useMemo(
     () => [{ link: '/', text: 'Homepage' }, { link: '/career', text: 'Career' }, title],
@@ -48,7 +48,7 @@ const CareerId = ({ vacancy: { id, title, description, location, time, items, li
 
       <WidthBox small filled>
         <div id="career-form" className={styles['form-wrapper']}>
-          <ContactUsForm />
+          <ContactUsForm fileLabel="CV" formLabel="Contact Us" linkField />
         </div>
       </WidthBox>
 
@@ -80,5 +80,3 @@ CareerId.propTypes = {
     ),
   }).isRequired,
 };
-
-export default CareerId;

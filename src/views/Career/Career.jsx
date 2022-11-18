@@ -1,6 +1,6 @@
 import { Breadcrumbs } from '@components/elements';
 import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
-import { DropALine, Footer, Header, VacancyList } from '@components/sections';
+import { DropALine, Footer, Header, VacancyList } from '@sections';
 import Head from 'next/head';
 import { useMemo } from 'react';
 
@@ -34,7 +34,7 @@ export const Career = () => {
 
       <WidthBox filled>
         <SectionWrapper question name="Drop a line" titles={['No suitable vacancy']}>
-          <DropALine />
+          <DropALine fileLabel="CV" formLabel="Contact Us" linkField />
         </SectionWrapper>
       </WidthBox>
 

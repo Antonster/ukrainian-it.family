@@ -1,5 +1,5 @@
 import { Breadcrumbs } from '@components/elements';
-import { ContactUsPartnerForm } from '@components/forms';
+import { ContactUsForm } from '@components/forms';
 import { TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { ContactsList, Footer, Header } from '@components/sections';
 import Head from 'next/head';
@@ -35,7 +35,12 @@ export const Contacts = () => {
 
       <WidthBox filled>
         <div className={styles['form-wrapper']}>
-          <ContactUsPartnerForm />
+          <ContactUsForm
+            descriptionField
+            fileLabel="Brief"
+            formDescription="Drop us a line and we’ll contact you as soon as possible"
+            formLabel="Or Fill the form"
+          />
         </div>
       </WidthBox>
 

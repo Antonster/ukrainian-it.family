@@ -1,6 +1,6 @@
 export { About } from './About/About';
 export { Career } from './Career/Career';
-export { default as CareerId } from './CareerId/CareerId';
+export { CareerId } from './CareerId/CareerId';
 export { Contacts } from './Contacts/Contacts';
 export { Home } from './Home/Home';
 export { PageNotFound } from './PageNotFound/PageNotFound';

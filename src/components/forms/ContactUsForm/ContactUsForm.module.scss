@@ -1,7 +1,6 @@
 .form {
   position: relative;
   width: 656px;
-  background: #f2f7fa;
 
   &__close-button {
     position: absolute;
@@ -26,12 +25,27 @@
     }
   }
 
+  &__content-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+  }
+
   &__content-title {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
     text-transform: uppercase;
+    color: #01669c;
+  }
+
+  &__content-subtitle {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
     color: #01669c;
   }
 

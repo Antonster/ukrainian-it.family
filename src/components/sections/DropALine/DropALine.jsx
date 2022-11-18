@@ -1,11 +1,28 @@
 import { MainButton } from '@components/elements';
 import { ContactUsForm } from '@components/forms';
-import { Modal } from '@mui/material';
+import Dialog from '@mui/material/Dialog';
+import { styled } from '@mui/material/styles';
+import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
 import styles from './DropALine.module.scss';
 
-export const DropALine = () => {
+const StyledDialog = styled(Dialog)(() => ({
+  '& .MuiDialog-paper': {
+    maxWidth: '656px',
+    backgroundColor: '#f2f7fa',
+    boxShadow: 'none',
+    borderRadius: 'unset',
+  },
+}));
+
+export const DropALine = ({
+  formLabel,
+  formDescription,
+  fileLabel,
+  linkField,
+  descriptionField,
+}) => {
   const [isOpenModal, setOpenModal] = useState(false);
 
   const onOpenModal = useCallback(() => {
@@ -24,18 +41,32 @@ export const DropALine = () => {
 
       <MainButton size="big" type="button" text="contact us" width="240px" onClick={onOpenModal} />
 
-      <Modal
+      <StyledDialog
         disablePortal
         disableEnforceFocus
         disableAutoFocus
-        className={styles.modal}
+        scroll="body"
         open={isOpenModal}
         onClose={onCloseModal}
       >
-        <div>
-          <ContactUsForm onCloseModal={onCloseModal} formGap />
-        </div>
-      </Modal>
+        <ContactUsForm
+          onCloseModal={onCloseModal}
+          formGap
+          formLabel={formLabel}
+          formDescription={formDescription}
+          fileLabel={fileLabel}
+          linkField={linkField}
+          descriptionField={descriptionField}
+        />
+      </StyledDialog>
     </div>
   );
+};
+
+DropALine.propTypes = {
+  formLabel: PropTypes.string.isRequired,
+  formDescription: PropTypes.string,
+  fileLabel: PropTypes.string,
+  linkField: PropTypes.bool,
+  descriptionField: PropTypes.bool,
 };

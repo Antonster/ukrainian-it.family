@@ -12,13 +12,22 @@ import styles from './ContactUsForm.module.scss';
 const schema = yup.object({
   name: yup.string().required('Required field'),
   email: yup.string().email('Email must be valid').required('Required field'),
-  curriculumVitae: yup.object(),
+  file: yup.object(),
   link: yup.string(),
+  description: yup.string(),
 });
 
 const imageMimeType = /(document|pdf|plain)/i;
 
-export const ContactUsForm = ({ onCloseModal, formGap }) => {
+export const ContactUsForm = ({
+  onCloseModal,
+  formGap,
+  formLabel,
+  formDescription,
+  fileLabel,
+  linkField,
+  descriptionField,
+}) => {
   const {
     register,
     handleSubmit,
@@ -29,7 +38,7 @@ export const ContactUsForm = ({ onCloseModal, formGap }) => {
     resolver: yupResolver(schema),
   });
 
-  const currentFile = watch('curriculumVitae');
+  const currentFile = watch('file');
 
   const [fileError, setFileError] = useState();
 
@@ -64,13 +73,13 @@ export const ContactUsForm = ({ onCloseModal, formGap }) => {
       }
 
       setFileError();
-      setValue('curriculumVitae', file[0]);
+      setValue('file', file[0]);
     },
     [setValue],
   );
 
   const onDeleteFile = useCallback(() => {
-    setValue('curriculumVitae', '');
+    setValue('file', '');
   }, [setValue]);
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop: onUploadFile });
@@ -84,8 +93,14 @@ export const ContactUsForm = ({ onCloseModal, formGap }) => {
       )}
 
       <div className={`${styles.form__content} ${formGap ? styles.gap : ''}`}>
-        <div className={styles['form__content-title']}>
-          Contact us<span className={styles['form__content-title-dot']}>.</span>
+        <div className={styles['form__content-title-container']}>
+          <div className={styles['form__content-title']}>
+            {formLabel}
+            <span className={styles['form__content-title-dot']}>.</span>
+          </div>
+          {formDescription && (
+            <div className={styles['form__content-subtitle']}>{formDescription}</div>
+          )}
         </div>
 
         <div className={styles['form__content-field']}>
@@ -120,59 +135,86 @@ export const ContactUsForm = ({ onCloseModal, formGap }) => {
           )}
         </div>
 
-        <div className={styles['form__curriculum-vitae']}>
-          <div className={styles['form__content-field']}>
-            <div className={styles['form__content-field-label']}>CV</div>
-            {currentFile ? (
-              <div className={styles['form__content-field-file']}>
-                <div className={styles['form__content-field-file-title-wrapper']}>
-                  <div className={styles['form__content-field-file-title']}>{currentFile.name}</div>
-                </div>
-                <button
-                  className={styles['form__content-field-file-delete']}
-                  type="button"
-                  onClick={onDeleteFile}
-                >
-                  delete
-                </button>
-              </div>
-            ) : (
-              <>
-                <div className={styles['form__content-field-dropzone']} {...getRootProps()}>
-                  <input {...getInputProps()} />
-                  <div className={styles['form__content-field-dropzone-text']}>
-                    <div>upload CV</div>
-                    <Image
-                      src="/static/images/arrow-blue.svg"
-                      alt="arrow icon"
-                      width={25}
-                      height={25}
-                    />
+        {fileLabel && (
+          <div className={styles['form__curriculum-vitae']}>
+            <div className={styles['form__content-field']}>
+              <div className={styles['form__content-field-label']}>{fileLabel}</div>
+              {currentFile ? (
+                <div className={styles['form__content-field-file']}>
+                  <div className={styles['form__content-field-file-title-wrapper']}>
+                    <div className={styles['form__content-field-file-title']}>
+                      {currentFile.name}
+                    </div>
                   </div>
+                  <button
+                    className={styles['form__content-field-file-delete']}
+                    type="button"
+                    onClick={onDeleteFile}
+                  >
+                    delete
+                  </button>
                 </div>
-                {fileError && <div className={styles['form__field-error']}>{fileError}</div>}
+              ) : (
+                <>
+                  <div className={styles['form__content-field-dropzone']} {...getRootProps()}>
+                    <input {...getInputProps()} />
+                    <div className={styles['form__content-field-dropzone-text']}>
+                      <div>upload {fileLabel}</div>
+                      <Image
+                        src="/static/images/arrow-blue.svg"
+                        alt="arrow icon"
+                        width={25}
+                        height={25}
+                      />
+                    </div>
+                  </div>
+                  {fileError && <div className={styles['form__field-error']}>{fileError}</div>}
+                </>
+              )}
+            </div>
+
+            {linkField && (
+              <>
+                <div className={styles.form__separator}>
+                  <div className={styles['form__separator-line']} />
+                  <div>OR</div>
+                  <div className={styles['form__separator-line']} />
+                </div>
+
+                <div className={styles['form__content-field']}>
+                  <label className={styles['form__content-field-label']} htmlFor="name">
+                    Link
+                  </label>
+                  <input
+                    className={styles['form__content-field-input']}
+                    id="link"
+                    placeholder="Enter your link"
+                    {...register('link')}
+                  />
+                </div>
               </>
             )}
           </div>
+        )}
 
-          <div className={styles.form__separator}>
-            <div className={styles['form__separator-line']} />
-            <div>OR</div>
-            <div className={styles['form__separator-line']} />
-          </div>
-
+        {descriptionField && (
           <div className={styles['form__content-field']}>
-            <label className={styles['form__content-field-label']} htmlFor="name">
-              Link
+            <label className={styles['form__content-field-label']} htmlFor="description">
+              Onboard us into your project
             </label>
-            <input
-              className={styles['form__content-field-input']}
-              id="link"
-              placeholder="Enter your link"
-              {...register('link')}
+            <textarea
+              className={`${styles['form__content-field-input']} ${
+                errors?.description ? styles.error : ''
+              }`}
+              id="description"
+              {...register('description')}
             />
+
+            {errors?.description && (
+              <div className={styles['form__field-error']}>{errors.email.message}</div>
+            )}
           </div>
-        </div>
+        )}
 
         <div className={styles.form__description}>
           You can also contact us via{' '}
@@ -190,4 +232,9 @@ export const ContactUsForm = ({ onCloseModal, formGap }) => {
 ContactUsForm.propTypes = {
   onCloseModal: PropTypes.func,
   formGap: PropTypes.bool,
+  formLabel: PropTypes.string.isRequired,
+  formDescription: PropTypes.string,
+  fileLabel: PropTypes.string,
+  linkField: PropTypes.bool,
+  descriptionField: PropTypes.bool,
 };
