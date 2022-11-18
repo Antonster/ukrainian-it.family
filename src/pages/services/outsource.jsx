@@ -1,3 +1,3 @@
-import { ServicesOutsource } from '@templates';
+import { ServicesOutsource } from '@views';
 
 export default ServicesOutsource;

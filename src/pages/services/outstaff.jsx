@@ -1,3 +1,3 @@
-import { ServicesOutstaff } from '@templates';
+import { ServicesOutstaff } from '@views';
 
 export default ServicesOutstaff;

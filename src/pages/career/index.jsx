@@ -1,3 +1,3 @@
-import { Career } from '@templates';
+import { Career } from '@views';
 
 export default Career;

@@ -1,3 +1,3 @@
-import { PageNotFound } from '@templates';
+import { PageNotFound } from '@views';
 
 export default PageNotFound;

@@ -1,3 +1,3 @@
-import { Services } from '@templates';
+import { Services } from '@views';
 
 export default Services;

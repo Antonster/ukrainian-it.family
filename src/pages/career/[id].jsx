@@ -1,5 +1,5 @@
 import { careerData } from '@constants';
-import { CareerId } from '@templates';
+import { CareerId } from '@views';
 import { PropTypes } from 'prop-types';
 
 export const getStaticPaths = async () => {

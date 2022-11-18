@@ -1,3 +1,3 @@
-import { PortfolioId } from '@templates';
+import { PortfolioId } from '@views';
 
 export default PortfolioId;

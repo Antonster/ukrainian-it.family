@@ -1,3 +1,3 @@
-import { Testimonials } from '@templates';
+import { Testimonials } from '@views';
 
 export default Testimonials;

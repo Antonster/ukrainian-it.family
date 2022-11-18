@@ -1,3 +1,3 @@
-import { Contacts } from '@templates';
+import { Contacts } from '@views';
 
 export default Contacts;

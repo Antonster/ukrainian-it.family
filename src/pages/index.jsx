@@ -1,3 +1,3 @@
-import { Home } from '@templates';
+import { Home } from '@views';
 
 export default Home;

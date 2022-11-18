@@ -1,3 +1,3 @@
-import { Portfolio } from '@templates';
+import { Portfolio } from '@views';
 
 export default Portfolio;
