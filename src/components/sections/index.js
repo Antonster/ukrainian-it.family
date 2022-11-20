@@ -2,8 +2,6 @@ export { AboutUsNumbers } from './AboutUsNumbers/AboutUsNumbers';
 export { ContactsList } from './ContactsList/ContactsList';
 export { DropALine } from './DropALine/DropALine';
 export { ExpertiseList } from './ExpertiseList/ExpertiseList';
-export { Footer } from './Footer/Footer';
-export { Header } from './Header/Header';
 export { History } from './History/History';
 export { MainSection } from './MainSection/MainSection';
 export { OurLife } from './OurLife/OurLife';

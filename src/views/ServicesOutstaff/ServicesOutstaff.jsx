@@ -1,10 +1,8 @@
-import { Breadcrumbs } from '@components/elements';
+import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
 import {
   DropALine,
   ExpertiseList,
-  Footer,
-  Header,
   PortfolioList,
   ServiceProcess,
   WhyUs,

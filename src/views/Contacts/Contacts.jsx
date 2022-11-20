@@ -1,7 +1,7 @@
-import { Breadcrumbs } from '@components/elements';
+import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { ContactUsForm } from '@components/forms';
 import { TitleSectionWrapper, WidthBox } from '@components/layouts';
-import { ContactsList, Footer, Header } from '@components/sections';
+import { ContactsList } from '@components/sections';
 import Head from 'next/head';
 import { useMemo } from 'react';
 

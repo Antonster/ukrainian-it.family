@@ -1,9 +1,8 @@
+import { Footer, Header } from '@components/elements';
 import { SectionWrapper, WidthBox } from '@components/layouts';
 import {
   AboutUsNumbers,
   ExpertiseList,
-  Footer,
-  Header,
   MainSection,
   PortfolioList,
   ServiceList,

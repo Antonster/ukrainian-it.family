@@ -1,6 +1,6 @@
-import { Breadcrumbs } from '@components/elements';
+import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { TitleSectionWrapper, WidthBox } from '@components/layouts';
-import { Footer, Header, PortfolioList } from '@components/sections';
+import { PortfolioList } from '@components/sections';
 import { portfolioListData } from '@constants';
 import Head from 'next/head';
 import { useMemo } from 'react';

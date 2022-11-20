@@ -1,12 +1,7 @@
-import { Breadcrumbs } from '@components/elements';
+import { Breadcrumbs, Footer, Header } from '@components/elements';
+import { ContactUsForm } from '@components/forms';
 import { WidthBox } from '@components/layouts';
-import {
-  ContactUsForm,
-  Footer,
-  Header,
-  VacancyContent,
-  VacancyDescription,
-} from '@components/sections';
+import { VacancyContent, VacancyDescription } from '@components/sections';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
 import { useMemo } from 'react';
