@@ -1,5 +1,88 @@
 {
-  "Home": {
-    "test": "test"
+  "Views": {
+    "Career": {},
+    "CareerId": {},
+    "Portfolio": {},
+    "PortfolioId": {},
+    "Services": {},
+    "ServicesOutsource": {},
+    "ServicesOutstaff": {},
+    "404": {},
+    "About": {},
+    "Contacts": {},
+    "Home": {
+      "HeadTitle": "Home",
+      "ServicesName": "Services",
+      "ServicesTitles": "This is what we do best",
+      "ExpertiseName": "Expertise",
+      "ExpertiseTitles": ["You have an idea", "We have a solution"],
+      "PortfolioName": "Case studies",
+      "PortfolioTitles": "Portfolio",
+      "AboutUsNumbersName": "About us",
+      "AboutUsNumbersTitles": "In numbers",
+      "AboutUsNumbersLinkText": "Read about us",
+      "TestimonialListName": "Testimonials",
+      "TestimonialListTitles": "Our partners say",
+      "TestimonialListLinkText": "See all"
+    },
+    "Team": {},
+    "Testimonials": {}
+  },
+  "Elements": {
+    "Breadcrumbs": {},
+    "Footer": {
+      "Description": "Ukrainian IT Family leverages exceptional Ukrainian engineering talent to digitalize small and medium businesses."
+    },
+    "Header": {
+      "GetInTouch": "Get in touch"
+    },
+    "LanguageSelection": {},
+    "MainButton": {},
+    "NavigationItem": {},
+    "PortfolioCard": {
+      "LinkText": "Go to case"
+    }
+  },
+  "Forms": {
+    "ContactUsForm": {}
+  },
+  "Layouts": {
+    "SectionWrapper": {},
+    "TitleSectionWrapper": {},
+    "WidthBox": {}
+  },
+  "Sections": {
+    "AboutUsNumbers": {},
+    "ContactList": {},
+    "DropALine": {},
+    "ExpertiseList": {},
+    "History": {},
+    "MainSection": {
+      "GetInTouch": "Get in touch",
+      "Title": "Bravery",
+      "Subtitle": "To develop responsibly",
+      "Description": [
+        "Ukrainian IT Family leverages",
+        "exceptional Ukrainian engineering",
+        "talent to digitalize small and medium businesses."
+      ],
+      "ButtonText": "Arrange a meeting"
+    },
+    "OurLife": {},
+    "OurPartnerList": {},
+    "PortfolioList": {
+      "MainButton": "See all cases"
+    },
+    "PrincipleList": {},
+    "ServiceList": {
+      "ButtonText": "Learn more"
+    },
+    "ServiceProcess": {},
+    "TeamList": {},
+    "TestimonialList": {},
+    "VacancyContent": {},
+    "VacancyDescription": {},
+    "VacancyList": {},
+    "WhyUs": {}
   }
 }

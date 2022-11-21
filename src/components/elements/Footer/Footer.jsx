@@ -3,12 +3,14 @@ import { WidthBox } from '@components/layouts';
 import { footerLinksData, footerTermsData, socialLogoListData } from '@constants';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useMemo } from 'react';
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 
 import styles from './Footer.module.scss';
 
 export const Footer = () => {
-  const mainLinks = useMemo(() => Object.keys(footerLinksData), []);
+  const t = useTranslations('Elements.Footer');
+  const router = useRouter();
 
   return (
     <WidthBox>
@@ -21,10 +23,7 @@ export const Footer = () => {
               </a>
             </Link>
 
-            <div className={styles.main__description}>
-              Ukrainian IT Family leverages exceptional Ukrainian engineering talent to digitalize
-              small and medium businesses.
-            </div>
+            <div className={styles.main__description}>{t('Description')}</div>
 
             <div className={styles['main__social-links']}>
               {socialLogoListData.map(({ link, image, alt }) => (
@@ -44,12 +43,12 @@ export const Footer = () => {
           </div>
 
           <div className={styles['main__links-container']}>
-            {mainLinks.map((linkList) => (
-              <div key={linkList} className={styles['main__links-container-item']}>
-                <div className={styles['main__links-container-title']}>{linkList}</div>
+            {footerLinksData[router.locale].map(({ title, list }) => (
+              <div key={title} className={styles['main__links-container-item']}>
+                <div className={styles['main__links-container-title']}>{title}</div>
 
                 <ul className={styles['main__link-list']}>
-                  {footerLinksData[linkList].map(({ type, text, link }) => (
+                  {list.map(({ type, text, link }) => (
                     <li key={text} className={styles['main__link-list-item']}>
                       {type === 'blank' ? (
                         <a href={link} target="_blank" rel="noopener noreferrer">
@@ -76,7 +75,7 @@ export const Footer = () => {
           </a>
 
           <ul className={styles['terms__link-list']}>
-            {footerTermsData.map(({ text, link }) => (
+            {footerTermsData[router.locale].map(({ text, link }) => (
               <li key={text} className={styles['terms__link-item']}>
                 {link ? (
                   <Link href={link}>

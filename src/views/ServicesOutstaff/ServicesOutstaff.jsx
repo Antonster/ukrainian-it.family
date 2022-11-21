@@ -9,11 +9,13 @@ import {
 } from '@components/sections';
 import { portfolioListData, serviceOutstaffProcessData } from '@constants';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 
 import styles from './ServicesOutstaff.module.scss';
 
 export const ServicesOutstaff = () => {
+  const router = useRouter();
   const headTitle = useMemo(() => `Outstaff Service | Ukrainian-IT.Family`, []);
   const crumbs = useMemo(
     () => [{ link: '/', text: 'Homepage' }, { link: '/services', text: 'Services' }, 'Outstaff'],
@@ -72,7 +74,7 @@ export const ServicesOutstaff = () => {
 
       <WidthBox>
         <SectionWrapper big name="Case studies" titles={['Portfolio']}>
-          <PortfolioList data={portfolioListData.slice(0, 4)} moreButton />
+          <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
         </SectionWrapper>
       </WidthBox>
 

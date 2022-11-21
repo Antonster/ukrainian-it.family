@@ -1,11 +1,11 @@
-import { contactsListData } from '@constants';
+import { ContactListData } from '@constants';
 import Image from 'next/image';
 
-import styles from './ContactsList.module.scss';
+import styles from './ContactList.module.scss';
 
-export const ContactsList = () => (
+export const ContactList = () => (
   <div className={styles.container}>
-    {contactsListData.map(
+    {ContactListData.map(
       ({ id, image, arrow, link, mainColor, mainText, secondaryColor, secondaryText }) => (
         <a key={id} className={styles.item} href={link} target="_blank" rel="noopener noreferrer">
           <div className={styles['item__image-container']} style={{ background: mainColor }}>

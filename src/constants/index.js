@@ -1,51 +1,102 @@
-export const expertiseListData = [
-  {
-    id: '1',
-    image: '/static/images/react-logo.svg',
-    name: 'React',
-    description: 'Efficient web development',
-  },
-  {
-    id: '2',
-    image: '/static/images/vue-logo.svg',
-    name: 'Vue',
-    description: 'Efficient web development',
-  },
-  {
-    id: '3',
-    image: '/static/images/node-logo.svg',
-    name: 'Node.js',
-    description: 'Back-end',
-  },
-  {
-    id: '4',
-    image: '/static/images/laravel-logo.svg',
-    name: 'Laravel',
-    description: 'Back-end',
-  },
-  {
-    id: '5',
-    image: '/static/images/flutter-logo.svg',
-    name: 'Flutter',
-    description: 'Mobile development',
-  },
-];
+export const expertiseListData = {
+  en: [
+    {
+      id: '1',
+      image: '/static/images/react-logo.svg',
+      name: 'React',
+      description: 'Efficient web development',
+    },
+    {
+      id: '2',
+      image: '/static/images/vue-logo.svg',
+      name: 'Vue',
+      description: 'Efficient web development',
+    },
+    {
+      id: '3',
+      image: '/static/images/node-logo.svg',
+      name: 'Node.js',
+      description: 'Back-end',
+    },
+    {
+      id: '4',
+      image: '/static/images/laravel-logo.svg',
+      name: 'Laravel',
+      description: 'Back-end',
+    },
+    {
+      id: '5',
+      image: '/static/images/flutter-logo.svg',
+      name: 'Flutter',
+      description: 'Mobile development',
+    },
+  ],
+  uk: [
+    {
+      id: '1',
+      image: '/static/images/react-logo.svg',
+      name: 'React',
+      description: 'Ефективна веб-розробка',
+    },
+    {
+      id: '2',
+      image: '/static/images/vue-logo.svg',
+      name: 'Vue',
+      description: 'Ефективна веб-розробка',
+    },
+    {
+      id: '3',
+      image: '/static/images/node-logo.svg',
+      name: 'Node.js',
+      description: 'Бекенд',
+    },
+    {
+      id: '4',
+      image: '/static/images/laravel-logo.svg',
+      name: 'Laravel',
+      description: 'Бекенд',
+    },
+    {
+      id: '5',
+      image: '/static/images/flutter-logo.svg',
+      name: 'Flutter',
+      description: 'Мобільна розробка',
+    },
+  ],
+};
 
-export const serviceListData = [
-  {
-    link: '/services/outsource',
-    name: 'Outsourcing team',
-    description: 'Have an idea? Rely on us with finding the best solution.',
-    image: '/static/images/logo.svg',
-  },
-  {
-    link: '/services/outstaff',
-    name: 'Outstaff developers',
-    description:
-      'Outstaffing is a type of remote employments when a hired person carries out all the job duties.',
-    image: '/static/images/outstaff-icon.svg',
-  },
-];
+export const serviceListData = {
+  en: [
+    {
+      link: '/services/outsource',
+      name: 'Outsourcing team',
+      description: 'Have an idea? Rely on us with finding the best solution.',
+      image: '/static/images/logo.svg',
+    },
+    {
+      link: '/services/outstaff',
+      name: 'Outstaff developers',
+      description:
+        'Outstaffing is a type of remote employments when a hired person carries out all the job duties.',
+      image: '/static/images/outstaff-icon.svg',
+    },
+  ],
+  uk: [
+    {
+      link: '/services/outsource',
+      name: 'Команда аутсорсингу',
+      description: 'Є ідея? Покладіться на нас у пошуку найкращого рішення.',
+      image: '/static/images/logo.svg',
+    },
+    {
+      link: '/services/outstaff',
+      name: 'Команда аутстафінгу',
+      description:
+        'Аутстаффінг – це різновид дистанційної роботи, коли всі посадові обов’язки виконує наймана особа.',
+      image: '/static/images/outstaff-icon.svg',
+    },
+  ],
+};
 
 export const serviceOutsourceProcessData = [
   {
@@ -122,32 +173,60 @@ export const serviceOutstaffProcessData = [
   },
 ];
 
-export const aboutUsNumbersData = [
-  {
-    id: '1',
-    image: '/static/images/in-numbers-figure-1.svg',
-    name: 'UA',
-    description: 'Soul and dedication',
-  },
-  {
-    id: '2',
-    image: '/static/images/in-numbers-figure-2.svg',
-    name: '6 years',
-    description: 'Writing excellent code',
-  },
-  {
-    id: '3',
-    image: '/static/images/in-numbers-figure-3.svg',
-    name: '100',
-    description: 'Projects',
-  },
-  {
-    id: '4',
-    image: '/static/images/in-numbers-figure-4.svg',
-    name: '15',
-    description: 'Team members',
-  },
-];
+export const aboutUsNumbersData = {
+  en: [
+    {
+      id: '1',
+      image: '/static/images/in-numbers-figure-1.svg',
+      name: 'UA',
+      description: 'Soul and dedication',
+    },
+    {
+      id: '2',
+      image: '/static/images/in-numbers-figure-2.svg',
+      name: '6 years',
+      description: 'Writing excellent code',
+    },
+    {
+      id: '3',
+      image: '/static/images/in-numbers-figure-3.svg',
+      name: '100',
+      description: 'Projects',
+    },
+    {
+      id: '4',
+      image: '/static/images/in-numbers-figure-4.svg',
+      name: '15',
+      description: 'Team members',
+    },
+  ],
+  uk: [
+    {
+      id: '1',
+      image: '/static/images/in-numbers-figure-1.svg',
+      name: 'UA',
+      description: 'Душа і відданість',
+    },
+    {
+      id: '2',
+      image: '/static/images/in-numbers-figure-2.svg',
+      name: '6 років',
+      description: 'Написання відмінного коду',
+    },
+    {
+      id: '3',
+      image: '/static/images/in-numbers-figure-3.svg',
+      name: '100',
+      description: 'Проектів',
+    },
+    {
+      id: '4',
+      image: '/static/images/in-numbers-figure-4.svg',
+      name: '15',
+      description: 'Членів команди',
+    },
+  ],
+};
 
 export const testimonialListData = [
   {
@@ -216,108 +295,213 @@ export const testimonialListData = [
   },
 ];
 
-export const portfolioListData = [
-  {
-    id: '1',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-1.png',
-  },
-  {
-    id: '2',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-2.png',
-  },
-  {
-    id: '3',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-2.png',
-  },
-  {
-    id: '4',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-1.png',
-  },
-  {
-    id: '5',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-1.png',
-  },
-  {
-    id: '6',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-2.png',
-  },
-  {
-    id: '7',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-2.png',
-  },
-  {
-    id: '8',
-    name: 'Title',
-    tags: ['UIUX Design', 'Front-end Development', 'react'],
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-    image: '/static/images/portfolio-test-1.png',
-  },
-];
+export const portfolioListData = {
+  en: [
+    {
+      id: '1',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+    {
+      id: '2',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '3',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '4',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+    {
+      id: '5',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+    {
+      id: '6',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '7',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '8',
+      name: 'Title',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+  ],
+  uk: [
+    {
+      id: '1',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+    {
+      id: '2',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '3',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '4',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+    {
+      id: '5',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+    {
+      id: '6',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '7',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-2.png',
+    },
+    {
+      id: '8',
+      name: 'Назва',
+      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      image: '/static/images/portfolio-test-1.png',
+    },
+  ],
+};
 
-export const headerData = [
-  {
-    type: 'menu-list',
-    text: 'Company',
-    list: [
-      {
-        text: 'About us',
-        link: '/about',
-      },
-      {
-        text: 'Career',
-        link: '/career',
-      },
-      {
-        text: 'Our team',
-        link: '/team',
-      },
-    ],
-  },
-  {
-    type: 'link',
-    text: 'Services',
-    link: '/services',
-  },
-  {
-    type: 'link',
-    text: 'Case Studies',
-    link: '/portfolio',
-  },
-  {
-    type: 'link',
-    text: 'Testimonials',
-    link: '/testimonials',
-  },
-];
+export const headerData = {
+  en: [
+    {
+      type: 'menu-list',
+      text: 'Company',
+      list: [
+        {
+          text: 'About us',
+          link: '/about',
+        },
+        {
+          text: 'Career',
+          link: '/career',
+        },
+        {
+          text: 'Our team',
+          link: '/team',
+        },
+      ],
+    },
+    {
+      type: 'link',
+      text: 'Services',
+      link: '/services',
+    },
+    {
+      type: 'link',
+      text: 'Case Studies',
+      link: '/portfolio',
+    },
+    {
+      type: 'link',
+      text: 'Testimonials',
+      link: '/testimonials',
+    },
+  ],
+  uk: [
+    {
+      type: 'menu-list',
+      text: 'Компанія',
+      list: [
+        {
+          text: 'Про нас',
+          link: '/about',
+        },
+        {
+          text: "Кар'єра",
+          link: '/career',
+        },
+        {
+          text: 'Наша команда',
+          link: '/team',
+        },
+      ],
+    },
+    {
+      type: 'link',
+      text: 'Послуги',
+      link: '/services',
+    },
+    {
+      type: 'link',
+      text: 'Портфоліо',
+      link: '/portfolio',
+    },
+    {
+      type: 'link',
+      text: 'Відгуки',
+      link: '/testimonials',
+    },
+  ],
+};
 
 export const socialLogoListData = [
   {
@@ -348,82 +532,180 @@ export const socialLogoListData = [
 ];
 
 export const footerLinksData = {
-  company: [
+  en: [
     {
-      text: 'About us',
-      link: '/about',
+      title: 'Company',
+      list: [
+        {
+          text: 'About us',
+          link: '/about',
+        },
+        {
+          text: 'Our Team',
+          link: '/team',
+        },
+        {
+          text: 'Career',
+          link: '/career',
+        },
+        {
+          text: 'Case Studies',
+          link: '/portfolio',
+        },
+        {
+          text: 'Testimonials',
+          link: '/testimonials',
+        },
+        {
+          text: 'Contacts',
+          link: '/contacts',
+        },
+      ],
     },
     {
-      text: 'Our Team',
-      link: '/team',
+      title: 'Read about us',
+      list: [
+        {
+          type: 'blank',
+          text: 'Upwork',
+          link: 'https://www.upwork.com/',
+        },
+        {
+          type: 'blank',
+          text: 'DOU',
+          link: 'https://dou.ua/',
+        },
+        {
+          type: 'blank',
+          text: 'Clutch',
+          link: 'https://clutch.co/',
+        },
+      ],
     },
     {
-      text: 'Career',
-      link: '/career',
-    },
-    {
-      text: 'Case Studies',
-      link: '/portfolio',
-    },
-    {
-      text: 'Testimonials',
-      link: '/testimonials',
-    },
-    {
-      text: 'Contacts',
-      link: '/contacts',
+      title: 'Services',
+      list: [
+        {
+          text: 'Outsource team',
+          link: '/services/outsource',
+        },
+        {
+          text: 'Outstaff developers',
+          link: '/services/outstaff',
+        },
+      ],
     },
   ],
-  'read about us': [
+  uk: [
     {
-      type: 'blank',
-      text: 'Upwork',
-      link: 'https://www.upwork.com/',
+      title: 'Компанія',
+      list: [
+        {
+          text: 'Про нас',
+          link: '/about',
+        },
+        {
+          text: 'Наша команда',
+          link: '/team',
+        },
+        {
+          text: "Кар'єра",
+          link: '/career',
+        },
+        {
+          text: 'Портфоліо',
+          link: '/portfolio',
+        },
+        {
+          text: 'Відгуки',
+          link: '/testimonials',
+        },
+        {
+          text: 'Контакти',
+          link: '/contacts',
+        },
+      ],
     },
     {
-      type: 'blank',
-      text: 'DOU',
-      link: 'https://dou.ua/',
+      title: 'Читайте про нас',
+      list: [
+        {
+          type: 'blank',
+          text: 'Upwork',
+          link: 'https://www.upwork.com/',
+        },
+        {
+          type: 'blank',
+          text: 'DOU',
+          link: 'https://dou.ua/',
+        },
+        {
+          type: 'blank',
+          text: 'Clutch',
+          link: 'https://clutch.co/',
+        },
+      ],
     },
     {
-      type: 'blank',
-      text: 'Clutch',
-      link: 'https://clutch.co/',
-    },
-  ],
-  services: [
-    {
-      text: 'Outsource team',
-      link: '/services/outsource',
-    },
-    {
-      text: 'Outstaff developers',
-      link: '/services/outstaff',
+      title: 'Послуги',
+      list: [
+        {
+          text: 'Команда аутсорсингу',
+          link: '/services/outsource',
+        },
+        {
+          text: 'Команда аутстафінгу',
+          link: '/services/outstaff',
+        },
+      ],
     },
   ],
 };
 
-export const footerTermsData = [
-  {
-    text: 'Privacy policy',
-    link: '/',
-  },
-  {
-    text: 'Legal notice',
-    link: '/',
-  },
-  {
-    text: 'Cookies',
-    link: '/',
-  },
-  {
-    text: 'Terms of use',
-    link: '/',
-  },
-  {
-    text: '© UITF 2022',
-  },
-];
+export const footerTermsData = {
+  en: [
+    {
+      text: 'Privacy policy',
+      link: '/',
+    },
+    {
+      text: 'Legal notice',
+      link: '/',
+    },
+    {
+      text: 'Terms of use',
+      link: '/',
+    },
+    {
+      text: 'Cookies',
+      link: '/',
+    },
+    {
+      text: '© UITF 2022',
+    },
+  ],
+  uk: [
+    {
+      text: 'Політика конфіденційності',
+      link: '/',
+    },
+    {
+      text: 'Юридичне повідомлення',
+      link: '/',
+    },
+    {
+      text: 'Умови використання',
+      link: '/',
+    },
+    {
+      text: 'Cookies',
+      link: '/',
+    },
+    {
+      text: '© UITF 2022',
+    },
+  ],
+};
 
 export const principleListData = [
   {
@@ -813,7 +1095,7 @@ export const teamListData = [
   },
 ];
 
-export const contactsListData = [
+export const ContactListData = [
   {
     id: '1',
     image: '/static/images/contacts-phone.svg',

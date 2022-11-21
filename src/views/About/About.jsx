@@ -63,7 +63,12 @@ export const About = () => {
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Testimonials" titles={['Our partners say']} link="/testimonials">
+        <SectionWrapper
+          name="Testimonials"
+          titles={['Our partners say']}
+          link="/testimonials"
+          linkText="See all"
+        >
           <TestimonialList data={testimonialListData.slice(0, 3)} />
         </SectionWrapper>
       </WidthBox>

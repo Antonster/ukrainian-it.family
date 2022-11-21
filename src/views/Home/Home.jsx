@@ -11,12 +11,16 @@ import {
 import { portfolioListData, testimonialListData } from '@constants';
 import { useOnScreen } from '@hooks';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import { useMemo, useRef } from 'react';
 
 import styles from './Home.module.scss';
 
 export const Home = () => {
-  const headTitle = useMemo(() => `Home | Ukrainian-IT.Family`, []);
+  const t = useTranslations('Views.Home');
+  const router = useRouter();
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const sectionHeaderRef = useRef();
   const sectionHeaderVisible = useOnScreen(sectionHeaderRef, '30px');
 
@@ -42,36 +46,45 @@ export const Home = () => {
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper big name="Services" titles={['This is what we do best']}>
+        <SectionWrapper big name={t('ServicesName')} titles={[t('ServicesTitles')]}>
           <ServiceList />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper name="Expertise" titles={['You have an idea', 'We have a solution']}>
+        <SectionWrapper
+          name={t('ExpertiseName')}
+          titles={[t('ExpertiseTitles.0'), t('ExpertiseTitles.1')]}
+        >
           <ExpertiseList />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper big name="Case studies" titles={['Portfolio']}>
-          <PortfolioList data={portfolioListData.slice(0, 4)} moreButton />
+        <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
+          <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
         <SectionWrapper
-          name="About us"
-          titles={['In numbers']}
+          name={t('AboutUsNumbersName')}
+          titles={[t('AboutUsNumbersTitles')]}
           link="/about"
-          linkText="read about us"
+          linkText={t('AboutUsNumbersLinkText')}
         >
           <AboutUsNumbers />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper big name="Testimonials" titles={['Our partners say']} link="/testimonials">
+        <SectionWrapper
+          big
+          name={t('TestimonialListName')}
+          titles={[t('TestimonialListTitles')]}
+          link="/testimonials"
+          linkText={t('TestimonialListLinkText')}
+        >
           <TestimonialList data={testimonialListData.slice(0, 3)} />
         </SectionWrapper>
       </WidthBox>

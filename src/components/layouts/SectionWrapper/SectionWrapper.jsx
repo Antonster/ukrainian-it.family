@@ -5,15 +5,7 @@ import { Fragment } from 'react';
 
 import styles from './SectionWrapper.module.scss';
 
-export const SectionWrapper = ({
-  big,
-  question,
-  name,
-  titles,
-  link,
-  linkText = 'see all',
-  children,
-}) => (
+export const SectionWrapper = ({ big, question, name, titles, link, linkText, children }) => (
   <div className={`${styles.container} ${big ? styles.big : styles.small}`}>
     <div className={styles['name-wrapper']}>
       <div className={styles['name-wrapper__dot']} />

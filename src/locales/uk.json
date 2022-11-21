@@ -1,5 +1,88 @@
 {
-  "Home": {
-    "test": "Тест"
+  "Views": {
+    "Career": {},
+    "CareerId": {},
+    "Portfolio": {},
+    "PortfolioId": {},
+    "Services": {},
+    "ServicesOutsource": {},
+    "ServicesOutstaff": {},
+    "404": {},
+    "About": {},
+    "Contacts": {},
+    "Home": {
+      "HeadTitle": "Головна",
+      "ServicesName": "Послуги",
+      "ServicesTitles": "Це те, що ми робимо найкраще",
+      "ExpertiseName": "Компетентність",
+      "ExpertiseTitles": ["У вас є ідея", "У нас є рішення"],
+      "PortfolioName": "Тематичні дослідження",
+      "PortfolioTitles": "Портфоліо",
+      "AboutUsNumbersName": "Про нас",
+      "AboutUsNumbersTitles": "У цифрах",
+      "AboutUsNumbersLinkText": "Читайте про нас",
+      "TestimonialListName": "Відгуки",
+      "TestimonialListTitles": "Кажуть наші партнери",
+      "TestimonialListLinkText": "Переглянути всі"
+    },
+    "Team": {},
+    "Testimonials": {}
+  },
+  "Elements": {
+    "Breadcrumbs": {},
+    "Footer": {
+      "Description": "Ukrainian IT Family використовує винятковий український інженерний талант для цифровізації малого та середнього бізнесу."
+    },
+    "Header": {
+      "GetInTouch": "Зв'язатись"
+    },
+    "LanguageSelection": {},
+    "MainButton": {},
+    "NavigationItem": {},
+    "PortfolioCard": {
+      "LinkText": "Детальніше"
+    }
+  },
+  "Forms": {
+    "ContactUsForm": {}
+  },
+  "Layouts": {
+    "SectionWrapper": {},
+    "TitleSectionWrapper": {},
+    "WidthBox": {}
+  },
+  "Sections": {
+    "AboutUsNumbers": {},
+    "ContactList": {},
+    "DropALine": {},
+    "ExpertiseList": {},
+    "History": {},
+    "MainSection": {
+      "GetInTouch": "Зв'язатись",
+      "Title": "Мужність",
+      "Subtitle": "Відповідально розвиватися",
+      "Description": [
+        "Ukrainian IT Family використовує",
+        "винятковий Український інженерний",
+        "талант для цифровізації малого та середнього бізнесу."
+      ],
+      "ButtonText": "Домовитися про зустріч"
+    },
+    "OurLife": {},
+    "OurPartnerList": {},
+    "PortfolioList": {
+      "MainButton": "Переглянути всі роботи"
+    },
+    "PrincipleList": {},
+    "ServiceList": {
+      "ButtonText": "Детальніше"
+    },
+    "ServiceProcess": {},
+    "TeamList": {},
+    "TestimonialList": {},
+    "VacancyContent": {},
+    "VacancyDescription": {},
+    "VacancyList": {},
+    "WhyUs": {}
   }
 }

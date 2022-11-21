@@ -1,7 +1,7 @@
 import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { ContactUsForm } from '@components/forms';
 import { TitleSectionWrapper, WidthBox } from '@components/layouts';
-import { ContactsList } from '@components/sections';
+import { ContactList } from '@components/sections';
 import Head from 'next/head';
 import { useMemo } from 'react';
 
@@ -29,7 +29,7 @@ export const Contacts = () => {
           title="Get in touch with UITF"
           description="Drop us a line and we’ll contact you as soon as possible"
         >
-          <ContactsList />
+          <ContactList />
         </TitleSectionWrapper>
       </WidthBox>
 

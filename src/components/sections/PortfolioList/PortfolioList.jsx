@@ -1,43 +1,48 @@
 import { MainButton, PortfolioCard } from '@components/elements';
 import Masonry from '@mui/lab/Masonry';
+import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
 
 import styles from './PortfolioList.module.scss';
 
-export const PortfolioList = ({ data, moreButton }) => (
-  <div className={styles.container}>
-    <Masonry columns={2}>
-      {data.map(({ id, name, tags, description, image }, index) => {
-        const big = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
+export const PortfolioList = ({ data, moreButton }) => {
+  const t = useTranslations('Sections.PortfolioList');
 
-        return (
-          <PortfolioCard
-            key={id}
-            id={id}
-            big={big}
-            name={name}
-            tags={tags}
-            description={description}
-            image={image}
+  return (
+    <div className={styles.container}>
+      <Masonry columns={2}>
+        {data.map(({ id, name, tags, description, image }, index) => {
+          const big = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
+
+          return (
+            <PortfolioCard
+              key={id}
+              id={id}
+              big={big}
+              name={name}
+              tags={tags}
+              description={description}
+              image={image}
+            />
+          );
+        })}
+      </Masonry>
+
+      {moreButton && (
+        <div className={styles['button-wrapper']}>
+          <MainButton
+            type="link"
+            href="/portfolio"
+            width="100%"
+            buttonStyle="secondary"
+            size="big"
+            text={t('MainButton')}
           />
-        );
-      })}
-    </Masonry>
-
-    {moreButton && (
-      <div className={styles['button-wrapper']}>
-        <MainButton
-          type="link"
-          href="/portfolio"
-          width="100%"
-          buttonStyle="secondary"
-          size="big"
-          text="See all cases"
-        />
-      </div>
-    )}
-  </div>
-);
+        </div>
+      )}
+    </div>
+  );
+};
 
 PortfolioList.propTypes = {
   data: PropTypes.arrayOf(
