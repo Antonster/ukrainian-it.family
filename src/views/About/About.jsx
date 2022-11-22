@@ -11,13 +11,17 @@ import {
 import { testimonialListData } from '@constants';
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 import styles from './About.module.scss';
 
 export const About = () => {
-  const headTitle = useMemo(() => `About | Ukrainian-IT.Family`, []);
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'About us'], []);
+  const t = useTranslations('Views.About');
+  const router = useRouter();
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
+  const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
 
   return (
     <div className={styles.container}>
@@ -33,48 +37,48 @@ export const About = () => {
       </WidthBox>
 
       <WidthBox small>
-        <TitleSectionWrapper title="We are UKRAINIAN IT FAMILY" description="Lorem ipsum">
+        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
           <Image src="/static/images/ukraine-map.svg" alt="ukraine map" width={874} height={583} />
         </TitleSectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper name="About us" titles={['In numbers']}>
+        <SectionWrapper name={t('AboutUsNumbersName')} titles={[t('AboutUsNumbersTitles')]}>
           <AboutUsNumbers />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Our history" titles={['How we became ourselves']}>
+        <SectionWrapper name={t('HistoryName')} titles={[t('HistoryTitles')]}>
           <History />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Our life" titles={['Not only code']}>
+        <SectionWrapper name={t('OurLifeName')} titles={[t('OurLifeTitles')]}>
           <OurLife />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Our values" titles={['Principles we follow']}>
+        <SectionWrapper name={t('PrincipleListName')} titles={[t('PrincipleListTitles')]}>
           <PrincipleList />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
         <SectionWrapper
-          name="Testimonials"
-          titles={['Our partners say']}
+          name={t('TestimonialListName')}
+          titles={[t('TestimonialListTitles')]}
           link="/testimonials"
-          linkText="See all"
+          linkText={t('TestimonialListLinkText')}
         >
-          <TestimonialList data={testimonialListData.slice(0, 3)} />
+          <TestimonialList data={testimonialListData[router.locale].slice(0, 3)} />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper name="Our partners" titles={['We are trusted by']}>
+        <SectionWrapper name={t('OurPartnerListName')} titles={[t('OurPartnerListTitles')]}>
           <OurPartnerList />
         </SectionWrapper>
       </WidthBox>

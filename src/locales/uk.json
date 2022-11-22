@@ -1,14 +1,26 @@
 {
   "Views": {
+    "About": {
+      "HeadTitle": "Про нас",
+      "Breadcrumbs": ["Головна", "Про нас"],
+      "PageTitle": "Ми - Українська ІТ Сім'я",
+      "PageDescription": "Ще трохи про нас",
+      "AboutUsNumbersName": "Про нас",
+      "AboutUsNumbersTitles": "У цифрах",
+      "HistoryName": "Наша історія",
+      "HistoryTitles": "Як ми стали собою",
+      "OurLifeName": "Наше життя",
+      "OurLifeTitles": "Не тільки код",
+      "PrincipleListName": "Наші цінності",
+      "PrincipleListTitles": "Принципи, яких ми дотримуємося",
+      "TestimonialListName": "Відгуки",
+      "TestimonialListTitles": "Кажуть наші партнери",
+      "TestimonialListLinkText": "Переглянути всі",
+      "OurPartnerListName": "Наші партнери",
+      "OurPartnerListTitles": "Нам довіряють"
+    },
     "Career": {},
     "CareerId": {},
-    "Portfolio": {},
-    "PortfolioId": {},
-    "Services": {},
-    "ServicesOutsource": {},
-    "ServicesOutstaff": {},
-    "404": {},
-    "About": {},
     "Contacts": {},
     "Home": {
       "HeadTitle": "Головна",
@@ -25,6 +37,12 @@
       "TestimonialListTitles": "Кажуть наші партнери",
       "TestimonialListLinkText": "Переглянути всі"
     },
+    "PageNotFound": {},
+    "Portfolio": {},
+    "PortfolioId": {},
+    "Services": {},
+    "ServicesOutsource": {},
+    "ServicesOutstaff": {},
     "Team": {},
     "Testimonials": {}
   },

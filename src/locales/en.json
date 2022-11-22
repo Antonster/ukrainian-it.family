@@ -1,14 +1,26 @@
 {
   "Views": {
+    "About": {
+      "HeadTitle": "About",
+      "Breadcrumbs": ["Homepage", "About us"],
+      "PageTitle": "We are Ukrainian IT Family",
+      "PageDescription": "A little more about us",
+      "AboutUsNumbersName": "About us",
+      "AboutUsNumbersTitles": "In numbers",
+      "HistoryName": "Our history",
+      "HistoryTitles": "How we became ourselves",
+      "OurLifeName": "Our life",
+      "OurLifeTitles": "Not only code",
+      "PrincipleListName": "Our values",
+      "PrincipleListTitles": "Principles we follow",
+      "TestimonialListName": "Testimonials",
+      "TestimonialListTitles": "Our partners say",
+      "TestimonialListLinkText": "See all",
+      "OurPartnerListName": "Our partners",
+      "OurPartnerListTitles": "We are trusted by"
+    },
     "Career": {},
     "CareerId": {},
-    "Portfolio": {},
-    "PortfolioId": {},
-    "Services": {},
-    "ServicesOutsource": {},
-    "ServicesOutstaff": {},
-    "404": {},
-    "About": {},
     "Contacts": {},
     "Home": {
       "HeadTitle": "Home",
@@ -25,6 +37,12 @@
       "TestimonialListTitles": "Our partners say",
       "TestimonialListLinkText": "See all"
     },
+    "PageNotFound": {},
+    "Portfolio": {},
+    "PortfolioId": {},
+    "Services": {},
+    "ServicesOutsource": {},
+    "ServicesOutstaff": {},
     "Team": {},
     "Testimonials": {}
   },

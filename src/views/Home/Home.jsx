@@ -85,7 +85,7 @@ export const Home = () => {
           link="/testimonials"
           linkText={t('TestimonialListLinkText')}
         >
-          <TestimonialList data={testimonialListData.slice(0, 3)} />
+          <TestimonialList data={testimonialListData[router.locale].slice(0, 3)} />
         </SectionWrapper>
       </WidthBox>
 

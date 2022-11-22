@@ -3,11 +3,13 @@ import { TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { TestimonialList } from '@components/sections';
 import { testimonialListData } from '@constants';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 
 import styles from './Testimonials.module.scss';
 
 export const Testimonials = () => {
+  const router = useRouter();
   const headTitle = useMemo(() => `Testimonials | Ukrainian-IT.Family`, []);
   const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Testimonials'], []);
 
@@ -29,7 +31,7 @@ export const Testimonials = () => {
           title="Our partners say"
           description="Hear what company like yours say"
         >
-          <TestimonialList data={testimonialListData} />
+          <TestimonialList data={testimonialListData[router.locale]} />
         </TitleSectionWrapper>
       </WidthBox>
 
