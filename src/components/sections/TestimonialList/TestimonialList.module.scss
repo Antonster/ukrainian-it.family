@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 100px 36px;
 }
@@ -15,6 +15,9 @@
   &__content-wrapper {
     width: calc(100% - 88px - 16px);
     padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
   }
 
   &__name {
@@ -23,7 +26,6 @@
     font-size: 24px;
     line-height: 29px;
     color: #01669c;
-    margin: 0 0 24px;
   }
 
   &__company {
@@ -37,7 +39,6 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #01669c;
-    margin: 0 0 24px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -50,5 +51,23 @@
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #3485b0;
+  }
+
+  &__link {
+    display: flex;
+    gap: 0 4px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #01669c;
+    transition: all 0.5s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
