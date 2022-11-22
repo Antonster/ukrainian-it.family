@@ -2,13 +2,15 @@ import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { DropALine, VacancyList } from '@components/sections';
 import Head from 'next/head';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 import styles from './Career.module.scss';
 
 export const Career = () => {
-  const headTitle = useMemo(() => `Career | Ukrainian-IT.Family`, []);
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Career'], []);
+  const t = useTranslations('Views.Career');
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
+  const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
 
   return (
     <div className={styles.container}>
@@ -24,17 +26,18 @@ export const Career = () => {
       </WidthBox>
 
       <WidthBox small>
-        <TitleSectionWrapper
-          title="Join ukrainian IT Family"
-          description="We celebrate Ukrainian IT talent and want to make it famous around the world. Join us!"
-        >
+        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
           <VacancyList />
         </TitleSectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper question name="Drop a line" titles={['No suitable vacancy']}>
-          <DropALine fileLabel="CV" formLabel="Contact Us" linkField />
+        <SectionWrapper question name={t('DropALineName')} titles={[t('DropALineTitles')]}>
+          <DropALine
+            fileLabel={t('DropALineFileLabel')}
+            formLabel={t('DropALineFormLabel')}
+            linkField
+          />
         </SectionWrapper>
       </WidthBox>
 

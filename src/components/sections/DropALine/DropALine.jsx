@@ -2,6 +2,7 @@ import { MainButton } from '@components/elements';
 import { ContactUsForm } from '@components/forms';
 import Dialog from '@mui/material/Dialog';
 import { styled } from '@mui/material/styles';
+import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
@@ -23,6 +24,7 @@ export const DropALine = ({
   linkField,
   descriptionField,
 }) => {
+  const t = useTranslations('Sections.DropALine');
   const [isOpenModal, setOpenModal] = useState(false);
 
   const onOpenModal = useCallback(() => {
@@ -35,11 +37,15 @@ export const DropALine = ({
 
   return (
     <div className={styles.container}>
-      <div className={styles.text}>
-        Contact us and we’ll get in touch with you as soon as possible
-      </div>
+      <div className={styles.text}>{t('Text')}</div>
 
-      <MainButton size="big" type="button" text="contact us" width="240px" onClick={onOpenModal} />
+      <MainButton
+        size="big"
+        type="button"
+        text={t('ButtonText')}
+        width="240px"
+        onClick={onOpenModal}
+      />
 
       <StyledDialog
         disablePortal

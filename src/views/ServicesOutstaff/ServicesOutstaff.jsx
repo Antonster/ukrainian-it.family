@@ -54,7 +54,7 @@ export const ServicesOutstaff = () => {
           <DropALine
             descriptionField
             fileLabel="Brief"
-            formDescription="Drop us a line and we’ll contact you as soon as possible"
+            formDescription="Drop us a line and we'll contact you as soon as possible"
             formLabel="Contact Us"
           />
         </SectionWrapper>

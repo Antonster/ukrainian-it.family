@@ -1,9 +1,9 @@
 import { careerData } from '@constants';
 import { CareerId } from '@views';
 
-export const getStaticPaths = async ({ locales }) => {
-  const paths = careerData.flatMap(({ id }) =>
-    locales.map((locale) => ({
+export const getStaticPaths = async (context) => {
+  const paths = careerData[context.defaultLocale].flatMap(({ id }) =>
+    context.locales.map((locale) => ({
       params: { id },
       locale,
     })),
@@ -16,7 +16,7 @@ export const getStaticPaths = async ({ locales }) => {
 };
 
 export async function getStaticProps(context) {
-  const vacancy = careerData.find((item) => item.id === context.params.id);
+  const vacancy = careerData[context.locale].find((item) => item.id === context.params.id);
 
   return {
     props: {

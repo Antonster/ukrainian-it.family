@@ -3,7 +3,7 @@
     "About": {
       "HeadTitle": "Про нас",
       "Breadcrumbs": ["Головна", "Про нас"],
-      "PageTitle": "Ми - Українська ІТ Сім'я",
+      "PageTitle": "Ми - Ukrainian IT Family",
       "PageDescription": "Ще трохи про нас",
       "AboutUsNumbersName": "Про нас",
       "AboutUsNumbersTitles": "У цифрах",
@@ -19,9 +19,30 @@
       "OurPartnerListName": "Наші партнери",
       "OurPartnerListTitles": "Нам довіряють"
     },
-    "Career": {},
-    "CareerId": {},
-    "Contacts": {},
+    "Career": {
+      "HeadTitle": "Кар'єра",
+      "Breadcrumbs": ["Головна", "Кар'єра"],
+      "PageTitle": "Приєднуйтесь до Ukrainian IT Family",
+      "PageDescription": "Ми відзначаємо український ІТ-талант і хочемо зробити його відомим у всьому світі. Приєднайся до нас!",
+      "DropALineName": "Зв'язатися",
+      "DropALineTitles": "Немає відповідної вакансії",
+      "DropALineFileLabel": "Резюме",
+      "DropALineFormLabel": "Зв'яжіться з нами"
+    },
+    "CareerId": {
+      "Breadcrumbs": ["Головна", "Кар'єра"],
+      "ContactUsFormFileLabel": "Резюме",
+      "ContactUsFormLabel": "Зв'яжіться з нами"
+    },
+    "Contacts": {
+      "HeadTitle": "Контакти",
+      "Breadcrumbs": ["Головна", "Контакти"],
+      "PageTitle": "Зв'яжіться з UITF",
+      "PageDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "ContactUsFormFileLabel": "Короткий опис",
+      "ContactUsFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "ContactUsFormLabel": "Або заповніть форму"
+    },
     "Home": {
       "HeadTitle": "Головна",
       "ServicesName": "Послуги",
@@ -62,7 +83,22 @@
     }
   },
   "Forms": {
-    "ContactUsForm": {}
+    "ContactUsForm": {
+      "FieldsErrors": ["Обов'язкове поле", "Електронна адреса має бути дійсною"],
+      "FileErrors": ["Дійсні формати .doc, .docx, .pdf, .txt", "Максимальний розмір файлу 8MB"],
+      "NameLabel": "Твоє ім'я",
+      "NamePlaceholder": "Введіть ім'я",
+      "EmailLabel": "Твоя електронна пошта",
+      "EmailPlaceholder": "example@email.com",
+      "DeleteButtonText": "Видалити",
+      "UploadButtonText": "Завантажити",
+      "SeparatorText": "ЧИ",
+      "LinkLabel": "Посилання",
+      "LinkPlaceholder": "Введіть своє посилання",
+      "DescriptionLabel": "Долучіть нас до свого проекту",
+      "LinkDescription": "Ви також можете зв'язатися з нами через",
+      "SubmitButtonText": "Надіслати"
+    }
   },
   "Layouts": {
     "SectionWrapper": {},
@@ -72,7 +108,10 @@
   "Sections": {
     "AboutUsNumbers": {},
     "ContactList": {},
-    "DropALine": {},
+    "DropALine": {
+      "Text": "Зв'яжіться з нами, і ми зв'яжемося з вами якомога швидше",
+      "ButtonText": "Зв'язатися"
+    },
     "ExpertiseList": {},
     "History": {},
     "MainSection": {
@@ -99,8 +138,13 @@
     "TeamList": {},
     "TestimonialList": {},
     "VacancyContent": {},
-    "VacancyDescription": {},
-    "VacancyList": {},
+    "VacancyDescription": {
+      "ButtonText": "Зв'язатись"
+    },
+    "VacancyList": {
+      "SearchPlaceholder": "Пошук можливостей роботи",
+      "ButtonText": "Подробиці"
+    },
     "WhyUs": {}
   }
 }

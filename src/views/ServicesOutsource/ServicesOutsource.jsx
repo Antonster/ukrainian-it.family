@@ -38,7 +38,7 @@ export const ServicesOutsource = () => {
       <WidthBox>
         <TitleSectionWrapper
           title="Let us be your outsource team"
-          description="Credit us a project and let’s become partners"
+          description="Credit us a project and let's become partners"
           small
         />
       </WidthBox>
@@ -54,7 +54,7 @@ export const ServicesOutsource = () => {
           <DropALine
             descriptionField
             fileLabel="Brief"
-            formDescription="Drop us a line and we’ll contact you as soon as possible"
+            formDescription="Drop us a line and we'll contact you as soon as possible"
             formLabel="Contact Us"
           />
         </SectionWrapper>

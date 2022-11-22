@@ -1,21 +1,14 @@
 import { MainButton } from '@components/elements';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 
 import styles from './ContactUsForm.module.scss';
-
-const schema = yup.object({
-  name: yup.string().required('Required field'),
-  email: yup.string().email('Email must be valid').required('Required field'),
-  file: yup.object(),
-  link: yup.string(),
-  description: yup.string(),
-});
 
 const imageMimeType = /(document|pdf|plain)/i;
 
@@ -28,6 +21,18 @@ export const ContactUsForm = ({
   linkField,
   descriptionField,
 }) => {
+  const t = useTranslations('Forms.ContactUsForm');
+  const schema = useMemo(
+    () =>
+      yup.object({
+        name: yup.string().required(t('FieldsErrors.0')),
+        email: yup.string().email(t('FieldsErrors.1')).required(t('FieldsErrors.0')),
+        file: yup.object(),
+        link: yup.string(),
+        description: yup.string(),
+      }),
+    [],
+  );
   const {
     register,
     handleSubmit,
@@ -64,11 +69,11 @@ export const ContactUsForm = ({
       const newFile = file[0];
 
       if (!newFile.type.match(imageMimeType)) {
-        setFileError('Valid formats .doc, .docx, .pdf, .txt');
+        setFileError(t('FileErrors.0'));
         return;
       }
       if (newFile.size >= 8000000) {
-        setFileError('Max file size 8MB');
+        setFileError(t('FileErrors.1'));
         return;
       }
 
@@ -105,12 +110,13 @@ export const ContactUsForm = ({
 
         <div className={styles['form__content-field']}>
           <label className={styles['form__content-field-label']} htmlFor="name">
-            Your name<span className={styles['form__content-field-required']}>*</span>
+            {t('NameLabel')}
+            <span className={styles['form__content-field-required']}>*</span>
           </label>
           <input
             className={`${styles['form__content-field-input']} ${errors?.name ? styles.error : ''}`}
             id="name"
-            placeholder="Enter your name"
+            placeholder={t('NamePlaceholder')}
             {...register('name')}
           />
 
@@ -119,14 +125,15 @@ export const ContactUsForm = ({
 
         <div className={styles['form__content-field']}>
           <label className={styles['form__content-field-label']} htmlFor="email">
-            Your email<span className={styles['form__content-field-required']}>*</span>
+            {t('EmailLabel')}
+            <span className={styles['form__content-field-required']}>*</span>
           </label>
           <input
             className={`${styles['form__content-field-input']} ${
               errors?.email ? styles.error : ''
             }`}
             id="email"
-            placeholder="example@email.com"
+            placeholder={t('EmailPlaceholder')}
             {...register('email')}
           />
 
@@ -151,7 +158,7 @@ export const ContactUsForm = ({
                     type="button"
                     onClick={onDeleteFile}
                   >
-                    delete
+                    {t('DeleteButtonText')}
                   </button>
                 </div>
               ) : (
@@ -159,7 +166,9 @@ export const ContactUsForm = ({
                   <div className={styles['form__content-field-dropzone']} {...getRootProps()}>
                     <input {...getInputProps()} />
                     <div className={styles['form__content-field-dropzone-text']}>
-                      <div>upload {fileLabel}</div>
+                      <div>
+                        {t('UploadButtonText')} {fileLabel}
+                      </div>
                       <Image
                         src="/static/images/arrow-blue.svg"
                         alt="arrow icon"
@@ -177,18 +186,18 @@ export const ContactUsForm = ({
               <>
                 <div className={styles.form__separator}>
                   <div className={styles['form__separator-line']} />
-                  <div>OR</div>
+                  <div>{t('SeparatorText')}</div>
                   <div className={styles['form__separator-line']} />
                 </div>
 
                 <div className={styles['form__content-field']}>
                   <label className={styles['form__content-field-label']} htmlFor="name">
-                    Link
+                    {t('LinkLabel')}
                   </label>
                   <input
                     className={styles['form__content-field-input']}
                     id="link"
-                    placeholder="Enter your link"
+                    placeholder={t('LinkPlaceholder')}
                     {...register('link')}
                   />
                 </div>
@@ -200,7 +209,7 @@ export const ContactUsForm = ({
         {descriptionField && (
           <div className={styles['form__content-field']}>
             <label className={styles['form__content-field-label']} htmlFor="description">
-              Onboard us into your project
+              {t('DescriptionLabel')}
             </label>
             <textarea
               className={`${styles['form__content-field-input']} ${
@@ -217,14 +226,14 @@ export const ContactUsForm = ({
         )}
 
         <div className={styles.form__description}>
-          You can also contact us via{' '}
+          {t('LinkDescription')}{' '}
           <a className={styles['form__description-email']} href="mailto: example@email.com">
             example@email.com
           </a>
         </div>
       </div>
 
-      <MainButton type="submit" width="100%" text="send" size="big" />
+      <MainButton type="submit" width="100%" text={t('SubmitButtonText')} size="big" />
     </form>
   );
 };

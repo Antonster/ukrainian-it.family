@@ -19,9 +19,30 @@
       "OurPartnerListName": "Our partners",
       "OurPartnerListTitles": "We are trusted by"
     },
-    "Career": {},
-    "CareerId": {},
-    "Contacts": {},
+    "Career": {
+      "HeadTitle": "Career",
+      "Breadcrumbs": ["Homepage", "Career"],
+      "PageTitle": "Join Ukrainian IT Family",
+      "PageDescription": "We celebrate Ukrainian IT talent and want to make it famous around the world. Join us!",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "No suitable vacancy",
+      "DropALineFileLabel": "CV",
+      "DropALineFormLabel": "Contact Us"
+    },
+    "CareerId": {
+      "Breadcrumbs": ["Homepage", "Career"],
+      "ContactUsFormFileLabel": "CV",
+      "ContactUsFormLabel": "Contact Us"
+    },
+    "Contacts": {
+      "HeadTitle": "Contacts",
+      "Breadcrumbs": ["Homepage", "Contacts"],
+      "PageTitle": "Get in touch with UITF",
+      "PageDescription": "Drop us a line and we'll contact you as soon as possible",
+      "ContactUsFormFileLabel": "Brief",
+      "ContactUsFormDescription": "Drop us a line and we'll contact you as soon as possible",
+      "ContactUsFormLabel": "Or Fill the form"
+    },
     "Home": {
       "HeadTitle": "Home",
       "ServicesName": "Services",
@@ -62,7 +83,22 @@
     }
   },
   "Forms": {
-    "ContactUsForm": {}
+    "ContactUsForm": {
+      "FieldsErrors": ["Required field", "Email must be valid"],
+      "FileErrors": ["Valid formats .doc, .docx, .pdf, .txt", "Max file size 8MB"],
+      "NameLabel": "Your name",
+      "NamePlaceholder": "Enter your name",
+      "EmailLabel": "Your email",
+      "EmailPlaceholder": "example@email.com",
+      "DeleteButtonText": "Delete",
+      "UploadButtonText": "Upload",
+      "SeparatorText": "OR",
+      "LinkLabel": "Link",
+      "LinkPlaceholder": "Enter your link",
+      "DescriptionLabel": "Onboard us into your project",
+      "LinkDescription": "You can also contact us via",
+      "SubmitButtonText": "Send"
+    }
   },
   "Layouts": {
     "SectionWrapper": {},
@@ -72,7 +108,10 @@
   "Sections": {
     "AboutUsNumbers": {},
     "ContactList": {},
-    "DropALine": {},
+    "DropALine": {
+      "Text": "Contact us and we'll get in touch with you as soon as possible",
+      "ButtonText": "Contact us"
+    },
     "ExpertiseList": {},
     "History": {},
     "MainSection": {
@@ -99,8 +138,13 @@
     "TeamList": {},
     "TestimonialList": {},
     "VacancyContent": {},
-    "VacancyDescription": {},
-    "VacancyList": {},
+    "VacancyDescription": {
+      "ButtonText": "Apply"
+    },
+    "VacancyList": {
+      "SearchPlaceholder": "Search for job opportunities",
+      "ButtonText": "Details"
+    },
     "WhyUs": {}
   }
 }

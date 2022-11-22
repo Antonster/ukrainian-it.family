@@ -2,13 +2,17 @@ import { careerData } from '@constants';
 import { useDebounce } from '@hooks';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import { useCallback, useState } from 'react';
 
 import styles from './VacancyList.module.scss';
 
 export const VacancyList = () => {
+  const t = useTranslations('Sections.VacancyList');
+  const router = useRouter();
   const [searchValue, setSearchValue] = useState('');
-  const [filteredCareerData, setFilteredCareerData] = useState(careerData);
+  const [filteredCareerData, setFilteredCareerData] = useState(careerData[router.locale]);
 
   const onChangeSearchValue = useCallback((event) => {
     setSearchValue(event.target.value);
@@ -42,7 +46,7 @@ export const VacancyList = () => {
         <input
           className={styles.search__input}
           type="text"
-          placeholder="Search for job opportunities"
+          placeholder={t('SearchPlaceholder')}
           value={searchValue}
           onChange={onChangeSearchValue}
         />
@@ -76,7 +80,7 @@ export const VacancyList = () => {
 
             <Link href={`/career/${id}`}>
               <a className={styles['list__item-link']}>
-                <div>Details</div>
+                <div>{t('ButtonText')}</div>
                 <Image
                   src="/static/images/arrow-blue.svg"
                   alt="arrow icon"

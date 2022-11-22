@@ -3,13 +3,15 @@ import { ContactUsForm } from '@components/forms';
 import { TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { ContactList } from '@components/sections';
 import Head from 'next/head';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 import styles from './Contacts.module.scss';
 
 export const Contacts = () => {
-  const headTitle = useMemo(() => `Contacts | Ukrainian-IT.Family`, []);
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Contacts'], []);
+  const t = useTranslations('Views.Contacts');
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
+  const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
 
   return (
     <div className={styles.container}>
@@ -25,10 +27,7 @@ export const Contacts = () => {
       </WidthBox>
 
       <WidthBox>
-        <TitleSectionWrapper
-          title="Get in touch with UITF"
-          description="Drop us a line and we’ll contact you as soon as possible"
-        >
+        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
           <ContactList />
         </TitleSectionWrapper>
       </WidthBox>
@@ -37,9 +36,9 @@ export const Contacts = () => {
         <div className={styles['form-wrapper']}>
           <ContactUsForm
             descriptionField
-            fileLabel="Brief"
-            formDescription="Drop us a line and we’ll contact you as soon as possible"
-            formLabel="Or Fill the form"
+            fileLabel={t('ContactUsFormFileLabel')}
+            formDescription={t('ContactUsFormDescription')}
+            formLabel={t('ContactUsFormLabel')}
           />
         </div>
       </WidthBox>
