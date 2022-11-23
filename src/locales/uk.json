@@ -24,7 +24,7 @@
       "Breadcrumbs": ["Головна", "Кар'єра"],
       "PageTitle": "Приєднуйтесь до Ukrainian IT Family",
       "PageDescription": "Ми відзначаємо український ІТ-талант і хочемо зробити його відомим у всьому світі. Приєднайся до нас!",
-      "DropALineName": "Зв'язатися",
+      "DropALineName": "Зв'язатись",
       "DropALineTitles": "Немає відповідної вакансії",
       "DropALineFileLabel": "Резюме",
       "DropALineFormLabel": "Зв'яжіться з нами"
@@ -59,13 +59,78 @@
       "TestimonialListLinkText": "Переглянути всі"
     },
     "PageNotFound": {},
-    "Portfolio": {},
+    "Portfolio": {
+      "HeadTitle": "Портфоліо",
+      "Breadcrumbs": ["Головна", "Портфоліо"],
+      "PageTitle": "Наше портфоліо",
+      "PageDescription": "Проекти, над якими ми працювали"
+    },
     "PortfolioId": {},
-    "Services": {},
-    "ServicesOutsource": {},
-    "ServicesOutstaff": {},
-    "Team": {},
-    "Testimonials": {}
+    "Services": {
+      "HeadTitle": "Послуги",
+      "Breadcrumbs": ["Головна", "Послуги"],
+      "PageTitle": "Це те, що ми робимо найкраще",
+      "PageDescription": "Подивіться, як ми можемо стати партнерами",
+      "ExpertiseListName": "Компетентність",
+      "ExpertiseListTitles": ["У вас є ідея", "У нас є рішення"]
+    },
+    "ServicesOutsource": {
+      "HeadTitle": "Послуги аутсорсингу",
+      "Breadcrumbs": ["Головна", "Послуги", "Аутсорсинг"],
+      "PageTitle": "Дозвольте нам бути вашою командою аутсорсингу",
+      "PageDescription": "Довірте нам проект і давайте станемо партнерами",
+      "ServiceProcessName": "Процес",
+      "ServiceProcessTitles": "Як виконуються проекти",
+      "DropALineName": "Зв'язатись",
+      "DropALineTitles": "Довірте нам свій проект",
+      "DropALineFileLabel": "Короткий опис",
+      "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "DropALineFormLabel": "Зв'язатись",
+      "WhyUsName": "Чому ми",
+      "WhyUsTitles": "Чому ми",
+      "ExpertiseListName": "Компетентність",
+      "ExpertiseListTitles": ["У вас є ідея", "У нас є рішення"],
+      "PortfolioName": "Тематичні дослідження",
+      "PortfolioTitles": "Портфоліо"
+    },
+    "ServicesOutstaff": {
+      "HeadTitle": "Послуги аутстафінгу",
+      "Breadcrumbs": ["Головна", "Послуги", "Аутстафінг"],
+      "PageTitle": "Знайди українську душу для реалізації свого проекту",
+      "PageDescription": "Потрібен відповідальний та ініціативний член команди? Аутстафінг від нас.",
+      "ServiceProcessName": "Процес",
+      "ServiceProcessTitles": "Як працює аутстафінг",
+      "DropALineName": "Зв'язатись",
+      "DropALineTitles": "Довірте нам свій проект",
+      "DropALineFileLabel": "Короткий опис",
+      "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "DropALineFormLabel": "Зв'язатись",
+      "WhyUsName": "Чому ми",
+      "WhyUsTitles": "Чому ми",
+      "ExpertiseListName": "Компетентність",
+      "ExpertiseListTitles": ["У вас є ідея", "У нас є рішення"],
+      "PortfolioName": "Тематичні дослідження",
+      "PortfolioTitles": "Портфоліо"
+    },
+    "Team": {
+      "HeadTitle": "Наша команда",
+      "Breadcrumbs": ["Головна", "Наша команда"],
+      "PageTitle": "Український талант в одному місці",
+      "PageDescription": "Наша команда українських IT талантів",
+      "WhyUsName": "Чому ми",
+      "WhyUsTitles": "Чому ми",
+      "DropALineName": "Зв'язатись",
+      "DropALineTitles": "Довірте нам свій проект",
+      "DropALineFileLabel": "Короткий опис",
+      "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "DropALineFormLabel": "Зв'язатись"
+    },
+    "Testimonials": {
+      "HeadTitle": "Відгуки",
+      "Breadcrumbs": ["Головна", "Відгуки"],
+      "PageTitle": "Кажуть наші партнери",
+      "PageDescription": "Послухайте, що говорять такі компанії, як ваша"
+    }
   },
   "Elements": {
     "Breadcrumbs": {},
@@ -96,7 +161,7 @@
       "LinkLabel": "Посилання",
       "LinkPlaceholder": "Введіть своє посилання",
       "DescriptionLabel": "Долучіть нас до свого проекту",
-      "LinkDescription": "Ви також можете зв'язатися з нами через",
+      "LinkDescription": "Ви також можете зв'язатись з нами через",
       "SubmitButtonText": "Надіслати"
     }
   },
@@ -110,7 +175,7 @@
     "ContactList": {},
     "DropALine": {
       "Text": "Зв'яжіться з нами, і ми зв'яжемося з вами якомога швидше",
-      "ButtonText": "Зв'язатися"
+      "ButtonText": "Зв'язатись"
     },
     "ExpertiseList": {},
     "History": {},
@@ -134,9 +199,13 @@
     "ServiceList": {
       "ButtonText": "Детальніше"
     },
-    "ServiceProcess": {},
+    "ServiceProcess": {
+      "FirstRow": ["Зв'язатись з нами", "тут."]
+    },
     "TeamList": {},
-    "TestimonialList": {},
+    "TestimonialList": {
+      "LinkText": "Переглянути відгук"
+    },
     "VacancyContent": {},
     "VacancyDescription": {
       "ButtonText": "Зв'язатись"

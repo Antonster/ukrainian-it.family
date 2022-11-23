@@ -98,80 +98,157 @@ export const serviceListData = {
   ],
 };
 
-export const serviceOutsourceProcessData = [
-  {
-    image: '/static/images/service-meeting-icon.svg',
-    title: 'Meeting the project',
-    content: [
-      "First meeting. Let's get to know better.",
-      'Tell us about your request.',
-      "Keeping everything transparent from the very beginning. Let's negotiate all organizational questions.",
-    ],
-  },
-  {
-    image: '/static/images/service-planning-icon.svg',
-    title: 'Planning',
-    content: [
-      'Briefing.',
-      'We brainstorm the best solutions for your project.',
-      'Assigning a team.',
-      'Presenting you the plan.',
-    ],
-  },
-  {
-    image: '/static/images/service-code-icon.svg',
-    title: 'Realization',
-    content: [
-      'Development.',
-      'Meetings throughout the process.',
-      'Regular progress demonstrations and feedback sessions.',
-      'Plans corrections if necessary.',
-    ],
-  },
-  {
-    image: '/static/images/service-check-icon.svg',
-    title: 'Finalization',
-    content: ['Demonstration.', 'Acceptance testing.'],
-  },
-  {
-    image: '/static/images/service-light-icon.svg',
-    title: 'Planning next project together',
-  },
-];
+export const serviceOutsourceProcessData = {
+  en: [
+    {
+      image: '/static/images/service-meeting-icon.svg',
+      title: 'Meeting the project',
+      content: [
+        "First meeting. Let's get to know better.",
+        'Tell us about your request.',
+        "Keeping everything transparent from the very beginning. Let's negotiate all organizational questions.",
+      ],
+    },
+    {
+      image: '/static/images/service-planning-icon.svg',
+      title: 'Planning',
+      content: [
+        'Briefing.',
+        'We brainstorm the best solutions for your project.',
+        'Assigning a team.',
+        'Presenting you the plan.',
+      ],
+    },
+    {
+      image: '/static/images/service-code-icon.svg',
+      title: 'Realization',
+      content: [
+        'Development.',
+        'Meetings throughout the process.',
+        'Regular progress demonstrations and feedback sessions.',
+        'Plans corrections if necessary.',
+      ],
+    },
+    {
+      image: '/static/images/service-check-icon.svg',
+      title: 'Finalization',
+      content: ['Demonstration.', 'Acceptance testing.'],
+    },
+    {
+      image: '/static/images/service-light-icon.svg',
+      title: 'Planning next project together',
+    },
+  ],
+  uk: [
+    {
+      image: '/static/images/service-meeting-icon.svg',
+      title: 'Знайомство з проектом',
+      content: [
+        'Перша зустріч. Давайте познайомимось ближче.',
+        'Розкажіть про свій запит.',
+        'Тримайте все прозорим із самого початку. Обговорюємо всі організаційні питання.',
+      ],
+    },
+    {
+      image: '/static/images/service-planning-icon.svg',
+      title: 'Планування',
+      content: [
+        'Брифінг.',
+        'Ми шукаємо найкращі рішення для вашого проекту.',
+        'Призначення команди.',
+        'Представлення вам плану.',
+      ],
+    },
+    {
+      image: '/static/images/service-code-icon.svg',
+      title: 'Реалізація',
+      content: [
+        'Розробка.',
+        'Зустрічі протягом усього процесу.',
+        "Регулярні демонстрації прогресу та сесії зворотного зв'язку.",
+        'За потреби вносимо корективи в плани.',
+      ],
+    },
+    {
+      image: '/static/images/service-check-icon.svg',
+      title: 'Доопрацювання',
+      content: ['Демонстрація.', 'Приймальні випробування.'],
+    },
+    {
+      image: '/static/images/service-light-icon.svg',
+      title: 'Спільне планування наступного проекту',
+    },
+  ],
+};
 
-export const serviceOutstaffProcessData = [
-  {
-    image: '/static/images/service-meeting-icon.svg',
-    title: 'Getting acquainted',
-    content: [
-      "First meeting. Let's get to know better.",
-      'Tell us about your request.',
-      'Negotiating the outstaff.',
-    ],
-  },
-  {
-    image: '/static/images/service-team-icon.svg',
-    title: 'Kickoff meeting',
-    content: [
-      'We introduce the developers to you.',
-      'Then we help developers onboard to your project.',
-    ],
-  },
-  {
-    image: '/static/images/service-check-icon.svg',
-    title: 'First check in meeting',
-    content: ['We want to know how your first sprint has been.'],
-  },
-  {
-    image: '/static/images/service-double-check-icon.svg',
-    title: 'Second check in meetings',
-    content: ['Has your first month been successful?'],
-  },
-  {
-    image: '/static/images/service-people-icon.svg',
-    title: 'Extending the team',
-  },
-];
+export const serviceOutstaffProcessData = {
+  en: [
+    {
+      image: '/static/images/service-meeting-icon.svg',
+      title: 'Getting acquainted',
+      content: [
+        "First meeting. Let's get to know better.",
+        'Tell us about your request.',
+        'Negotiating the outstaff.',
+      ],
+    },
+    {
+      image: '/static/images/service-team-icon.svg',
+      title: 'Kickoff meeting',
+      content: [
+        'We introduce the developers to you.',
+        'Then we help developers onboard to your project.',
+      ],
+    },
+    {
+      image: '/static/images/service-check-icon.svg',
+      title: 'First check in meeting',
+      content: ['We want to know how your first sprint has been.'],
+    },
+    {
+      image: '/static/images/service-double-check-icon.svg',
+      title: 'Second check in meetings',
+      content: ['Has your first month been successful?'],
+    },
+    {
+      image: '/static/images/service-people-icon.svg',
+      title: 'Extending the team',
+    },
+  ],
+  uk: [
+    {
+      image: '/static/images/service-meeting-icon.svg',
+      title: 'Знайомство',
+      content: [
+        'Перша зустріч. Давайте познайомимось ближче.',
+        'Розкажіть про свій запит.',
+        'Переговори з приводу аутстафінгу.',
+      ],
+    },
+    {
+      image: '/static/images/service-team-icon.svg',
+      title: 'Стартова зустріч',
+      content: [
+        'Представляємо вам розробників.',
+        'Тоді ми допоможемо розробникам підключитись до вашого проекту.',
+      ],
+    },
+    {
+      image: '/static/images/service-check-icon.svg',
+      title: 'Перша перевірка на зустрічах',
+      content: ['Ми хочемо знати, як пройшов ваш перший спринт.'],
+    },
+    {
+      image: '/static/images/service-double-check-icon.svg',
+      title: 'Друга перевірка на зустрічах',
+      content: ['Ваш перший місяць був успішним?'],
+    },
+    {
+      image: '/static/images/service-people-icon.svg',
+      title: 'Розширення команди',
+    },
+  ],
+};
 
 export const aboutUsNumbersData = {
   en: [
@@ -1353,80 +1430,157 @@ export const careerData = {
   ],
 };
 
-export const whyUsData = [
-  {
-    id: '1',
-    name: 'Project ownership',
-    description: 'We care about successful project result.',
-  },
-  {
-    id: '2',
-    name: 'High English level',
-    description:
-      'We know that usually there is a dilemma: either skills or sufficient English level. We provide both.',
-  },
-  {
-    id: '3',
-    name: 'Happy team',
-    description: 'We are honest with our team members.',
-  },
-  {
-    id: '4',
-    name: 'Constinuous team growth',
-    description: 'We encourage studying and research stages to look for the best results.',
-  },
-];
+export const whyUsData = {
+  en: [
+    {
+      id: '1',
+      name: 'Project ownership',
+      description: 'We care about successful project result.',
+    },
+    {
+      id: '2',
+      name: 'High English level',
+      description:
+        'We know that usually there is a dilemma: either skills or sufficient English level. We provide both.',
+    },
+    {
+      id: '3',
+      name: 'Happy team',
+      description: 'We are honest with our team members.',
+    },
+    {
+      id: '4',
+      name: 'Continuous team growth',
+      description: 'We encourage studying and research stages to look for the best results.',
+    },
+  ],
+  uk: [
+    {
+      id: '1',
+      name: 'Відданість проекту',
+      description: 'Ми дбаємо про успішний результат проекту.',
+    },
+    {
+      id: '2',
+      name: 'Високий рівень англійської',
+      description:
+        'Ми знаємо, що зазвичай є дилема: або навички, або достатній рівень англійської. Ми надаємо обидва.',
+    },
+    {
+      id: '3',
+      name: 'Щаслива команда',
+      description: 'Ми чесні з членами нашої команди.',
+    },
+    {
+      id: '4',
+      name: 'Постійне зростання команди',
+      description: 'Ми заохочуємо етапи навчання та дослідження, щоб отримати найкращі результати.',
+    },
+  ],
+};
 
-export const teamListData = [
-  {
-    id: '1',
-    name: 'Turovets Yevhen',
-    position: 'CEO',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '2',
-    name: 'Mykola Piddubnyi',
-    position: 'CTO',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '3',
-    name: 'Anton Titov',
-    position: 'CTO',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '4',
-    name: 'Olexandr Stadnik',
-    position: 'React Developer',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '5',
-    name: 'Dmytro Yahuza',
-    position: 'PHP Full-stack Developer',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '6',
-    name: 'Denis Velykyi',
-    position: 'PHP Full-stack developer',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '7',
-    name: 'Andrey Oleinych',
-    position: 'PHP Developer',
-    photo: '/static/images/avatar.png',
-  },
-  {
-    id: '8',
-    name: 'Anastasiia Titova',
-    position: 'Project Manager',
-    photo: '/static/images/avatar.png',
-  },
-];
+export const teamListData = {
+  en: [
+    {
+      id: '1',
+      name: 'Yevhen Turovets',
+      position: 'CEO',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '2',
+      name: 'Mykola Piddubnyi',
+      position: 'CTO',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '3',
+      name: 'Anton Titov',
+      position: 'CTO',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '4',
+      name: 'Olexandr Stadnik',
+      position: 'React Developer',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '5',
+      name: 'Dmytro Yahuza',
+      position: 'PHP Full-stack Developer',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '6',
+      name: 'Denis Velykyi',
+      position: 'PHP Full-stack developer',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '7',
+      name: 'Andrey Oleinych',
+      position: 'PHP Developer',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '8',
+      name: 'Anastasiia Titova',
+      position: 'Project Manager',
+      photo: '/static/images/avatar.png',
+    },
+  ],
+  uk: [
+    {
+      id: '1',
+      name: 'Yevhen Turovets',
+      position: 'Генеральний Директор',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '2',
+      name: 'Mykola Piddubnyi',
+      position: 'Технічний Директор',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '3',
+      name: 'Anton Titov',
+      position: 'Технічний Директор',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '4',
+      name: 'Olexandr Stadnik',
+      position: 'React Розробник',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '5',
+      name: 'Dmytro Yahuza',
+      position: 'PHP Full-stack Розробник',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '6',
+      name: 'Denis Velykyi',
+      position: 'PHP Full-stack Розробник',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '7',
+      name: 'Andrey Oleinych',
+      position: 'PHP Розробник',
+      photo: '/static/images/avatar.png',
+    },
+    {
+      id: '8',
+      name: 'Anastasiia Titova',
+      position: 'Проектний Менеджер',
+      photo: '/static/images/avatar.png',
+    },
+  ],
+};
 
 export const contactListData = {
   en: [

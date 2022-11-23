@@ -59,13 +59,78 @@
       "TestimonialListLinkText": "See all"
     },
     "PageNotFound": {},
-    "Portfolio": {},
+    "Portfolio": {
+      "HeadTitle": "Case Studies",
+      "Breadcrumbs": ["Homepage", "Case Studies"],
+      "PageTitle": "Our case studies",
+      "PageDescription": "Projects we have worked on"
+    },
     "PortfolioId": {},
-    "Services": {},
-    "ServicesOutsource": {},
-    "ServicesOutstaff": {},
-    "Team": {},
-    "Testimonials": {}
+    "Services": {
+      "HeadTitle": "Services",
+      "Breadcrumbs": ["Homepage", "Services"],
+      "PageTitle": "This is what we do best",
+      "PageDescription": "See how we can become partners",
+      "ExpertiseListName": "Expertise",
+      "ExpertiseListTitles": ["You have an idea", "We have a solution"]
+    },
+    "ServicesOutsource": {
+      "HeadTitle": "Outsource Service",
+      "Breadcrumbs": ["Homepage", "Services", "Outsource"],
+      "PageTitle": "Let us be your outsource team",
+      "PageDescription": "Credit us a project and let's become partners",
+      "ServiceProcessName": "Process",
+      "ServiceProcessTitles": "How projects get done",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "Credit us your project",
+      "DropALineFileLabel": "Brief",
+      "DropALineFormLabel": "Contact Us",
+      "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible",
+      "WhyUsName": "Why us",
+      "WhyUsTitles": "Why us",
+      "ExpertiseListName": "Expertise",
+      "ExpertiseListTitles": ["You have an idea", "We have a solution"],
+      "PortfolioName": "Case studies",
+      "PortfolioTitles": "Portfolio"
+    },
+    "ServicesOutstaff": {
+      "HeadTitle": "Outstaff Service",
+      "Breadcrumbs": ["Homepage", "Services", "Outstaff"],
+      "PageTitle": "Find a ukrainian soul to fulfil your project",
+      "PageDescription": "Need a responsible and proactive team member? Outstaff from us.",
+      "ServiceProcessName": "Process",
+      "ServiceProcessTitles": "How outstaff works",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "Credit us your project",
+      "DropALineFileLabel": "Brief",
+      "DropALineFormLabel": "Contact Us",
+      "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible",
+      "WhyUsName": "Why us",
+      "WhyUsTitles": "Why us",
+      "ExpertiseListName": "Expertise",
+      "ExpertiseListTitles": ["You have an idea", "We have a solution"],
+      "PortfolioName": "Case studies",
+      "PortfolioTitles": "Portfolio"
+    },
+    "Team": {
+      "HeadTitle": "Our Team",
+      "Breadcrumbs": ["Homepage", "Our Team"],
+      "PageTitle": "Ukrainian talent in one place",
+      "PageDescription": "Our team of Ukrainian IT talents",
+      "WhyUsName": "Why us",
+      "WhyUsTitles": "Why us",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "Credit us your project",
+      "DropALineFileLabel": "Brief",
+      "DropALineFormLabel": "Contact Us",
+      "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
+    },
+    "Testimonials": {
+      "HeadTitle": "Testimonials",
+      "Breadcrumbs": ["Homepage", "Testimonials"],
+      "PageTitle": "Our partners say",
+      "PageDescription": "Hear what company like yours say"
+    }
   },
   "Elements": {
     "Breadcrumbs": {},
@@ -134,9 +199,13 @@
     "ServiceList": {
       "ButtonText": "Learn more"
     },
-    "ServiceProcess": {},
+    "ServiceProcess": {
+      "FirstRow": ["Drop us a line", "here."]
+    },
     "TeamList": {},
-    "TestimonialList": {},
+    "TestimonialList": {
+      "LinkText": "Watch review"
+    },
     "VacancyContent": {},
     "VacancyDescription": {
       "ButtonText": "Apply"

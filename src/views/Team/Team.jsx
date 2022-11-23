@@ -2,13 +2,15 @@ import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { DropALine, TeamList, WhyUs } from '@components/sections';
 import Head from 'next/head';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 import styles from './Team.module.scss';
 
 export const Team = () => {
-  const headTitle = useMemo(() => `Our Team | Ukrainian-IT.Family`, []);
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Our Team'], []);
+  const t = useTranslations('Views.Team');
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
+  const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
 
   return (
     <div className={styles.container}>
@@ -24,27 +26,24 @@ export const Team = () => {
       </WidthBox>
 
       <WidthBox>
-        <TitleSectionWrapper
-          title="Ukrainian talent in one place"
-          description="Ukrainian IT talent appreciation team"
-        >
+        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
           <TeamList />
         </TitleSectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Why us" titles={['Why us']}>
+        <SectionWrapper name={t('WhyUsName')} titles={[t('WhyUsTitles')]}>
           <WhyUs />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper name="Drop a line" titles={['Credit us your project']}>
+        <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>
           <DropALine
             descriptionField
-            fileLabel="Brief"
-            formDescription="Drop us a line and we'll contact you as soon as possible"
-            formLabel="Contact Us"
+            fileLabel={t('DropALineFileLabel')}
+            formDescription={t('DropALineFormDescription')}
+            formLabel={t('DropALineFormLabel')}
           />
         </SectionWrapper>
       </WidthBox>

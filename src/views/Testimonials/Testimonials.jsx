@@ -4,14 +4,16 @@ import { TestimonialList } from '@components/sections';
 import { testimonialListData } from '@constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 import styles from './Testimonials.module.scss';
 
 export const Testimonials = () => {
+  const t = useTranslations('Views.Testimonials');
   const router = useRouter();
-  const headTitle = useMemo(() => `Testimonials | Ukrainian-IT.Family`, []);
-  const crumbs = useMemo(() => [{ link: '/', text: 'Homepage' }, 'Testimonials'], []);
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
+  const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
 
   return (
     <div className={styles.container}>
@@ -27,10 +29,7 @@ export const Testimonials = () => {
       </WidthBox>
 
       <WidthBox>
-        <TitleSectionWrapper
-          title="Our partners say"
-          description="Hear what company like yours say"
-        >
+        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
           <TestimonialList data={testimonialListData[router.locale]} />
         </TitleSectionWrapper>
       </WidthBox>

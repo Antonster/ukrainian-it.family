@@ -10,16 +10,22 @@ import {
 import { portfolioListData, serviceOutsourceProcessData } from '@constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 
 import styles from './ServicesOutsource.module.scss';
 
 export const ServicesOutsource = () => {
+  const t = useTranslations('Views.ServicesOutsource');
   const router = useRouter();
-  const headTitle = useMemo(() => `Outsource Service | Ukrainian-IT.Family`, []);
+  const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(
-    () => [{ link: '/', text: 'Homepage' }, { link: '/services', text: 'Services' }, 'Outsource'],
-    [],
+    () => [
+      { link: '/', text: t('Breadcrumbs.0') },
+      { link: '/services', text: t('Breadcrumbs.1') },
+      t('Breadcrumbs.2'),
+    ],
+    [t],
   );
 
   return (
@@ -36,44 +42,43 @@ export const ServicesOutsource = () => {
       </WidthBox>
 
       <WidthBox>
-        <TitleSectionWrapper
-          title="Let us be your outsource team"
-          description="Credit us a project and let's become partners"
-          small
-        />
+        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')} small />
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Process" titles={['How projects get done']}>
-          <ServiceProcess data={serviceOutsourceProcessData} />
+        <SectionWrapper name={t('ServiceProcessName')} titles={[t('ServiceProcessTitles')]}>
+          <ServiceProcess data={serviceOutsourceProcessData[router.locale]} />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper name="Drop a line" titles={['Credit us your project']}>
+        <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>
           <DropALine
             descriptionField
-            fileLabel="Brief"
-            formDescription="Drop us a line and we'll contact you as soon as possible"
-            formLabel="Contact Us"
+            fileLabel={t('DropALineFileLabel')}
+            formDescription={t('DropALineFormDescription')}
+            formLabel={t('DropALineFormLabel')}
           />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper name="Why us" titles={['Why us']}>
+        <SectionWrapper name={t('WhyUsName')} titles={[t('WhyUsTitles')]}>
           <WhyUs />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox filled>
-        <SectionWrapper name="Expertise" titles={['You have an idea', 'We have a solution']}>
+        <SectionWrapper
+          name={t('ExpertiseListName')}
+          titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}
+        >
           <ExpertiseList />
         </SectionWrapper>
       </WidthBox>
 
       <WidthBox>
-        <SectionWrapper big name="Case studies" titles={['Portfolio']}>
+        <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
           <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
         </SectionWrapper>
       </WidthBox>
