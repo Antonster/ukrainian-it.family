@@ -5,11 +5,11 @@ import { portfolioListData } from '@constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './Portfolio.module.scss';
 
-export const Portfolio = () => {
+const Portfolio = () => {
   const t = useTranslations('Views.Portfolio');
   const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
@@ -38,3 +38,5 @@ export const Portfolio = () => {
     </div>
   );
 };
+
+export default memo(Portfolio);

@@ -5,11 +5,11 @@ import { testimonialListData } from '@constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './Testimonials.module.scss';
 
-export const Testimonials = () => {
+const Testimonials = () => {
   const t = useTranslations('Views.Testimonials');
   const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
@@ -38,3 +38,5 @@ export const Testimonials = () => {
     </div>
   );
 };
+
+export default memo(Testimonials);

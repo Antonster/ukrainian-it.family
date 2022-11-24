@@ -134,6 +134,9 @@
   },
   "Elements": {
     "Breadcrumbs": {},
+    "CareerItem": {
+      "ButtonText": "Details"
+    },
     "Footer": {
       "Description": "Ukrainian IT Family leverages exceptional Ukrainian engineering talent to digitalize small and medium businesses."
     },
@@ -211,8 +214,7 @@
       "ButtonText": "Apply"
     },
     "VacancyList": {
-      "SearchPlaceholder": "Search for job opportunities",
-      "ButtonText": "Details"
+      "SearchPlaceholder": "Search for job opportunities"
     },
     "WhyUs": {}
   }

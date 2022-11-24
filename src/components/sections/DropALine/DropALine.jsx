@@ -4,7 +4,7 @@ import Dialog from '@mui/material/Dialog';
 import { styled } from '@mui/material/styles';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 
 import styles from './DropALine.module.scss';
 
@@ -17,13 +17,7 @@ const StyledDialog = styled(Dialog)(() => ({
   },
 }));
 
-export const DropALine = ({
-  formLabel,
-  formDescription,
-  fileLabel,
-  linkField,
-  descriptionField,
-}) => {
+const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descriptionField }) => {
   const t = useTranslations('Sections.DropALine');
   const [isOpenModal, setOpenModal] = useState(false);
 
@@ -76,3 +70,5 @@ DropALine.propTypes = {
   linkField: PropTypes.bool,
   descriptionField: PropTypes.bool,
 };
+
+export default memo(DropALine);

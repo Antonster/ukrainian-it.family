@@ -11,11 +11,11 @@ import { portfolioListData, serviceOutsourceProcessData } from '@constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './ServicesOutsource.module.scss';
 
-export const ServicesOutsource = () => {
+const ServicesOutsource = () => {
   const t = useTranslations('Views.ServicesOutsource');
   const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
@@ -87,3 +87,5 @@ export const ServicesOutsource = () => {
     </div>
   );
 };
+
+export default memo(ServicesOutsource);

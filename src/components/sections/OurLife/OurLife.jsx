@@ -2,11 +2,12 @@ import 'swiper/css';
 
 import { ourLifeListData } from '@constants';
 import Image from 'next/image';
+import { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './OurLife.module.scss';
 
-export const OurLife = () => (
+const OurLife = () => (
   <div className={styles.container}>
     <Swiper className={styles.swiper} spaceBetween={8} slidesPerView={3} grabCursor>
       {ourLifeListData.map(({ id, images }) => {
@@ -51,3 +52,5 @@ export const OurLife = () => (
     </Swiper>
   </div>
 );
+
+export default memo(OurLife);

@@ -13,11 +13,11 @@ import { useOnScreen } from '@hooks';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { useMemo, useRef } from 'react';
+import { memo, useMemo, useRef } from 'react';
 
 import styles from './Home.module.scss';
 
-export const Home = () => {
+const Home = () => {
   const t = useTranslations('Views.Home');
   const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
@@ -93,3 +93,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default memo(Home);

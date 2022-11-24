@@ -134,6 +134,9 @@
   },
   "Elements": {
     "Breadcrumbs": {},
+    "CareerItem": {
+      "ButtonText": "Подробиці"
+    },
     "Footer": {
       "Description": "Ukrainian IT Family використовує винятковий український інженерний талант для цифровізації малого та середнього бізнесу."
     },
@@ -211,8 +214,7 @@
       "ButtonText": "Зв'язатись"
     },
     "VacancyList": {
-      "SearchPlaceholder": "Пошук можливостей роботи",
-      "ButtonText": "Подробиці"
+      "SearchPlaceholder": "Пошук можливостей роботи"
     },
     "WhyUs": {}
   }

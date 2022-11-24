@@ -5,10 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
+import { memo } from 'react';
 
 import styles from './Footer.module.scss';
 
-export const Footer = () => {
+const Footer = () => {
   const t = useTranslations('Elements.Footer');
   const router = useRouter();
 
@@ -92,3 +93,5 @@ export const Footer = () => {
     </WidthBox>
   );
 };
+
+export default memo(Footer);

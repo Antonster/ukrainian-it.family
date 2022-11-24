@@ -2,10 +2,11 @@ import { MainButton } from '@components/elements';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './VacancyDescription.module.scss';
 
-export const VacancyDescription = ({ title, description, location, time }) => {
+const VacancyDescription = ({ title, description, location, time }) => {
   const t = useTranslations('Sections.VacancyDescription');
 
   return (
@@ -37,3 +38,5 @@ VacancyDescription.propTypes = {
   location: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
 };
+
+export default memo(VacancyDescription);

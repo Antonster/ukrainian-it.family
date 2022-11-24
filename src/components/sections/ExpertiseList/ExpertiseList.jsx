@@ -1,10 +1,11 @@
 import { expertiseListData } from '@constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './ExpertiseList.module.scss';
 
-export const ExpertiseList = () => {
+const ExpertiseList = () => {
   const router = useRouter();
 
   return (
@@ -21,3 +22,5 @@ export const ExpertiseList = () => {
     </div>
   );
 };
+
+export default memo(ExpertiseList);

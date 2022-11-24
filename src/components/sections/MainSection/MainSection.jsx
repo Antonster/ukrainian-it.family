@@ -5,10 +5,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './MainSection.module.scss';
 
-export const MainSection = ({ sectionHeaderRef }) => {
+const MainSection = ({ sectionHeaderRef }) => {
   const t = useTranslations('Sections.MainSection');
   const router = useRouter();
 
@@ -93,3 +94,5 @@ MainSection.propTypes = {
     PropTypes.shape({ current: PropTypes.object }),
   ]),
 };
+
+export default memo(MainSection);

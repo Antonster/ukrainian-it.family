@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './MainButton.module.scss';
 
-export const MainButton = ({
+const MainButton = ({
   type,
   href,
   blank,
@@ -79,3 +79,5 @@ MainButton.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
+
+export default memo(MainButton);

@@ -3,10 +3,11 @@ import { serviceListData } from '@constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
+import { memo } from 'react';
 
 import styles from './ServiceList.module.scss';
 
-export const ServiceList = () => {
+const ServiceList = () => {
   const t = useTranslations('Sections.ServiceList');
   const router = useRouter();
 
@@ -43,3 +44,5 @@ export const ServiceList = () => {
     </div>
   );
 };
+
+export default memo(ServiceList);

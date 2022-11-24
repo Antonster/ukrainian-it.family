@@ -4,11 +4,11 @@ import { TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { ContactList } from '@components/sections';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './Contacts.module.scss';
 
-export const Contacts = () => {
+const Contacts = () => {
   const t = useTranslations('Views.Contacts');
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
@@ -47,3 +47,5 @@ export const Contacts = () => {
     </div>
   );
 };
+
+export default memo(Contacts);

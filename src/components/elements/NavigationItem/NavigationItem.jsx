@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 
 import styles from './NavigationItem.module.scss';
 
@@ -19,7 +19,7 @@ const StyledPopover = styled(Popover)(() => ({
   },
 }));
 
-export const NavigationItem = ({ item }) => {
+const NavigationItem = ({ item }) => {
   const [anchorElement, setAnchorElement] = useState(null);
 
   const onClickElement = (event) => {
@@ -99,3 +99,5 @@ NavigationItem.propTypes = {
     ),
   }).isRequired,
 };
+
+export default memo(NavigationItem);

@@ -5,11 +5,11 @@ import { VacancyContent, VacancyDescription } from '@components/sections';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './CareerId.module.scss';
 
-export const CareerId = ({ vacancy: { id, title, description, location, time, items, links } }) => {
+const CareerId = ({ vacancy: { id, title, description, location, time, items, links } }) => {
   const t = useTranslations('Views.CareerId');
   const headTitle = useMemo(() => `${title} | Ukrainian-IT.Family`, [title]);
   const crumbs = useMemo(
@@ -85,3 +85,5 @@ CareerId.propTypes = {
     ),
   }).isRequired,
 };
+
+export default memo(CareerId);

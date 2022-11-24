@@ -6,10 +6,11 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './Header.module.scss';
 
-export const Header = ({ fixed }) => {
+const Header = ({ fixed }) => {
   const t = useTranslations('Elements.Header');
   const router = useRouter();
 
@@ -59,3 +60,5 @@ export const Header = ({ fixed }) => {
 Header.propTypes = {
   fixed: PropTypes.bool,
 };
+
+export default memo(Header);

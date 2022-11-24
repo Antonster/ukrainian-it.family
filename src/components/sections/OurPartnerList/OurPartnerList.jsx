@@ -1,9 +1,10 @@
 import { ourPartnerListData } from '@constants';
 import Image from 'next/image';
+import { memo } from 'react';
 
 import styles from './OurPartnerList.module.scss';
 
-export const OurPartnerList = () => (
+const OurPartnerList = () => (
   <div className={styles.container}>
     {ourPartnerListData.map(({ id, image, alt }) => (
       <div key={id} className={styles.image}>
@@ -12,3 +13,5 @@ export const OurPartnerList = () => (
     ))}
   </div>
 );
+
+export default memo(OurPartnerList);

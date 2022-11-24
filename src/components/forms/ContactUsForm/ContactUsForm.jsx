@@ -3,7 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
-import { useCallback, useMemo, useState } from 'react';
+import { memo, useCallback, useMemo, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
@@ -12,7 +12,7 @@ import styles from './ContactUsForm.module.scss';
 
 const imageMimeType = /(document|pdf|plain)/i;
 
-export const ContactUsForm = ({
+const ContactUsForm = ({
   onCloseModal,
   formGap,
   formLabel,
@@ -31,7 +31,7 @@ export const ContactUsForm = ({
         link: yup.string(),
         description: yup.string(),
       }),
-    [],
+    [t],
   );
   const {
     register,
@@ -80,7 +80,7 @@ export const ContactUsForm = ({
       setFileError();
       setValue('file', file[0]);
     },
-    [setValue],
+    [setValue, t],
   );
 
   const onDeleteFile = useCallback(() => {
@@ -247,3 +247,5 @@ ContactUsForm.propTypes = {
   linkField: PropTypes.bool,
   descriptionField: PropTypes.bool,
 };
+
+export default memo(ContactUsForm);

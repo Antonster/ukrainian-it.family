@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './TitleSectionWrapper.module.scss';
 
-export const TitleSectionWrapper = ({ title, description, small, children }) => (
+const TitleSectionWrapper = ({ title, description, small, children }) => (
   <div className={`${styles.container} ${small ? styles.small : ''}`}>
     <div className={styles['title-wrapper']}>
       <h1 className={styles['title-wrapper__title']}>{title}</h1>
@@ -21,3 +22,5 @@ TitleSectionWrapper.propTypes = {
   small: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
+
+export default memo(TitleSectionWrapper);

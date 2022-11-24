@@ -2,10 +2,11 @@ import { MainButton, PortfolioCard } from '@components/elements';
 import Masonry from '@mui/lab/Masonry';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './PortfolioList.module.scss';
 
-export const PortfolioList = ({ data, moreButton }) => {
+const PortfolioList = ({ data, moreButton }) => {
   const t = useTranslations('Sections.PortfolioList');
 
   return (
@@ -56,3 +57,5 @@ PortfolioList.propTypes = {
   ).isRequired,
   moreButton: PropTypes.bool,
 };
+
+export default memo(PortfolioList);

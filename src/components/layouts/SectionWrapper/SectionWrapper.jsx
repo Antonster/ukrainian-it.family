@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { Fragment } from 'react';
+import { Fragment, memo } from 'react';
 
 import styles from './SectionWrapper.module.scss';
 
-export const SectionWrapper = ({ big, question, name, titles, link, linkText, children }) => (
+const SectionWrapper = ({ big, question, name, titles, link, linkText, children }) => (
   <div className={`${styles.container} ${big ? styles.big : styles.small}`}>
     <div className={styles['name-wrapper']}>
       <div className={styles['name-wrapper__dot']} />
@@ -47,3 +47,5 @@ SectionWrapper.propTypes = {
   linkText: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };
+
+export default memo(SectionWrapper);

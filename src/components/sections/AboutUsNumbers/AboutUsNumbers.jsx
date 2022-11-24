@@ -1,10 +1,11 @@
 import { aboutUsNumbersData } from '@constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './AboutUsNumbers.module.scss';
 
-export const AboutUsNumbers = () => {
+const AboutUsNumbers = () => {
   const router = useRouter();
 
   return (
@@ -21,3 +22,5 @@ export const AboutUsNumbers = () => {
     </div>
   );
 };
+
+export default memo(AboutUsNumbers);

@@ -3,11 +3,11 @@ import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layou
 import { DropALine, VacancyList } from '@components/sections';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './Career.module.scss';
 
-export const Career = () => {
+const Career = () => {
   const t = useTranslations('Views.Career');
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
@@ -45,3 +45,5 @@ export const Career = () => {
     </div>
   );
 };
+
+export default memo(Career);

@@ -1,10 +1,11 @@
 import { contactListData } from '@constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './ContactList.module.scss';
 
-export const ContactList = () => {
+const ContactList = () => {
   const router = useRouter();
 
   return (
@@ -38,3 +39,5 @@ export const ContactList = () => {
     </div>
   );
 };
+
+export default memo(ContactList);

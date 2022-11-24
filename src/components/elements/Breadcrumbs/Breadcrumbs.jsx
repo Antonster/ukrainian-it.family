@@ -2,10 +2,11 @@ import { nanoid } from 'nanoid';
 import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './Breadcrumbs.module.scss';
 
-export const Breadcrumbs = ({ crumbs, centered }) => {
+const Breadcrumbs = ({ crumbs, centered }) => {
   const crumbList = crumbs.reduce(
     (acc, item, index) => (index === 0 ? [item] : acc.concat('/', item)),
     [],
@@ -59,3 +60,5 @@ Breadcrumbs.propTypes = {
   ).isRequired,
   centered: PropTypes.bool,
 };
+
+export default memo(Breadcrumbs);

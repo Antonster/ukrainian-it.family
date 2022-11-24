@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './ServiceProcess.module.scss';
 
-export const ServiceProcess = ({ data }) => {
+const ServiceProcess = ({ data }) => {
   const t = useTranslations('Sections.ServiceProcess');
 
   return (
@@ -84,3 +85,5 @@ ServiceProcess.propTypes = {
     }).isRequired,
   ).isRequired,
 };
+
+export default memo(ServiceProcess);

@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './LanguageSelection.module.scss';
 
-export const LanguageSelection = () => {
+const LanguageSelection = () => {
   const router = useRouter();
 
   return (
@@ -32,3 +33,5 @@ export const LanguageSelection = () => {
     </div>
   );
 };
+
+export default memo(LanguageSelection);

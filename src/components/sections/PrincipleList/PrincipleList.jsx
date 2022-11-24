@@ -1,9 +1,10 @@
 import { principleListData } from '@constants';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './PrincipleList.module.scss';
 
-export const PrincipleList = () => {
+const PrincipleList = () => {
   const router = useRouter();
 
   return (
@@ -24,3 +25,5 @@ export const PrincipleList = () => {
     </div>
   );
 };
+
+export default memo(PrincipleList);

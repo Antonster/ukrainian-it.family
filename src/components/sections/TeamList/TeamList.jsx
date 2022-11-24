@@ -1,10 +1,11 @@
 import { teamListData } from '@constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './TeamList.module.scss';
 
-export const TeamList = () => {
+const TeamList = () => {
   const router = useRouter();
 
   return (
@@ -21,3 +22,5 @@ export const TeamList = () => {
     </div>
   );
 };
+
+export default memo(TeamList);

@@ -3,11 +3,11 @@ import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layou
 import { DropALine, TeamList, WhyUs } from '@components/sections';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './Team.module.scss';
 
-export const Team = () => {
+const Team = () => {
   const t = useTranslations('Views.Team');
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
@@ -52,3 +52,5 @@ export const Team = () => {
     </div>
   );
 };
+
+export default memo(Team);

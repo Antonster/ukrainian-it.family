@@ -13,11 +13,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { useMemo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './About.module.scss';
 
-export const About = () => {
+const About = () => {
   const t = useTranslations('Views.About');
   const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
@@ -87,3 +87,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default memo(About);

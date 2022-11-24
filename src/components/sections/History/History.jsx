@@ -1,10 +1,11 @@
 import { historyData } from '@constants';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './History.module.scss';
 
-export const History = () => {
+const History = () => {
   const router = useRouter();
 
   return (
@@ -65,3 +66,5 @@ export const History = () => {
     </div>
   );
 };
+
+export default memo(History);

@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './TestimonialList.module.scss';
 
-export const TestimonialList = ({ data }) => {
+const TestimonialList = ({ data }) => {
   const t = useTranslations('Sections.TestimonialList');
 
   return (
@@ -50,3 +51,5 @@ TestimonialList.propTypes = {
     }),
   ).isRequired,
 };
+
+export default memo(TestimonialList);

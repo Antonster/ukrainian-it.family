@@ -1,9 +1,10 @@
 import { MainButton } from '@components/elements';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './VacancyContent.module.scss';
 
-export const VacancyContent = ({ items, links }) => (
+const VacancyContent = ({ items, links }) => (
   <div className={styles['vacancy-content']}>
     {items.map(({ type, title, content }) => (
       <div key={title} className={styles['vacancy-content__item']}>
@@ -47,3 +48,5 @@ VacancyContent.propTypes = {
     }).isRequired,
   ),
 };
+
+export default memo(VacancyContent);

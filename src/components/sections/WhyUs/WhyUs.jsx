@@ -1,9 +1,10 @@
 import { whyUsData } from '@constants';
 import { useRouter } from 'next/router';
+import { memo } from 'react';
 
 import styles from './WhyUs.module.scss';
 
-export const WhyUs = () => {
+const WhyUs = () => {
   const router = useRouter();
 
   return (
@@ -17,3 +18,5 @@ export const WhyUs = () => {
     </div>
   );
 };
+
+export default memo(WhyUs);

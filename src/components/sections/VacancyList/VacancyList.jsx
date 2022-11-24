@@ -1,14 +1,14 @@
+import { CareerItem } from '@components/elements';
 import { careerData } from '@constants';
 import { useDebounce } from '@hooks';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { useCallback, useState } from 'react';
+import { memo, useCallback, useState } from 'react';
 
 import styles from './VacancyList.module.scss';
 
-export const VacancyList = () => {
+const VacancyList = () => {
   const t = useTranslations('Sections.VacancyList');
   const router = useRouter();
   const [searchValue, setSearchValue] = useState('');
@@ -30,7 +30,7 @@ export const VacancyList = () => {
 
         setFilteredCareerData(newData);
       } else {
-        setFilteredCareerData(careerData);
+        setFilteredCareerData(careerData[router.locale]);
       }
     },
     1000,
@@ -54,44 +54,11 @@ export const VacancyList = () => {
 
       <div className={styles.list}>
         {filteredCareerData.map(({ id, title, location, time }) => (
-          <div key={id} className={styles.list__item}>
-            <div className={styles['list__item-content']}>
-              <Link href={`/career/${id}`}>
-                <a className={styles['list__item-title']}>{title}</a>
-              </Link>
-
-              <div className={styles['list__item-info']}>
-                <div className={styles['list__item-location']}>
-                  <Image
-                    src="/static/images/location.svg"
-                    alt="location icon"
-                    width={16}
-                    height={20}
-                  />
-                  <div>{location}</div>
-                </div>
-
-                <div className={styles['list__item-time']}>
-                  <Image src="/static/images/clock.svg" alt="clock icon" width={24} height={24} />
-                  <div>{time}</div>
-                </div>
-              </div>
-            </div>
-
-            <Link href={`/career/${id}`}>
-              <a className={styles['list__item-link']}>
-                <div>{t('ButtonText')}</div>
-                <Image
-                  src="/static/images/arrow-blue.svg"
-                  alt="arrow icon"
-                  width={25}
-                  height={25}
-                />
-              </a>
-            </Link>
-          </div>
+          <CareerItem key={id} id={id} title={title} location={location} time={time} />
         ))}
       </div>
     </div>
   );
 };
+
+export default memo(VacancyList);

@@ -2,10 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
+import { memo } from 'react';
 
 import styles from './PortfolioCard.module.scss';
 
-export const PortfolioCard = ({ id, big, name, tags, description, image }) => {
+const PortfolioCard = ({ id, big, name, tags, description, image }) => {
   const t = useTranslations('Elements.PortfolioCard');
 
   return (
@@ -49,3 +50,5 @@ PortfolioCard.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
+
+export default memo(PortfolioCard);
