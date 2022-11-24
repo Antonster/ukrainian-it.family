@@ -9,7 +9,7 @@ import { memo, useMemo } from 'react';
 
 import styles from './CareerId.module.scss';
 
-const CareerId = ({ vacancy: { id, title, description, location, time, items, links } }) => {
+const CareerId = ({ vacancy: { title, description, location, time, items, links } }) => {
   const t = useTranslations('Views.CareerId');
   const headTitle = useMemo(() => `${title} | Ukrainian-IT.Family`, [title]);
   const crumbs = useMemo(

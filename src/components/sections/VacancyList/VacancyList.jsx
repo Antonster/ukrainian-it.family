@@ -4,7 +4,7 @@ import { useDebounce } from '@hooks';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
-import { memo, useCallback, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 
 import styles from './VacancyList.module.scss';
 
@@ -12,7 +12,7 @@ const VacancyList = () => {
   const t = useTranslations('Sections.VacancyList');
   const router = useRouter();
   const [searchValue, setSearchValue] = useState('');
-  const [filteredCareerData, setFilteredCareerData] = useState(careerData[router.locale]);
+  const [filteredCareerData, setFilteredCareerData] = useState();
 
   const onChangeSearchValue = useCallback((event) => {
     setSearchValue(event.target.value);
@@ -37,6 +37,10 @@ const VacancyList = () => {
     [searchValue],
   );
 
+  useEffect(() => {
+    setFilteredCareerData(careerData[router.locale]);
+  }, [router.locale]);
+
   return (
     <div className={styles.container}>
       <div className={styles.search}>
@@ -53,7 +57,7 @@ const VacancyList = () => {
       </div>
 
       <div className={styles.list}>
-        {filteredCareerData.map(({ id, title, location, time }) => (
+        {filteredCareerData?.map(({ id, title, location, time }) => (
           <CareerItem key={id} id={id} title={title} location={location} time={time} />
         ))}
       </div>
