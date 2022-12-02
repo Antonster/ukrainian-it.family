@@ -1,17 +1,37 @@
 import { LanguageSelection, MainButton, NavigationItem } from '@components/elements';
+import { ContactUsForm } from '@components/forms';
 import { headerData } from '@constants';
+import { Dialog, styled } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
-import { memo } from 'react';
+import { memo, useCallback, useState } from 'react';
 
 import styles from './MainSection.module.scss';
+
+const StyledDialog = styled(Dialog)(() => ({
+  '& .MuiDialog-paper': {
+    maxWidth: '656px',
+    backgroundColor: '#f2f7fa',
+    boxShadow: 'none',
+    borderRadius: 'unset',
+  },
+}));
 
 const MainSection = ({ sectionHeaderRef }) => {
   const t = useTranslations('Sections.MainSection');
   const router = useRouter();
+  const [isOpenModal, setOpenModal] = useState(false);
+
+  const onOpenModal = useCallback(() => {
+    setOpenModal(true);
+  }, []);
+
+  const onCloseModal = useCallback(() => {
+    setOpenModal(false);
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -71,7 +91,7 @@ const MainSection = ({ sectionHeaderRef }) => {
             {t('Description.2')}
           </div>
 
-          <MainButton size="big" type="button" text={t('ButtonText')} onClick={() => {}} />
+          <MainButton size="big" type="button" text={t('ButtonText')} onClick={onOpenModal} />
         </div>
       </div>
 
@@ -84,6 +104,24 @@ const MainSection = ({ sectionHeaderRef }) => {
           height={878}
         />
       </div>
+
+      <StyledDialog
+        disablePortal
+        disableEnforceFocus
+        disableAutoFocus
+        scroll="body"
+        open={isOpenModal}
+        onClose={onCloseModal}
+      >
+        <ContactUsForm
+          onCloseModal={onCloseModal}
+          formGap
+          descriptionField
+          fileLabel={t('ContactUsFormFileLabel')}
+          formDescription={t('ContactUsFormDescription')}
+          formLabel={t('ContactUsFormLabel')}
+        />
+      </StyledDialog>
     </div>
   );
 };

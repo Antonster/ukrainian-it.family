@@ -191,7 +191,10 @@
         "exceptional Ukrainian engineering",
         "talent to digitalize small and medium businesses."
       ],
-      "ButtonText": "Arrange a meeting"
+      "ButtonText": "Arrange a meeting",
+      "ContactUsFormLabel": "Contact Us",
+      "ContactUsFormFileLabel": "Brief",
+      "ContactUsFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
     "OurLife": {},
     "OurPartnerList": {},
