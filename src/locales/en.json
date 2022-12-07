@@ -63,7 +63,12 @@
       "HeadTitle": "Case Studies",
       "Breadcrumbs": ["Homepage", "Case Studies"],
       "PageTitle": "Our case studies",
-      "PageDescription": "Projects we have worked on"
+      "PageDescription": "Projects we have worked on",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "Credit us your project",
+      "DropALineFileLabel": "Brief",
+      "DropALineFormLabel": "Contact Us",
+      "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
     "PortfolioId": {},
     "Services": {
@@ -129,7 +134,12 @@
       "HeadTitle": "Testimonials",
       "Breadcrumbs": ["Homepage", "Testimonials"],
       "PageTitle": "Our partners say",
-      "PageDescription": "Hear what company like yours say"
+      "PageDescription": "Hear what company like yours say",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "Credit us your project",
+      "DropALineFileLabel": "Brief",
+      "DropALineFormLabel": "Contact Us",
+      "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     }
   },
   "Elements": {

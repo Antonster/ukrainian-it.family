@@ -1,6 +1,6 @@
 import { Breadcrumbs, Footer, Header } from '@components/elements';
-import { TitleSectionWrapper, WidthBox } from '@components/layouts';
-import { PortfolioList } from '@components/sections';
+import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
+import { DropALine, PortfolioList } from '@components/sections';
 import { portfolioListData } from '@constants';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -32,6 +32,17 @@ const Portfolio = () => {
         <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
           <PortfolioList data={portfolioListData[router.locale]} />
         </TitleSectionWrapper>
+      </WidthBox>
+
+      <WidthBox filled>
+        <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>
+          <DropALine
+            descriptionField
+            fileLabel={t('DropALineFileLabel')}
+            formDescription={t('DropALineFormDescription')}
+            formLabel={t('DropALineFormLabel')}
+          />
+        </SectionWrapper>
       </WidthBox>
 
       <Footer />

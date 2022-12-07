@@ -63,7 +63,12 @@
       "HeadTitle": "Портфоліо",
       "Breadcrumbs": ["Головна", "Портфоліо"],
       "PageTitle": "Наше портфоліо",
-      "PageDescription": "Проекти, над якими ми працювали"
+      "PageDescription": "Проекти, над якими ми працювали",
+      "DropALineName": "Зв'язатись",
+      "DropALineTitles": "Довірте нам свій проект",
+      "DropALineFileLabel": "Короткий опис",
+      "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "DropALineFormLabel": "Зв'язатись"
     },
     "PortfolioId": {},
     "Services": {
@@ -129,7 +134,12 @@
       "HeadTitle": "Відгуки",
       "Breadcrumbs": ["Головна", "Відгуки"],
       "PageTitle": "Кажуть наші партнери",
-      "PageDescription": "Послухайте, що говорять такі компанії, як ваша"
+      "PageDescription": "Послухайте, що говорять такі компанії, як ваша",
+      "DropALineName": "Зв'язатись",
+      "DropALineTitles": "Довірте нам свій проект",
+      "DropALineFileLabel": "Короткий опис",
+      "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "DropALineFormLabel": "Зв'язатись"
     }
   },
   "Elements": {
