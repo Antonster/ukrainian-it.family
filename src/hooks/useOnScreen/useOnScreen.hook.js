@@ -1,27 +1,28 @@
-/* eslint-disable consistent-return */
 import { useEffect, useState } from 'react';
 
 export const useOnScreen = (ref, rootMargin = '0px') => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (ref.current == null) {
-      return;
-    }
+    let observerRefValue = null;
 
     const observer = new IntersectionObserver(([entry]) => setIsVisible(entry.isIntersecting), {
       rootMargin,
     });
-    observer.observe(ref.current);
+
+    if (ref.current) {
+      observer.observe(ref.current);
+      observerRefValue = ref.current;
+    }
 
     return () => {
-      if (ref.current == null) {
+      if (observerRefValue == null) {
         return;
       }
 
-      observer.unobserve(ref.current);
+      observer.unobserve(observerRefValue);
     };
-  }, [ref.current, rootMargin]);
+  }, [ref, rootMargin]);
 
   return isVisible;
 };

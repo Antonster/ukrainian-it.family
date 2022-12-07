@@ -1,3 +1,3 @@
-export { useDebounce } from './useDebounce';
-export { useOnScreen } from './useOnScreen';
-export { useTimeout } from './useTimeout';
+export { useDebounce } from './useDebounce/useDebounce.hook';
+export { useOnScreen } from './useOnScreen/useOnScreen.hook';
+export { useTimeout } from './useTimeout/useTimeout.hook';
