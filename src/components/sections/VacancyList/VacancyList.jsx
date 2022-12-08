@@ -1,5 +1,5 @@
 import { CareerItem } from '@components/elements';
-import { careerData } from '@constants';
+import { careerData } from '@data';
 import { useDebounce } from '@hooks';
 import Image from 'next/image';
 import { useRouter } from 'next/router';

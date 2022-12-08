@@ -1,6 +1,6 @@
 import 'swiper/css';
 
-import { ourLifeListData } from '@constants';
+import { ourLifeListData } from '@data';
 import Image from 'next/image';
 import { memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';

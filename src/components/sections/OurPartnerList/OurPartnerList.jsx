@@ -1,4 +1,4 @@
-import { ourPartnerListData } from '@constants';
+import { ourPartnerListData } from '@data';
 import Image from 'next/image';
 import { memo } from 'react';
 

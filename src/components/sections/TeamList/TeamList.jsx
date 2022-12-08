@@ -1,4 +1,4 @@
-import { teamListData } from '@constants';
+import { teamListData } from '@data';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { memo } from 'react';

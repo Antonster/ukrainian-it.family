@@ -1,7 +1,7 @@
 import { Breadcrumbs, Footer, Header } from '@components/elements';
 import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
 import { DropALine, TestimonialList } from '@components/sections';
-import { testimonialListData } from '@constants';
+import { testimonialListData } from '@data';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';

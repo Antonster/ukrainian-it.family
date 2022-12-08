@@ -8,7 +8,7 @@ import {
   ServiceList,
   TestimonialList,
 } from '@components/sections';
-import { portfolioListData, testimonialListData } from '@constants';
+import { portfolioListData, testimonialListData } from '@data';
 import { useOnScreen } from '@hooks';
 import Head from 'next/head';
 import { useRouter } from 'next/router';

@@ -1,4 +1,4 @@
-import { expertiseListData } from '@constants';
+import { expertiseListData } from '@data';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { memo } from 'react';

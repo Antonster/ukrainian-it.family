@@ -1,5 +1,5 @@
 import { MainButton } from '@components/elements';
-import { serviceListData } from '@constants';
+import { serviceListData } from '@data';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';

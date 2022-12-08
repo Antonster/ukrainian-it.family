@@ -1,4 +1,4 @@
-import { whyUsData } from '@constants';
+import { whyUsData } from '@data';
 import { useRouter } from 'next/router';
 import { memo } from 'react';
 

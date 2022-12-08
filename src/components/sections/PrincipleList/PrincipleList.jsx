@@ -1,4 +1,4 @@
-import { principleListData } from '@constants';
+import { principleListData } from '@data';
 import { useRouter } from 'next/router';
 import { memo } from 'react';
 

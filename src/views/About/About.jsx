@@ -8,7 +8,7 @@ import {
   PrincipleList,
   TestimonialList,
 } from '@components/sections';
-import { testimonialListData } from '@constants';
+import { testimonialListData } from '@data';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useRouter } from 'next/router';

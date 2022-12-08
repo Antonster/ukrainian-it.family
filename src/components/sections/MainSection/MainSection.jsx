@@ -1,6 +1,6 @@
 import { LanguageSelection, MainButton, NavigationItem } from '@components/elements';
 import { ContactUsForm } from '@components/forms';
-import { headerData } from '@constants';
+import { headerData } from '@data';
 import { Dialog, styled } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';

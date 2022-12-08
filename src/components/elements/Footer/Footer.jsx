@@ -1,6 +1,6 @@
 import { LanguageSelection } from '@components/elements';
 import { WidthBox } from '@components/layouts';
-import { footerLinksData, footerTermsData, socialLogoListData } from '@constants';
+import { footerLinksData, footerTermsData, socialLogoListData } from '@data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';

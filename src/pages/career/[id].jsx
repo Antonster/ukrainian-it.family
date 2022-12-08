@@ -1,4 +1,4 @@
-import { careerData } from '@constants';
+import { careerData } from '@data';
 import { CareerId } from '@views';
 
 export const getStaticPaths = async (context) => {

@@ -7,7 +7,7 @@ import {
   ServiceProcess,
   WhyUs,
 } from '@components/sections';
-import { portfolioListData, serviceOutsourceProcessData } from '@constants';
+import { portfolioListData, serviceOutsourceProcessData } from '@data';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
