@@ -64,13 +64,13 @@ export const teamListData = {
     },
     {
       id: '3',
-      name: 'Anton Titov',
+      name: 'Антон Тітов',
       position: 'Технічний Директор',
       photo: '/static/images/photo-anton-titov.jpg',
     },
     {
       id: '4',
-      name: 'Anastasiia Titova',
+      name: 'Анастасія Тітова',
       position: 'Проектний Менеджер',
       photo: '/static/images/photo-anastasiia-titova.jpg',
     },
