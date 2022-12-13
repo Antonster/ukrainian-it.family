@@ -8,6 +8,8 @@ export { default as OurLife } from './OurLife/OurLife';
 export { default as OurPartnerList } from './OurPartnerList/OurPartnerList';
 export { default as PortfolioList } from './PortfolioList/PortfolioList';
 export { default as PrincipleList } from './PrincipleList/PrincipleList';
+export { default as ProjectDescription } from './ProjectDescription/ProjectDescription';
+export { default as ProjectPreview } from './ProjectPreview/ProjectPreview';
 export { default as ServiceList } from './ServiceList/ServiceList';
 export { default as ServiceProcess } from './ServiceProcess/ServiceProcess';
 export { default as TeamList } from './TeamList/TeamList';

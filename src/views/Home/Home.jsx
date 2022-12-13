@@ -51,7 +51,7 @@ const Home = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper
           name={t('ExpertiseName')}
           titles={[t('ExpertiseTitles.0'), t('ExpertiseTitles.1')]}
@@ -66,7 +66,7 @@ const Home = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper
           name={t('AboutUsNumbersName')}
           titles={[t('AboutUsNumbersTitles')]}

@@ -70,7 +70,9 @@
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
-    "PortfolioId": {},
+    "PortfolioId": {
+      "Breadcrumbs": ["Homepage", "Case Studies"]
+    },
     "Services": {
       "HeadTitle": "Services",
       "Breadcrumbs": ["Homepage", "Services"],

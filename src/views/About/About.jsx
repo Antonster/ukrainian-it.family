@@ -42,7 +42,7 @@ const About = () => {
         </TitleSectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper name={t('AboutUsNumbersName')} titles={[t('AboutUsNumbersTitles')]}>
           <AboutUsNumbers />
         </SectionWrapper>
@@ -77,7 +77,7 @@ const About = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper name={t('OurPartnerListName')} titles={[t('OurPartnerListTitles')]}>
           <OurPartnerList />
         </SectionWrapper>

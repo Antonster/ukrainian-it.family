@@ -70,7 +70,9 @@
       "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
       "DropALineFormLabel": "Зв'язатись"
     },
-    "PortfolioId": {},
+    "PortfolioId": {
+      "Breadcrumbs": ["Головна", "Портфоліо"]
+    },
     "Services": {
       "HeadTitle": "Послуги",
       "Breadcrumbs": ["Головна", "Послуги"],

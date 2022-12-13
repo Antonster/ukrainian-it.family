@@ -31,7 +31,7 @@ const Career = () => {
         </TitleSectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper question name={t('DropALineName')} titles={[t('DropALineTitles')]}>
           <DropALine
             fileLabel={t('DropALineFileLabel')}

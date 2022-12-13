@@ -1,8 +1,12 @@
 .container {
   width: 100%;
 
-  &.filled-background {
+  &.filled-light {
     background: #f2f7fa;
+  }
+
+  &.filled-dark {
+    background: #011520;
   }
 }
 

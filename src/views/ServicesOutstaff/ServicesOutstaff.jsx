@@ -51,7 +51,7 @@ const ServicesOutstaff = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>
           <DropALine
             descriptionField
@@ -68,7 +68,7 @@ const ServicesOutstaff = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper
           name={t('ExpertiseListName')}
           titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}

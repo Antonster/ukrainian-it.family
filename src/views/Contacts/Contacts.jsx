@@ -32,7 +32,7 @@ const Contacts = () => {
         </TitleSectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <div className={styles['form-wrapper']}>
           <ContactUsForm
             descriptionField

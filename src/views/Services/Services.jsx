@@ -31,7 +31,7 @@ const Services = () => {
         </TitleSectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      <WidthBox filled="light">
         <SectionWrapper
           name={t('ExpertiseListName')}
           titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}

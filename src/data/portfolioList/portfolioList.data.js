@@ -2,7 +2,7 @@ export const portfolioListData = {
   en: [
     {
       id: '1',
-      name: 'Title',
+      name: 'Title 1',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -10,7 +10,7 @@ export const portfolioListData = {
     },
     {
       id: '2',
-      name: 'Title',
+      name: 'Title 2',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -18,7 +18,7 @@ export const portfolioListData = {
     },
     {
       id: '3',
-      name: 'Title',
+      name: 'Title 3',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -26,7 +26,7 @@ export const portfolioListData = {
     },
     {
       id: '4',
-      name: 'Title',
+      name: 'Title 4',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -34,7 +34,7 @@ export const portfolioListData = {
     },
     {
       id: '5',
-      name: 'Title',
+      name: 'Title 5',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -42,7 +42,7 @@ export const portfolioListData = {
     },
     {
       id: '6',
-      name: 'Title',
+      name: 'Title 6',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -50,7 +50,7 @@ export const portfolioListData = {
     },
     {
       id: '7',
-      name: 'Title',
+      name: 'Title 7',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -58,7 +58,7 @@ export const portfolioListData = {
     },
     {
       id: '8',
-      name: 'Title',
+      name: 'Title 8',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -68,7 +68,7 @@ export const portfolioListData = {
   uk: [
     {
       id: '1',
-      name: 'Назва',
+      name: 'Назва 1',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -76,7 +76,7 @@ export const portfolioListData = {
     },
     {
       id: '2',
-      name: 'Назва',
+      name: 'Назва 2',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -84,7 +84,7 @@ export const portfolioListData = {
     },
     {
       id: '3',
-      name: 'Назва',
+      name: 'Назва 3',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -92,7 +92,7 @@ export const portfolioListData = {
     },
     {
       id: '4',
-      name: 'Назва',
+      name: 'Назва 4',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -100,7 +100,7 @@ export const portfolioListData = {
     },
     {
       id: '5',
-      name: 'Назва',
+      name: 'Назва 5',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -108,7 +108,7 @@ export const portfolioListData = {
     },
     {
       id: '6',
-      name: 'Назва',
+      name: 'Назва 6',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -116,7 +116,7 @@ export const portfolioListData = {
     },
     {
       id: '7',
-      name: 'Назва',
+      name: 'Назва 7',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
@@ -124,7 +124,7 @@ export const portfolioListData = {
     },
     {
       id: '8',
-      name: 'Назва',
+      name: 'Назва 8',
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
