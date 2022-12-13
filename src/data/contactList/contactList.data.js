@@ -28,7 +28,7 @@ export const contactListData = {
       arrow: true,
       mainColor: '#7E5AED',
       secondaryColor: '#F3EFFE',
-      link: 'viber://chat?number=+380689926250',
+      link: 'viber://chat?number=%2B380689926250',
     },
     {
       id: '4',
@@ -38,7 +38,7 @@ export const contactListData = {
       arrow: true,
       mainColor: '#2DB942',
       secondaryColor: '#EAF8ED',
-      link: 'https://api.whatsapp.com/send?phone=+380689926250',
+      link: 'https://api.whatsapp.com/send?phone=380689926250',
     },
     // {
     //   id: '5',
@@ -80,7 +80,7 @@ export const contactListData = {
       arrow: true,
       mainColor: '#7E5AED',
       secondaryColor: '#F3EFFE',
-      link: 'viber://chat?number=+380689926250',
+      link: 'viber://chat?number=%2B380689926250',
     },
     {
       id: '4',
@@ -90,7 +90,7 @@ export const contactListData = {
       arrow: true,
       mainColor: '#2DB942',
       secondaryColor: '#EAF8ED',
-      link: 'https://api.whatsapp.com/send?phone=+380689926250',
+      link: 'https://api.whatsapp.com/send?phone=380689926250',
     },
     // {
     //   id: '5',
