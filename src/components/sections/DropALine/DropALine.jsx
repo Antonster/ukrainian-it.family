@@ -33,13 +33,7 @@ const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descripti
     <div className={styles.container}>
       <div className={styles.text}>{t('Text')}</div>
 
-      <MainButton
-        size="big"
-        type="button"
-        text={t('ButtonText')}
-        width="240px"
-        onClick={onOpenModal}
-      />
+      <MainButton size="big" type="link" href="/contacts" text={t('ButtonText')} width="240px" />
 
       <StyledDialog
         disablePortal

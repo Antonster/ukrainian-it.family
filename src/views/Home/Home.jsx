@@ -60,11 +60,11 @@ const Home = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
+      {/* <WidthBox>
         <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
           <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
         </SectionWrapper>
-      </WidthBox>
+      </WidthBox> */}
 
       <WidthBox filled>
         <SectionWrapper
@@ -77,7 +77,7 @@ const Home = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
+      {/* <WidthBox>
         <SectionWrapper
           big
           name={t('TestimonialListName')}
@@ -87,7 +87,7 @@ const Home = () => {
         >
           <TestimonialList data={testimonialListData[router.locale].slice(0, 3)} />
         </SectionWrapper>
-      </WidthBox>
+      </WidthBox> */}
 
       <Footer />
     </div>

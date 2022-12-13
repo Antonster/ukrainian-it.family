@@ -32,7 +32,7 @@ const Contacts = () => {
         </TitleSectionWrapper>
       </WidthBox>
 
-      <WidthBox filled>
+      {/* <WidthBox filled>
         <div className={styles['form-wrapper']}>
           <ContactUsForm
             descriptionField
@@ -41,7 +41,7 @@ const Contacts = () => {
             formLabel={t('ContactUsFormLabel')}
           />
         </div>
-      </WidthBox>
+      </WidthBox> */}
 
       <Footer />
     </div>

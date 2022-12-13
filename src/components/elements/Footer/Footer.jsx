@@ -72,7 +72,7 @@ const Footer = () => {
 
         <div className={styles.terms}>
           <a href="/" className={styles.terms__clutch} target="_blank" rel="noopener noreferrer">
-            <Image src="/static/images/clutch.svg" alt="clutch logo" width={100} height={64} />
+            {/* <Image src="/static/images/clutch.svg" alt="clutch logo" width={100} height={64} /> */}
           </a>
 
           <ul className={styles['terms__link-list']}>

@@ -11,44 +11,44 @@ export const footerLinksData = {
           text: 'Our Team',
           link: '/team',
         },
-        {
-          text: 'Career',
-          link: '/career',
-        },
-        {
-          text: 'Case Studies',
-          link: '/portfolio',
-        },
-        {
-          text: 'Testimonials',
-          link: '/testimonials',
-        },
+        // {
+        //   text: 'Career',
+        //   link: '/career',
+        // },
+        // {
+        //   text: 'Case Studies',
+        //   link: '/portfolio',
+        // },
+        // {
+        //   text: 'Testimonials',
+        //   link: '/testimonials',
+        // },
         {
           text: 'Contacts',
           link: '/contacts',
         },
       ],
     },
-    {
-      title: 'Read about us',
-      list: [
-        {
-          type: 'blank',
-          text: 'Upwork',
-          link: 'https://www.upwork.com/',
-        },
-        {
-          type: 'blank',
-          text: 'DOU',
-          link: 'https://dou.ua/',
-        },
-        {
-          type: 'blank',
-          text: 'Clutch',
-          link: 'https://clutch.co/',
-        },
-      ],
-    },
+    // {
+    //   title: 'Read about us',
+    //   list: [
+    //     {
+    //       type: 'blank',
+    //       text: 'Upwork',
+    //       link: 'https://www.upwork.com/',
+    //     },
+    //     {
+    //       type: 'blank',
+    //       text: 'DOU',
+    //       link: 'https://dou.ua/',
+    //     },
+    //     {
+    //       type: 'blank',
+    //       text: 'Clutch',
+    //       link: 'https://clutch.co/',
+    //     },
+    //   ],
+    // },
     {
       title: 'Services',
       list: [
@@ -75,44 +75,44 @@ export const footerLinksData = {
           text: 'Наша команда',
           link: '/team',
         },
-        {
-          text: "Кар'єра",
-          link: '/career',
-        },
-        {
-          text: 'Портфоліо',
-          link: '/portfolio',
-        },
-        {
-          text: 'Відгуки',
-          link: '/testimonials',
-        },
+        // {
+        //   text: "Кар'єра",
+        //   link: '/career',
+        // },
+        // {
+        //   text: 'Портфоліо',
+        //   link: '/portfolio',
+        // },
+        // {
+        //   text: 'Відгуки',
+        //   link: '/testimonials',
+        // },
         {
           text: 'Контакти',
           link: '/contacts',
         },
       ],
     },
-    {
-      title: 'Читайте про нас',
-      list: [
-        {
-          type: 'blank',
-          text: 'Upwork',
-          link: 'https://www.upwork.com/',
-        },
-        {
-          type: 'blank',
-          text: 'DOU',
-          link: 'https://dou.ua/',
-        },
-        {
-          type: 'blank',
-          text: 'Clutch',
-          link: 'https://clutch.co/',
-        },
-      ],
-    },
+    // {
+    //   title: 'Читайте про нас',
+    //   list: [
+    //     {
+    //       type: 'blank',
+    //       text: 'Upwork',
+    //       link: 'https://www.upwork.com/',
+    //     },
+    //     {
+    //       type: 'blank',
+    //       text: 'DOU',
+    //       link: 'https://dou.ua/',
+    //     },
+    //     {
+    //       type: 'blank',
+    //       text: 'Clutch',
+    //       link: 'https://clutch.co/',
+    //     },
+    //   ],
+    // },
     {
       title: 'Послуги',
       list: [

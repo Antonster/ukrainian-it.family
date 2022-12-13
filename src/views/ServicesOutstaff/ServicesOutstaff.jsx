@@ -77,11 +77,11 @@ const ServicesOutstaff = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
+      {/* <WidthBox>
         <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
           <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
         </SectionWrapper>
-      </WidthBox>
+      </WidthBox> */}
 
       <Footer />
     </div>

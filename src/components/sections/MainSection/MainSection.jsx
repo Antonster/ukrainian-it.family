@@ -91,7 +91,7 @@ const MainSection = ({ sectionHeaderRef }) => {
             {t('Description.2')}
           </div>
 
-          <MainButton size="big" type="button" text={t('ButtonText')} onClick={onOpenModal} />
+          <MainButton size="big" type="link" href="/contacts" text={t('ButtonText')} />
         </div>
       </div>
 

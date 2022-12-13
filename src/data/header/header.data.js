@@ -8,10 +8,10 @@ export const headerData = {
           text: 'About us',
           link: '/about',
         },
-        {
-          text: 'Career',
-          link: '/career',
-        },
+        // {
+        //   text: 'Career',
+        //   link: '/career',
+        // },
         {
           text: 'Our team',
           link: '/team',
@@ -23,16 +23,16 @@ export const headerData = {
       text: 'Services',
       link: '/services',
     },
-    {
-      type: 'link',
-      text: 'Case Studies',
-      link: '/portfolio',
-    },
-    {
-      type: 'link',
-      text: 'Testimonials',
-      link: '/testimonials',
-    },
+    // {
+    //   type: 'link',
+    //   text: 'Case Studies',
+    //   link: '/portfolio',
+    // },
+    // {
+    //   type: 'link',
+    //   text: 'Testimonials',
+    //   link: '/testimonials',
+    // },
   ],
   uk: [
     {
@@ -43,10 +43,10 @@ export const headerData = {
           text: 'Про нас',
           link: '/about',
         },
-        {
-          text: "Кар'єра",
-          link: '/career',
-        },
+        // {
+        //   text: "Кар'єра",
+        //   link: '/career',
+        // },
         {
           text: 'Наша команда',
           link: '/team',
@@ -58,15 +58,15 @@ export const headerData = {
       text: 'Послуги',
       link: '/services',
     },
-    {
-      type: 'link',
-      text: 'Портфоліо',
-      link: '/portfolio',
-    },
-    {
-      type: 'link',
-      text: 'Відгуки',
-      link: '/testimonials',
-    },
+    // {
+    //   type: 'link',
+    //   text: 'Портфоліо',
+    //   link: '/portfolio',
+    // },
+    // {
+    //   type: 'link',
+    //   text: 'Відгуки',
+    //   link: '/testimonials',
+    // },
   ],
 };

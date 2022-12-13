@@ -54,11 +54,11 @@ const About = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
+      {/* <WidthBox>
         <SectionWrapper name={t('OurLifeName')} titles={[t('OurLifeTitles')]}>
           <OurLife />
         </SectionWrapper>
-      </WidthBox>
+      </WidthBox> */}
 
       <WidthBox>
         <SectionWrapper name={t('PrincipleListName')} titles={[t('PrincipleListTitles')]}>
@@ -66,7 +66,7 @@ const About = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
+      {/* <WidthBox>
         <SectionWrapper
           name={t('TestimonialListName')}
           titles={[t('TestimonialListTitles')]}
@@ -75,13 +75,13 @@ const About = () => {
         >
           <TestimonialList data={testimonialListData[router.locale].slice(0, 3)} />
         </SectionWrapper>
-      </WidthBox>
+      </WidthBox> */}
 
-      <WidthBox filled>
+      {/* <WidthBox filled>
         <SectionWrapper name={t('OurPartnerListName')} titles={[t('OurPartnerListTitles')]}>
           <OurPartnerList />
         </SectionWrapper>
-      </WidthBox>
+      </WidthBox> */}
 
       <Footer />
     </div>
