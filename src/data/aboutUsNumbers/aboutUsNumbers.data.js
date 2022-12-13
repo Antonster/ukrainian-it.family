@@ -9,13 +9,13 @@ export const aboutUsNumbersData = {
     {
       id: '2',
       image: '/static/images/in-numbers-figure-2.svg',
-      name: '6 years',
+      name: '10 years',
       description: 'Writing excellent code',
     },
     {
       id: '3',
       image: '/static/images/in-numbers-figure-3.svg',
-      name: '100',
+      name: '+100',
       description: 'Projects',
     },
     {
@@ -35,13 +35,13 @@ export const aboutUsNumbersData = {
     {
       id: '2',
       image: '/static/images/in-numbers-figure-2.svg',
-      name: '6 років',
+      name: '10 років',
       description: 'Написання відмінного коду',
     },
     {
       id: '3',
       image: '/static/images/in-numbers-figure-3.svg',
-      name: '100',
+      name: '+100',
       description: 'Проектів',
     },
     {

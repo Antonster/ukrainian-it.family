@@ -2,50 +2,71 @@ export const principleListData = {
   en: [
     {
       id: '1',
-      name: 'Ownership',
+      name: 'Maximum value',
       description:
-        "Our team is dedicated to projects we do. We don't line doing projects blindly and always try to find the best solution.",
+        'To bring maximum value to the client. Understand the project (niche) and help to make the client what will bring the maximum result.',
     },
     {
       id: '2',
-      name: 'Meeting deadlines',
-      description: "We've built our processes to get results on time.",
+      name: 'Openness',
+      description:
+        'Treat the case with understanding and openness. Try to understand the essence of the project and not just perform the written task. Try to convey your opinion to the client.',
     },
     {
       id: '3',
-      name: 'Communication',
+      name: 'Friendly relations',
       description:
-        "We love arranging meetings with stakeholders throughout the process. Drop a line and we'll see you at the meeting.",
+        'Build close, friendly relationships with customers. Do not do things that can have a bad impact on the relationship.',
     },
     {
       id: '4',
-      name: 'Brining maximum value',
-      description: 'We dive into your project and do our best to help you get maximum result.',
+      name: 'Development',
+      description: 'Constantly develop the company and everything related to it.',
+    },
+    {
+      id: '5',
+      name: 'Honesty',
+      description: 'Be honest with yourself.',
+    },
+    {
+      id: '6',
+      name: 'Respect',
+      description: 'Respect all participants of the process.',
     },
   ],
   uk: [
     {
       id: '1',
-      name: 'Відданість',
+      name: 'Цінність',
       description:
-        'Наша команда віддана проектам, які ми робимо. Ми не виконуємо проекти наосліп і завжди намагаємося знайти найкраще рішення.',
+        'Нести максимальну цінність клієнту. Зрозуміти проект(нішу) і допомогти зробити клієнту то шо принесе максимальний результат.',
     },
     {
       id: '2',
-      name: 'Дотримання термінів',
-      description: 'Ми створили наші процеси, щоб отримати результати вчасно.',
+      name: 'Відкритість',
+      description:
+        'Відноситись до справи з розумінням та відкритістю. Намагатися зрозуміти суть проекту, а не просто виконувати написане завдання. Намагатися донести клієнту свою думку.',
     },
     {
       id: '3',
-      name: 'Комунікація',
+      name: "Дружні зв'язки",
       description:
-        'Ми любимо організовувати зустрічі із зацікавленими сторонами протягом усього процесу. Запишіться, і ми побачимося на зустрічі.',
+        "Будувати тісні, дружні зв'язки з клієнтами. Не робити того шо може погано вплинути на відносини.",
     },
     {
       id: '4',
-      name: 'Зацікавленість',
-      description:
-        'Ми занурюємось у ваш проект і робимо все можливе, щоб допомогти вам отримати максимальний результат.',
+      name: 'Розвиток',
+      description: "Постійно розвивати компанію і все шо з нею пов'язано.",
+    },
+    {
+      id: '5',
+      name: 'Чесність',
+      description: 'Бути чесним перед собою.',
+    },
+    {
+      id: '6',
+      name: 'Повага',
+      description: 'Поважати всіх учасників процесу.',
     },
   ],
 };
