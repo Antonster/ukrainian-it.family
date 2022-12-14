@@ -34,7 +34,7 @@ export const teamListData = {
       id: '6',
       name: 'Dmytro Yahuza',
       position: 'PHP Full-stack Developer',
-      photo: '/static/images/avatar.jpg',
+      photo: '/static/images/photo-dmytro-yahuza.jpg',
     },
     {
       id: '7',
@@ -46,7 +46,7 @@ export const teamListData = {
       id: '8',
       name: 'Andrey Oleinych',
       position: 'PHP Developer',
-      photo: '/static/images/avatar.jpg',
+      photo: '/static/images/photo-andrey-oleinych.jpg',
     },
   ],
   uk: [
@@ -84,7 +84,7 @@ export const teamListData = {
       id: '6',
       name: 'Дмитро Ягуза',
       position: 'PHP Full-stack Розробник',
-      photo: '/static/images/avatar.jpg',
+      photo: '/static/images/photo-dmytro-yahuza.jpg',
     },
     {
       id: '7',
@@ -96,7 +96,7 @@ export const teamListData = {
       id: '8',
       name: 'Андрій Олейнич',
       position: 'PHP Розробник',
-      photo: '/static/images/avatar.jpg',
+      photo: '/static/images/photo-andrey-oleinych.jpg',
     },
   ],
 };
