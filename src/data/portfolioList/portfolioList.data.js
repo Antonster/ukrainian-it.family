@@ -6,7 +6,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '2',
@@ -14,7 +71,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '3',
@@ -22,7 +136,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '4',
@@ -30,7 +201,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '5',
@@ -38,7 +266,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '6',
@@ -46,7 +331,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '7',
@@ -54,7 +396,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '8',
@@ -62,7 +461,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
   ],
   uk: [
@@ -72,7 +528,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '2',
@@ -80,7 +593,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '3',
@@ -88,7 +658,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '4',
@@ -96,7 +723,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '5',
@@ -104,7 +788,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '6',
@@ -112,7 +853,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '7',
@@ -120,7 +918,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-2.png',
+      smallPreviewImage: '/static/images/portfolio-test-2.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
     {
       id: '8',
@@ -128,7 +983,64 @@ export const portfolioListData = {
       tags: ['UIUX Design', 'Front-end Development', 'react'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
-      image: '/static/images/portfolio-test-1.png',
+      smallPreviewImage: '/static/images/portfolio-test-1.png',
+      fullPreviewImage: '/static/images/portfolio-full-preview.jpg',
+      screenList: [
+        {
+          id: '1',
+          images: ['/static/images/project-image-test-1.png'],
+        },
+        {
+          id: '2',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '3',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+        {
+          id: '4',
+          images: [
+            '/static/images/project-image-test-2.png',
+            '/static/images/project-image-test-3.png',
+          ],
+        },
+        {
+          id: '5',
+          images: ['/static/images/project-image-test-4.png'],
+        },
+      ],
+      paragraphs: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+        'Lorem psum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
+      ],
+      rows: [
+        'UI/UX interface design',
+        'Configured a soap-server for the application',
+        'CRM system with admin-panel',
+        'An error-logging system',
+        'Push notifications to users',
+        'A bonus program with the ability to add multiple users to one account',
+      ],
+      videoId: 'jfKfPfyJRdk',
+      resultList: [
+        {
+          value: '1000',
+          description: 'users took advantage of the loyalty system within the first month',
+        },
+        {
+          value: '5000+',
+          description: 'notifications were sent through the application',
+        },
+        {
+          value: '30%',
+          description: 'of customers interacted with the loyalty program through the app',
+        },
+      ],
+      feedbackId: '3',
     },
   ],
 };

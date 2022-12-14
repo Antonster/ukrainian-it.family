@@ -12,7 +12,7 @@ const PortfolioList = ({ data, moreButton }) => {
   return (
     <div className={styles.container}>
       <Masonry columns={2}>
-        {data.map(({ id, name, tags, description, image }, index) => {
+        {data.map(({ id, name, tags, description, smallPreviewImage }, index) => {
           const big = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
 
           return (
@@ -23,7 +23,7 @@ const PortfolioList = ({ data, moreButton }) => {
               name={name}
               tags={tags}
               description={description}
-              image={image}
+              image={smallPreviewImage}
             />
           );
         })}
@@ -52,7 +52,7 @@ PortfolioList.propTypes = {
       name: PropTypes.string.isRequired,
       tags: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
       description: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      smallPreviewImage: PropTypes.string.isRequired,
     }),
   ).isRequired,
   moreButton: PropTypes.bool,

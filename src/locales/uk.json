@@ -71,7 +71,18 @@
       "DropALineFormLabel": "Зв'язатись"
     },
     "PortfolioId": {
-      "Breadcrumbs": ["Головна", "Портфоліо"]
+      "Breadcrumbs": ["Головна", "Портфоліо"],
+      "ProjectScreensName": "Екрани",
+      "ProjectScreensTitles": "Перегляньте інтерфейс",
+      "ProjectDetailsName": "Рішення",
+      "ProjectDetailsTitles": "Що було зроблено",
+      "ProjectResultsName": "Що отримав клієнт",
+      "ProjectResultsTitles": "Результати",
+      "DropALineName": "Зв'язатись",
+      "DropALineTitles": "Довірте нам свій проект",
+      "DropALineFileLabel": "Короткий опис",
+      "DropALineFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше",
+      "DropALineFormLabel": "Зв'язатись"
     },
     "Services": {
       "HeadTitle": "Послуги",
@@ -214,6 +225,13 @@
       "MainButton": "Переглянути всі роботи"
     },
     "PrincipleList": {},
+    "ProjectDescription": {},
+    "ProjectDetails": {},
+    "ProjectPreview": {},
+    "ProjectResults": {
+      "FeedbackLinkText": "Переглянути відгук"
+    },
+    "ProjectScreens": {},
     "ServiceList": {
       "ButtonText": "Детальніше"
     },

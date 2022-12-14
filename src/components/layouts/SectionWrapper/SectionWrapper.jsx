@@ -5,18 +5,30 @@ import { Fragment, memo } from 'react';
 
 import styles from './SectionWrapper.module.scss';
 
-const SectionWrapper = ({ big, question, name, titles, link, linkText, children }) => (
+const SectionWrapper = ({ big, question, name, titles, titleColor, link, linkText, children }) => (
   <div className={`${styles.container} ${big ? styles.big : styles.small}`}>
     <div className={styles['name-wrapper']}>
       <div className={styles['name-wrapper__dot']} />
-      <div className={styles['name-wrapper__text']}>{name}</div>
+      <div
+        className={`
+          ${styles['name-wrapper__text']} 
+          ${titleColor === 'secondary' ? styles['color-secondary'] : ''}
+        `}
+      >
+        {name}
+      </div>
     </div>
 
     <div className={styles['titles-wrapper']}>
       <div>
         {titles.map((item) => (
           <Fragment key={item}>
-            <h3 className={styles['titles-wrapper__name']}>
+            <h3
+              className={`
+                ${styles['titles-wrapper__name']} 
+                ${titleColor === 'secondary' ? styles['color-secondary'] : ''}
+              `}
+            >
               {item}
               <span className={styles['titles-wrapper__dot']}>{question ? '?' : '.'}</span>
             </h3>
@@ -43,6 +55,7 @@ SectionWrapper.propTypes = {
   question: PropTypes.bool,
   name: PropTypes.string.isRequired,
   titles: PropTypes.arrayOf(PropTypes.string).isRequired,
+  titleColor: PropTypes.oneOf(['secondary']),
   link: PropTypes.string,
   linkText: PropTypes.string,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),

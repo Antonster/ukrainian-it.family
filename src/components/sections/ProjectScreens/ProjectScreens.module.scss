@@ -1,0 +1,24 @@
+.container {
+  .swiper {
+    overflow: visible;
+  }
+
+  .slide-wrapper-big {
+    width: 640px;
+  }
+
+  .slide-wrapper-small {
+    width: 320px;
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+
+  &__image {
+    background: #f2f7fa;
+    line-height: 0;
+  }
+}

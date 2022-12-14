@@ -1,17 +1,35 @@
 import { Breadcrumbs, Footer, Header } from '@components/elements';
-import { WidthBox } from '@components/layouts';
-import { ProjectDescription, ProjectPreview } from '@components/sections';
+import { SectionWrapper, WidthBox } from '@components/layouts';
+import {
+  DropALine,
+  ProjectDescription,
+  ProjectDetails,
+  ProjectPreview,
+  ProjectResults,
+  ProjectScreens,
+} from '@components/sections';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
 import { memo, useMemo } from 'react';
 
 import styles from './PortfolioId.module.scss';
 
-const PortfolioId = ({ project: { id, name, tags, description, image } }) => {
+const PortfolioId = ({
+  project: {
+    name,
+    tags,
+    description,
+    fullPreviewImage,
+    screenList,
+    paragraphs,
+    rows,
+    videoId,
+    resultList,
+    feedbackId,
+  },
+}) => {
   const t = useTranslations('Views.PortfolioId');
-  const router = useRouter();
   const headTitle = useMemo(() => `${name} | Ukrainian-IT.Family`, [name]);
   const crumbs = useMemo(
     () => [
@@ -40,10 +58,32 @@ const PortfolioId = ({ project: { id, name, tags, description, image } }) => {
       </WidthBox>
 
       <WidthBox>
-        <ProjectPreview image={image} />
+        <ProjectPreview image={fullPreviewImage} />
       </WidthBox>
 
-      {/* <WidthBox filled="light">
+      <WidthBox filled="dark">
+        <SectionWrapper
+          name={t('ProjectScreensName')}
+          titles={[t('ProjectScreensTitles')]}
+          titleColor="secondary"
+        >
+          <ProjectScreens imageList={screenList} />
+        </SectionWrapper>
+      </WidthBox>
+
+      <WidthBox filled="light">
+        <SectionWrapper name={t('ProjectDetailsName')} titles={[t('ProjectDetailsTitles')]}>
+          <ProjectDetails paragraphs={paragraphs} rows={rows} videoId={videoId} />
+        </SectionWrapper>
+      </WidthBox>
+
+      <WidthBox>
+        <SectionWrapper name={t('ProjectResultsName')} titles={[t('ProjectResultsTitles')]}>
+          <ProjectResults resultList={resultList} feedbackId={feedbackId} />
+        </SectionWrapper>
+      </WidthBox>
+
+      <WidthBox filled="light">
         <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>
           <DropALine
             descriptionField
@@ -52,7 +92,7 @@ const PortfolioId = ({ project: { id, name, tags, description, image } }) => {
             formLabel={t('DropALineFormLabel')}
           />
         </SectionWrapper>
-      </WidthBox> */}
+      </WidthBox>
 
       <Footer />
     </div>
@@ -65,7 +105,23 @@ PortfolioId.propTypes = {
     name: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    fullPreviewImage: PropTypes.string.isRequired,
+    screenList: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+      }),
+    ),
+    paragraphs: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    rows: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    videoId: PropTypes.string,
+    resultList: PropTypes.arrayOf(
+      PropTypes.shape({
+        value: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+      }).isRequired,
+    ).isRequired,
+    feedbackId: PropTypes.string,
   }),
 };
 

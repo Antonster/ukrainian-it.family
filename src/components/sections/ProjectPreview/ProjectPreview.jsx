@@ -11,8 +11,10 @@ const ProjectPreview = ({ image }) => (
         className={styles['project-preview__image']}
         src={image}
         width={810}
-        height={505}
-        alt="macbook"
+        height={506}
+        objectFit="cover"
+        objectPosition="center"
+        alt="macbook preview"
       />
     </div>
   </div>

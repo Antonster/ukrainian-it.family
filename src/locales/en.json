@@ -71,7 +71,18 @@
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
     "PortfolioId": {
-      "Breadcrumbs": ["Homepage", "Case Studies"]
+      "Breadcrumbs": ["Homepage", "Case Studies"],
+      "ProjectScreensName": "Screens",
+      "ProjectScreensTitles": "Check out the ui",
+      "ProjectDetailsName": "Solution",
+      "ProjectDetailsTitles": "What was done",
+      "ProjectResultsName": "What the client got",
+      "ProjectResultsTitles": "Results",
+      "DropALineName": "Drop a line",
+      "DropALineTitles": "Credit us your project",
+      "DropALineFileLabel": "Brief",
+      "DropALineFormLabel": "Contact Us",
+      "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
     "Services": {
       "HeadTitle": "Services",
@@ -214,6 +225,13 @@
       "MainButton": "See all cases"
     },
     "PrincipleList": {},
+    "ProjectDescription": {},
+    "ProjectDetails": {},
+    "ProjectPreview": {},
+    "ProjectResults": {
+      "FeedbackLinkText": "Watch review"
+    },
+    "ProjectScreens": {},
     "ServiceList": {
       "ButtonText": "Learn more"
     },

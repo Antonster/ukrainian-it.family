@@ -30,6 +30,10 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #80b3ce;
+
+    &.color-secondary {
+      color: #ffffff;
+    }
   }
 }
 
@@ -46,6 +50,10 @@
     line-height: 49px;
     text-transform: uppercase;
     color: #01669c;
+
+    &.color-secondary {
+      color: #ffffff;
+    }
   }
 
   &__dot {
