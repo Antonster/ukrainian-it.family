@@ -9,7 +9,7 @@ import {
   TestimonialList,
 } from '@components/sections';
 import { portfolioListData, testimonialListData } from '@data';
-import { useOnScreen } from '@hooks';
+import { useMediaQuery, useOnScreen } from '@hooks';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
@@ -23,6 +23,7 @@ const Home = () => {
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const sectionHeaderRef = useRef();
   const sectionHeaderVisible = useOnScreen(sectionHeaderRef, '30px');
+  const isTabletScreen = useMediaQuery('(max-width: 768px)');
 
   return (
     <div className={styles.container}>
@@ -39,7 +40,7 @@ const Home = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      {!sectionHeaderVisible && <Header fixed />}
+      {(!sectionHeaderVisible || isTabletScreen) && <Header fixed />}
 
       <WidthBox>
         <MainSection sectionHeaderRef={sectionHeaderRef} />

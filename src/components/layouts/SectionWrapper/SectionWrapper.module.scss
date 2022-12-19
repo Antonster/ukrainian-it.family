@@ -94,3 +94,27 @@
     transition: all 0.5s;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .titles-wrapper {
+    &__link {
+      padding: 64px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    &.small,
+    &.big {
+      padding: 48px 12px 120px;
+    }
+  }
+
+  .titles-wrapper {
+    &__name {
+      font-size: 32px;
+      line-height: 39px;
+    }
+  }
+}

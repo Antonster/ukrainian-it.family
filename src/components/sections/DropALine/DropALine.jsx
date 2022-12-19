@@ -1,5 +1,6 @@
 import { MainButton } from '@components/elements';
 import { ContactUsForm } from '@components/forms';
+import { useMediaQuery } from '@hooks';
 import Dialog from '@mui/material/Dialog';
 import { styled } from '@mui/material/styles';
 import { useTranslations } from 'next-intl';
@@ -8,7 +9,8 @@ import { memo, useCallback, useState } from 'react';
 
 import styles from './DropALine.module.scss';
 
-const StyledDialog = styled(Dialog)(() => ({
+const FormDialog = styled(Dialog)(() => ({
+  zIndex: '1600',
   '& .MuiDialog-paper': {
     maxWidth: '656px',
     backgroundColor: '#f2f7fa',
@@ -20,6 +22,7 @@ const StyledDialog = styled(Dialog)(() => ({
 const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descriptionField }) => {
   const t = useTranslations('Sections.DropALine');
   const [isOpenModal, setOpenModal] = useState(false);
+  const isTabletScreen = useMediaQuery('(max-width: 768px)');
 
   const onOpenModal = useCallback(() => {
     setOpenModal(true);
@@ -41,13 +44,14 @@ const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descripti
         onClick={onOpenModal}
       />
 
-      <StyledDialog
+      <FormDialog
         disablePortal
         disableEnforceFocus
         disableAutoFocus
         scroll="body"
         open={isOpenModal}
         onClose={onCloseModal}
+        fullScreen={isTabletScreen}
       >
         <ContactUsForm
           onCloseModal={onCloseModal}
@@ -58,7 +62,7 @@ const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descripti
           linkField={linkField}
           descriptionField={descriptionField}
         />
-      </StyledDialog>
+      </FormDialog>
     </div>
   );
 };

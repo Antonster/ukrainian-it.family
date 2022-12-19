@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 940px;
+  width: 100%;
   gap: 0 48px;
   padding: 24px 24px 24px 64px;
   margin: 0 0 136px;
@@ -125,4 +125,67 @@
 
 .main-background {
   line-height: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    &__navigation {
+      gap: 16px 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .header {
+    margin: 0 0 64px;
+    padding: 40px 12px;
+  }
+
+  .main {
+    &__title {
+      font-size: 48px;
+      line-height: 59px;
+      margin: 0 12px 24px;
+    }
+
+    &__subtitle {
+      font-size: 36px;
+      line-height: 150%;
+      margin: 0 12px 24px 44px;
+    }
+
+    &__description-container {
+      margin: 0 12px;
+      gap: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    &__title {
+      font-size: 32px;
+      line-height: 44px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      margin: 0 12px 24px;
+    }
+
+    &__description {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
 }

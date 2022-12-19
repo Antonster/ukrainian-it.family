@@ -4,6 +4,7 @@ export { contactListData } from './contactList/contactList.data';
 export { expertiseListData } from './expertiseList/expertiseList.data';
 export { footerLinksData } from './footerLinks/footerLinks.data';
 export { footerTermsData } from './footerTerms/footerTerms.data';
+export { hamburgerLinks } from './hamburgerLinks/hamburgerLinks.data';
 export { headerData } from './header/header.data';
 export { historyData } from './history/history.data';
 export { ourLifeListData } from './ourLifeList/ourLifeList.data';

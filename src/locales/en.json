@@ -164,7 +164,11 @@
       "Description": "Ukrainian IT Family leverages exceptional Ukrainian engineering talent to digitalize small and medium businesses."
     },
     "Header": {
-      "GetInTouch": "Get in touch"
+      "GetInTouch": "Get in touch",
+      "ButtonText": "Arrange a meeting",
+      "ContactUsFormLabel": "Зв'язатись",
+      "ContactUsFormFileLabel": "Короткий опис",
+      "ContactUsFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше"
     },
     "LanguageSelection": {},
     "MainButton": {},

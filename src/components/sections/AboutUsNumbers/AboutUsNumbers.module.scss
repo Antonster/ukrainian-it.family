@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 48px 0;
 }
 
 .item {
-  width: 319px;
+  width: 25%;
   height: 288px;
   display: flex;
   flex-direction: column;
@@ -37,5 +39,17 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: #01669c;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: 100%;
   }
 }

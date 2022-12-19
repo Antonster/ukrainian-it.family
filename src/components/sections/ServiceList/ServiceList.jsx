@@ -1,5 +1,6 @@
 import { MainButton } from '@components/elements';
 import { serviceListData } from '@data';
+import { useMediaQuery } from '@hooks';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
@@ -10,6 +11,7 @@ import styles from './ServiceList.module.scss';
 const ServiceList = () => {
   const t = useTranslations('Sections.ServiceList');
   const router = useRouter();
+  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
@@ -26,7 +28,12 @@ const ServiceList = () => {
               <div className={styles.item__description}>{description}</div>
             </div>
 
-            <Image src={image} alt={`${name} icon`} width={240} height={240} />
+            <Image
+              src={image}
+              alt={`${name} icon`}
+              width={isSmallScreen ? 96 : 240}
+              height={isSmallScreen ? 96 : 240}
+            />
 
             <div className={styles.item__button}>
               <MainButton

@@ -42,3 +42,15 @@
     color: #80b3ce;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .item {
+    width: calc(25% - 9px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    width: calc(50% - 6px);
+  }
+}

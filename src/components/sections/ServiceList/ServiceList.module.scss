@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 48px 12px;
 }
 
 .item {
@@ -56,6 +57,26 @@
   &:hover {
     .item__button {
       opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item {
+    width: 100%;
+    flex-direction: column-reverse;
+
+    &__button {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item {
+    &__text-wrapper {
+      width: 100%;
+      margin: 16px 0 0;
     }
   }
 }
