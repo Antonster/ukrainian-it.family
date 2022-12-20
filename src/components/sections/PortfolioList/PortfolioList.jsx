@@ -1,4 +1,5 @@
 import { MainButton, PortfolioCard } from '@components/elements';
+import { useMediaQuery } from '@hooks';
 import Masonry from '@mui/lab/Masonry';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
@@ -8,10 +9,11 @@ import styles from './PortfolioList.module.scss';
 
 const PortfolioList = ({ data, moreButton }) => {
   const t = useTranslations('Sections.PortfolioList');
+  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
-      <Masonry columns={2}>
+      <Masonry columns={isSmallScreen ? 1 : 2}>
         {data.map(({ id, name, tags, description, smallPreviewImage }, index) => {
           const big = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
 
