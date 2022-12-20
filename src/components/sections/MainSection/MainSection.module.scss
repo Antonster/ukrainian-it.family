@@ -1,6 +1,6 @@
 .container {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: calc(100% - 500px) 500px;
 }
 
 .header {
@@ -128,24 +128,34 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: calc(100% - 400px) 400px;
+  }
+
   .header {
     &__navigation {
       gap: 16px 40px;
     }
   }
+
+  .main {
+    &__description-container {
+      margin: 0 64px 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .container {
+    display: block;
+  }
+
   .header {
     padding: 24px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    display: block;
-  }
-
   .header {
     margin: 0 0 64px;
     padding: 40px 12px;

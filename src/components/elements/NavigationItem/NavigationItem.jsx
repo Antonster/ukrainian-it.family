@@ -8,6 +8,8 @@ import { memo, useState } from 'react';
 import styles from './NavigationItem.module.scss';
 
 const StyledPopover = styled(Popover)(() => ({
+  zIndex: '1600',
+
   '& .MuiPopover-paper': {
     display: 'flex',
     minWidth: '320px',
