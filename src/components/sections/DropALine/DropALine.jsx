@@ -23,6 +23,7 @@ const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descripti
   const t = useTranslations('Sections.DropALine');
   const [isOpenModal, setOpenModal] = useState(false);
   const isTabletScreen = useMediaQuery('(max-width: 768px)');
+  const isMobileScreen = useMediaQuery('(max-width: 480px)');
 
   const onOpenModal = useCallback(() => {
     setOpenModal(true);
@@ -40,7 +41,7 @@ const DropALine = ({ formLabel, formDescription, fileLabel, linkField, descripti
         size="big"
         type="button"
         text={t('ButtonText')}
-        width="240px"
+        width={isMobileScreen ? '100%' : '240px'}
         onClick={onOpenModal}
       />
 

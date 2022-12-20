@@ -1,16 +1,21 @@
+import { useMediaQuery } from '@hooks';
 import { nanoid } from 'nanoid';
 import Image from 'next/image';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import { memo } from 'react';
+import { memo, useMemo } from 'react';
 
 import styles from './Breadcrumbs.module.scss';
 
 const Breadcrumbs = ({ crumbs, centered }) => {
-  const crumbList = crumbs.reduce(
-    (acc, item, index) => (index === 0 ? [item] : acc.concat('/', item)),
-    [],
-  );
+  const isMobileScreen = useMediaQuery('(max-width: 480px)');
+  const crumbList = useMemo(() => {
+    if (isMobileScreen) {
+      return ['/', crumbs.at(-2)];
+    }
+
+    return crumbs.reduce((acc, item, index) => (index === 0 ? [item] : acc.concat('/', item)), []);
+  }, [crumbs, isMobileScreen]);
 
   return (
     <div className={styles.container}>

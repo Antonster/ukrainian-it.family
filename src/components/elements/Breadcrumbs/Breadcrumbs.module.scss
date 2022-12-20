@@ -42,3 +42,19 @@
     color: #80b3ce;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 32px 12px 40px;
+  }
+
+  .breadcrumbs {
+    &.centered {
+      justify-content: flex-start;
+    }
+
+    &__separator {
+      transform: rotateZ(90deg);
+    }
+  }
+}
