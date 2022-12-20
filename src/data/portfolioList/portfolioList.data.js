@@ -3,7 +3,7 @@ export const portfolioListData = {
     {
       id: '1',
       name: 'Title 1',
-      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      tags: ['UIU Design', 'Front-end Development', 'react', 'UIUX Design'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
       smallPreviewImage: '/static/images/portfolio-test-1.png',
@@ -525,7 +525,7 @@ export const portfolioListData = {
     {
       id: '1',
       name: 'Назва 1',
-      tags: ['UIUX Design', 'Front-end Development', 'react'],
+      tags: ['UIU Design', 'Front-end Development', 'react', 'UIUX Design'],
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam mauris, non id nibh libero euismod.',
       smallPreviewImage: '/static/images/portfolio-test-1.png',

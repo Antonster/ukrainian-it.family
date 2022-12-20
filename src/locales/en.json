@@ -165,7 +165,7 @@
     },
     "Header": {
       "GetInTouch": "Get in touch",
-      "ButtonText": "Arrange a meeting",
+      "ButtonText": "Contact us",
       "ContactUsFormLabel": "Зв'язатись",
       "ContactUsFormFileLabel": "Короткий опис",
       "ContactUsFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше"
@@ -218,7 +218,7 @@
         "exceptional Ukrainian engineering",
         "talent to digitalize small and medium businesses."
       ],
-      "ButtonText": "Arrange a meeting",
+      "ButtonText": "Contact Us",
       "ContactUsFormLabel": "Contact Us",
       "ContactUsFormFileLabel": "Brief",
       "ContactUsFormDescription": "Drop us a line and we'll contact you as soon as possible"

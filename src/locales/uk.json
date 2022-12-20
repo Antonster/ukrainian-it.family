@@ -165,7 +165,7 @@
     },
     "Header": {
       "GetInTouch": "Зв'язатись",
-      "ButtonText": "Домовитися про зустріч",
+      "ButtonText": "Зв'язатись з нами",
       "ContactUsFormLabel": "Зв'язатись",
       "ContactUsFormFileLabel": "Короткий опис",
       "ContactUsFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше"
@@ -218,7 +218,7 @@
         "винятковий Український інженерний",
         "талант для цифровізації малого та середнього бізнесу."
       ],
-      "ButtonText": "Домовитися про зустріч",
+      "ButtonText": "Зв'язатись з нами",
       "ContactUsFormLabel": "Зв'язатись",
       "ContactUsFormFileLabel": "Короткий опис",
       "ContactUsFormDescription": "Напишіть нам, і ми зв'яжемося з вами якомога швидше"
@@ -226,7 +226,7 @@
     "OurLife": {},
     "OurPartnerList": {},
     "PortfolioList": {
-      "MainButton": "Переглянути всі роботи"
+      "MainButton": "Переглянути всі"
     },
     "PrincipleList": {},
     "ProjectDescription": {},
