@@ -40,7 +40,7 @@ export const footerLinksData = {
         {
           type: 'blank',
           text: 'DOU',
-          link: 'https://dou.ua/',
+          link: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
           type: 'blank',
@@ -104,7 +104,7 @@ export const footerLinksData = {
         {
           type: 'blank',
           text: 'DOU',
-          link: 'https://dou.ua/',
+          link: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
           type: 'blank',
