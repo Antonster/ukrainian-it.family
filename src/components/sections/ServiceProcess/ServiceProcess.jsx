@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@hooks';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -8,6 +9,7 @@ import styles from './ServiceProcess.module.scss';
 
 const ServiceProcess = ({ data }) => {
   const t = useTranslations('Sections.ServiceProcess');
+  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
@@ -30,14 +32,16 @@ const ServiceProcess = ({ data }) => {
               </div>
             </div>
 
-            <div className={styles['process-item__arrow']}>
-              <Image
-                src={`/static/images/arrow-${long ? 'long' : 'short'}.png`}
-                alt="arrow icon"
-                width={12}
-                height={long ? 318 : 68}
-              />
-            </div>
+            {!isSmallScreen && (
+              <div className={styles['process-item__arrow']}>
+                <Image
+                  src={`/static/images/arrow-${long ? 'long' : 'short'}.png`}
+                  alt="arrow icon"
+                  width={12}
+                  height={long ? 318 : 68}
+                />
+              </div>
+            )}
 
             <div className={styles['process-item__content']}>
               <div className={styles['process-item__title']}>{title}</div>
