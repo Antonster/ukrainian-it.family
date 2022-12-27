@@ -14,7 +14,7 @@ const OurLife = () => {
 
   const slidesPerView = useMemo(() => {
     if (isMobileScreen) return 1.2;
-    if (isSmallScreen) return 2;
+    if (isSmallScreen) return 2.2;
     return 3;
   }, [isMobileScreen, isSmallScreen]);
 

@@ -15,6 +15,14 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    .swiper {
+      overflow: hidden;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .slide {
     gap: 4px 0;
