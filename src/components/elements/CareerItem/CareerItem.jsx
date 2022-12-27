@@ -18,7 +18,7 @@ const CareerItem = ({ id, title, location, time }) => {
 
         <div className={styles['career-item__info']}>
           <div className={styles['career-item__location']}>
-            <Image src="/static/images/location.svg" alt="location icon" width={16} height={20} />
+            <Image src="/static/images/location.svg" alt="location icon" width={24} height={24} />
             <div>{location}</div>
           </div>
 

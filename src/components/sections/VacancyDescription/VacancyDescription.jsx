@@ -1,4 +1,5 @@
 import { MainButton } from '@components/elements';
+import { useMediaQuery } from '@hooks';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
@@ -8,6 +9,7 @@ import styles from './VacancyDescription.module.scss';
 
 const VacancyDescription = ({ title, description, location, time }) => {
   const t = useTranslations('Sections.VacancyDescription');
+  const isMobileScreen = useMediaQuery('(max-width: 480px)');
 
   return (
     <div className={styles['vacancy-description']}>
@@ -16,7 +18,7 @@ const VacancyDescription = ({ title, description, location, time }) => {
         <div className={styles['vacancy-description__description']}>{description}</div>
         <div className={styles['vacancy-description__info']}>
           <div className={styles['vacancy-description__location']}>
-            <Image src="/static/images/location.svg" alt="location icon" width={16} height={20} />
+            <Image src="/static/images/location.svg" alt="location icon" width={24} height={24} />
             <div>{location}</div>
           </div>
 
@@ -27,7 +29,13 @@ const VacancyDescription = ({ title, description, location, time }) => {
         </div>
       </div>
 
-      <MainButton href="#career-form" type="link" text={t('ButtonText')} size="big" width="240px" />
+      <MainButton
+        href="#career-form"
+        type="link"
+        text={t('ButtonText')}
+        size="big"
+        width={isMobileScreen ? '100%' : '240px'}
+      />
     </div>
   );
 };

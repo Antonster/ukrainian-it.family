@@ -43,6 +43,13 @@
 
   &__links {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vacancy-content {
+    padding: 64px 12px;
   }
 }

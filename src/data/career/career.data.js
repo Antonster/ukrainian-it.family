@@ -51,7 +51,7 @@ export const careerData = {
           href: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
-          text: 'See this vacancy on djinni',
+          text: 'See us on djinni',
           href: 'https://djinni.co/',
         },
       ],
@@ -107,7 +107,7 @@ export const careerData = {
           href: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
-          text: 'See this vacancy on djinni',
+          text: 'See us on djinni',
           href: 'https://djinni.co/',
         },
       ],
@@ -163,7 +163,7 @@ export const careerData = {
           href: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
-          text: 'See this vacancy on djinni',
+          text: 'See us on djinni',
           href: 'https://djinni.co/',
         },
       ],
@@ -221,7 +221,7 @@ export const careerData = {
           href: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
-          text: 'Подивіться цю вакансію на djinni',
+          text: 'Дивіться нас на djinni',
           href: 'https://djinni.co/',
         },
       ],
@@ -277,7 +277,7 @@ export const careerData = {
           href: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
-          text: 'Подивіться цю вакансію на djinni',
+          text: 'Дивіться нас на djinni',
           href: 'https://djinni.co/',
         },
       ],
@@ -333,7 +333,7 @@ export const careerData = {
           href: 'https://jobs.dou.ua/companies/ukrainian-it-family/',
         },
         {
-          text: 'Подивіться цю вакансію на djinni',
+          text: 'Дивіться нас на djinni',
           href: 'https://djinni.co/',
         },
       ],

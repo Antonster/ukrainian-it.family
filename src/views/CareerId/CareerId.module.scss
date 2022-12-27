@@ -5,3 +5,9 @@
 .form-wrapper {
   padding: 64px 64px 120px;
 }
+
+@media screen and (max-width: 480px) {
+  .form-wrapper {
+    padding: 64px 12px 120px;
+  }
+}

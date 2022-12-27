@@ -64,3 +64,25 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .career-item {
+    flex-direction: column;
+
+    &__content {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #dbeaf1;
+    }
+
+    &__info {
+      flex-direction: column;
+      gap: 16px 0;
+    }
+
+    &__link {
+      width: 100%;
+      padding: 26px;
+    }
+  }
+}

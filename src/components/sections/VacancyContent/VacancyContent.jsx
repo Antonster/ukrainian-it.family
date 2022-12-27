@@ -1,36 +1,49 @@
 import { MainButton } from '@components/elements';
+import { useMediaQuery } from '@hooks';
 import PropTypes from 'prop-types';
 import { memo } from 'react';
 
 import styles from './VacancyContent.module.scss';
 
-const VacancyContent = ({ items, links }) => (
-  <div className={styles['vacancy-content']}>
-    {items.map(({ type, title, content }) => (
-      <div key={title} className={styles['vacancy-content__item']}>
-        <div className={styles['vacancy-content__item-title']}>{title}</div>
+const VacancyContent = ({ items, links }) => {
+  const isMobileScreen = useMediaQuery('(max-width: 480px)');
 
-        {type === 'text' && <div className={styles['vacancy-content__item-text']}>{content}</div>}
+  return (
+    <div className={styles['vacancy-content']}>
+      {items.map(({ type, title, content }) => (
+        <div key={title} className={styles['vacancy-content__item']}>
+          <div className={styles['vacancy-content__item-title']}>{title}</div>
 
-        {type === 'list' && (
-          <ul className={styles['vacancy-content__item-list']}>
-            {content.map((item) => (
-              <li key={item} className={styles['vacancy-content__item-list-element']}>
-                {item}
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    ))}
+          {type === 'text' && <div className={styles['vacancy-content__item-text']}>{content}</div>}
 
-    <div className={styles['vacancy-content__links']}>
-      {links.map(({ text, href }) => (
-        <MainButton key={text} type="link" href={href} text={text} blank buttonStyle="outlined" />
+          {type === 'list' && (
+            <ul className={styles['vacancy-content__item-list']}>
+              {content.map((item) => (
+                <li key={item} className={styles['vacancy-content__item-list-element']}>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       ))}
+
+      <div className={styles['vacancy-content__links']}>
+        {links.map(({ text, href }) => (
+          <MainButton
+            key={text}
+            type="link"
+            href={href}
+            text={text}
+            blank
+            buttonStyle="outlined"
+            width={isMobileScreen ? '100%' : 'auto'}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 VacancyContent.propTypes = {
   items: PropTypes.arrayOf(

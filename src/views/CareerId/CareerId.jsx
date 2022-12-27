@@ -43,11 +43,11 @@ const CareerId = ({ vacancy: { title, description, location, time, items, links 
         />
       </WidthBox>
 
-      <WidthBox small filled>
+      <WidthBox small filled="light">
         <VacancyContent items={items} links={links} />
       </WidthBox>
 
-      <WidthBox small filled>
+      <WidthBox small filled="light">
         <div id="career-form" className={styles['form-wrapper']}>
           <ContactUsForm
             fileLabel={t('ContactUsFormFileLabel')}
