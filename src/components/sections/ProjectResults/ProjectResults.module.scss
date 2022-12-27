@@ -120,3 +120,25 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .project-results {
+    gap: 64px 0;
+
+    &__items-container {
+      grid-template-columns: 1fr;
+    }
+
+    &__feedback {
+      align-items: stretch;
+    }
+
+    &__feedback-container {
+      padding: 0;
+    }
+
+    &__feedback-content-company {
+      width: 100%;
+    }
+  }
+}

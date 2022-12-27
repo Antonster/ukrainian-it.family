@@ -8,6 +8,7 @@ import {
   ProjectResults,
   ProjectScreens,
 } from '@components/sections';
+import { useMediaQuery } from '@hooks';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
@@ -39,6 +40,7 @@ const PortfolioId = ({
     ],
     [name, t],
   );
+  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
@@ -57,9 +59,11 @@ const PortfolioId = ({
         <ProjectDescription name={name} tags={tags} description={description} />
       </WidthBox>
 
-      <WidthBox>
-        <ProjectPreview image={fullPreviewImage} />
-      </WidthBox>
+      {!isSmallScreen && (
+        <WidthBox>
+          <ProjectPreview image={fullPreviewImage} />
+        </WidthBox>
+      )}
 
       <WidthBox filled="dark">
         <SectionWrapper

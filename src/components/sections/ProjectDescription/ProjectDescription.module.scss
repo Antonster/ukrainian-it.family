@@ -25,7 +25,8 @@
 
   &__tags-wrapper {
     display: flex;
-    gap: 0 12px;
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   &__tag {
@@ -38,5 +39,11 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #01669c;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-description {
+    padding: 0 12px 96px;
   }
 }

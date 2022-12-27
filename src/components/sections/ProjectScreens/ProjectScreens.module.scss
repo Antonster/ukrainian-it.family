@@ -22,3 +22,27 @@
     line-height: 0;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .swiper {
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .slide-wrapper-big {
+      width: 334px;
+    }
+
+    .slide-wrapper-small {
+      width: 167px;
+    }
+  }
+
+  .slide {
+    gap: 4px 0;
+  }
+}

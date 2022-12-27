@@ -60,4 +60,24 @@
   &__video-title-dot {
     color: #ffc20f;
   }
+
+  &__video-frame {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-details {
+    gap: 64px 0;
+
+    &__wrapper {
+      flex-direction: column;
+      gap: 32px 0;
+    }
+
+    &__paragraphs,
+    &__rows {
+      width: 100%;
+    }
+  }
 }
