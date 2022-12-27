@@ -31,14 +31,14 @@ export const historyData = {
     ],
     bottomRow: [
       {
-        title: 'Oct 2013',
-        description: 'Launched a programming school.',
-        color: 'secondary',
-      },
-      {
         title: 'Feb 2012',
         location: 'Donetsk',
         description: 'Got money for our first project.',
+        color: 'secondary',
+      },
+      {
+        title: 'Oct 2013',
+        description: 'Launched a programming school.',
         color: 'secondary',
       },
       {
@@ -62,7 +62,7 @@ export const historyData = {
   uk: {
     topRow: [
       {
-        title: 'Лют 2013',
+        title: 'Серп 2013',
         description: 'Найняли 6 розробників і зняли крутий офіс.',
         color: 'secondary',
       },
@@ -91,14 +91,14 @@ export const historyData = {
     ],
     bottomRow: [
       {
-        title: 'Жовт 2013',
-        description: 'Запустили школу програмування.',
-        color: 'secondary',
-      },
-      {
         title: 'Лют 2012',
         location: 'Донецьк',
         description: 'Отримали гроші за наш перший проект.',
+        color: 'secondary',
+      },
+      {
+        title: 'Жовт 2013',
+        description: 'Запустили школу програмування.',
         color: 'secondary',
       },
       {

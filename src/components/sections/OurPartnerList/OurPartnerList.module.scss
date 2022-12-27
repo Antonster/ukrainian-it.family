@@ -11,3 +11,20 @@
   background: #ffffff;
   padding: 30px 36px;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    gap: 12px;
+  }
+
+  .image {
+    width: calc(25% - 36px / 4);
+    padding: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: calc(50% - 12px / 2);
+  }
+}

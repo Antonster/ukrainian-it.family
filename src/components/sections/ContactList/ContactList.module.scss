@@ -53,3 +53,24 @@
     color: #01669c;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .item {
+    &__image-container {
+      width: 64px;
+      height: auto;
+    }
+
+    &__link {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 24px 0;
+      padding: 20px 24px;
+    }
+  }
+}

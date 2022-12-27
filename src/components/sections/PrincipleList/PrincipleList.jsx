@@ -1,4 +1,5 @@
 import { principleListData } from '@data';
+import { useMediaQuery } from '@hooks';
 import { useRouter } from 'next/router';
 import { memo } from 'react';
 
@@ -6,11 +7,14 @@ import styles from './PrincipleList.module.scss';
 
 const PrincipleList = () => {
   const router = useRouter();
+  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
       {principleListData[router.locale].map(({ id, name, description }, index) => {
-        const secondary = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
+        const secondary = isSmallScreen
+          ? (index + 1 - 2) % 2 === 0
+          : (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
 
         return (
           <div

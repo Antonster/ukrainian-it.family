@@ -7,3 +7,10 @@
   margin-inline: auto;
   padding: 48px 0 120px;
 }
+
+@media screen and (max-width: 768px) {
+  .form-wrapper {
+    width: 100%;
+    padding: 48px 12px 120px;
+  }
+}

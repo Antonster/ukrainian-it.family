@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px 0;
-    width: 226px;
+    width: 17.2%;
 
     &.primary {
       color: #01669c;
@@ -40,7 +40,7 @@
     }
 
     &:last-child {
-      width: 187px;
+      width: 14.25%;
     }
   }
 
@@ -126,5 +126,76 @@
     font-size: 14px;
     line-height: 170%;
     letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .history {
+    &__top-row-item {
+      &:last-child {
+        width: 12%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .history {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    gap: 0 32px;
+
+    &__top-row,
+    &__bottom-row {
+      padding: 0;
+      flex-direction: column;
+      width: calc(50% - 10px);
+      gap: 116px 0;
+    }
+
+    &__top-row {
+      padding: 125px 0 0;
+      gap: 80px 0;
+    }
+
+    &__top-row-item,
+    &__bottom-row-item {
+      width: 100%;
+    }
+
+    &__separator {
+      width: 2px;
+      height: auto;
+    }
+
+    &__separator-arrow {
+      width: 24px;
+      height: 24px;
+      right: -17.2px;
+      top: auto;
+      bottom: -15px;
+      transform: rotate(0deg) scale(1.5);
+    }
+
+    &__bottom-row-item {
+      &::after {
+        left: auto;
+        top: 0;
+        right: -38px;
+      }
+    }
+
+    &__top-row-item {
+      &::after {
+        bottom: auto;
+        top: 0;
+        left: -38px;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+    }
   }
 }

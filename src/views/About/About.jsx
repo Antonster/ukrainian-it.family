@@ -54,7 +54,7 @@ const About = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
+      <WidthBox filled="light">
         <SectionWrapper name={t('OurLifeName')} titles={[t('OurLifeTitles')]}>
           <OurLife />
         </SectionWrapper>

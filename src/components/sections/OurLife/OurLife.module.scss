@@ -14,3 +14,9 @@
     line-height: 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .slide {
+    gap: 4px 0;
+  }
+}

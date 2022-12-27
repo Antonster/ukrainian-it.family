@@ -35,6 +35,14 @@ const History = () => {
       </div>
 
       <div className={styles.history__separator}>
+        {/* <div className={styles['history__separator-square-list']}>
+          {[...historyData[router.locale].topRow, ...historyData[router.locale].bottomRow].map(
+            ({ title }) => (
+              <div key={title} className={styles['history__separator-square']} />
+            ),
+          )}
+        </div> */}
+
         <div className={styles['history__separator-arrow']}>
           <Image src="/static/images/arrow-down-blue.svg" alt="arrow icon" width={16} height={16} />
         </div>
