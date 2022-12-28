@@ -8,21 +8,15 @@ import YouTube from 'react-youtube';
 import styles from './ProjectDetails.module.scss';
 
 const ProjectDetails = ({ paragraphs, rows, videoId }) => {
-  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
-  const isTabletScreen = useMediaQuery('(max-width: 768px)');
-  const isMobileScreen = useMediaQuery('(max-width: 480px)');
+  const isDesktopScreen = useMediaQuery('(min-width: 1025px)');
+  const isSmallScreen = useMediaQuery('(min-width: 769px)');
+  const isTabletScreen = useMediaQuery('(min-width: 481px)');
 
   const frameSize = useMemo(() => {
-    if (isMobileScreen) {
+    if (isDesktopScreen) {
       return {
-        width: '100%',
-        height: 'auto',
-      };
-    }
-    if (isTabletScreen) {
-      return {
-        width: '439',
-        height: '270',
+        width: '780',
+        height: '480',
       };
     }
     if (isSmallScreen) {
@@ -31,11 +25,18 @@ const ProjectDetails = ({ paragraphs, rows, videoId }) => {
         height: '360',
       };
     }
+
+    if (isTabletScreen) {
+      return {
+        width: '439',
+        height: '270',
+      };
+    }
     return {
-      width: '780',
-      height: '480',
+      width: '100%',
+      height: 'auto',
     };
-  }, [isMobileScreen, isSmallScreen, isTabletScreen]);
+  }, [isDesktopScreen, isSmallScreen, isTabletScreen]);
 
   return (
     <div className={styles['project-details']}>
