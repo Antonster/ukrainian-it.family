@@ -1,13 +1,15 @@
-import { Footer, Header } from '@components/elements';
-import { SectionWrapper, WidthBox } from '@components/layouts';
 import {
   AboutUsNumbers,
   ExpertiseList,
+  Footer,
+  Header,
   MainSection,
   PortfolioList,
+  SectionWrapper,
   ServiceList,
   TestimonialList,
-} from '@components/sections';
+  WidthBox,
+} from '@components';
 import { portfolioListData, testimonialListData } from '@data';
 import { useMediaQuery, useOnScreen } from '@hooks';
 import Head from 'next/head';

@@ -155,7 +155,7 @@
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     }
   },
-  "Elements": {
+  "Components": {
     "Breadcrumbs": {},
     "CareerItem": {
       "ButtonText": "Details"
@@ -175,9 +175,7 @@
     "NavigationItem": {},
     "PortfolioCard": {
       "LinkText": "Go to case"
-    }
-  },
-  "Forms": {
+    },
     "ContactUsForm": {
       "FieldsErrors": ["Required field", "Email must be valid"],
       "FileErrors": ["Valid formats .doc, .docx, .pdf, .txt", "Max file size 8MB"],
@@ -193,14 +191,10 @@
       "DescriptionLabel": "Onboard us into your project",
       "LinkDescription": "You can also contact us via",
       "SubmitButtonText": "Send"
-    }
-  },
-  "Layouts": {
+    },
     "SectionWrapper": {},
     "TitleSectionWrapper": {},
-    "WidthBox": {}
-  },
-  "Sections": {
+    "WidthBox": {},
     "AboutUsNumbers": {},
     "ContactList": {},
     "DropALine": {

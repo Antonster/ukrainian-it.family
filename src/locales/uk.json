@@ -155,7 +155,7 @@
       "DropALineFormLabel": "Зв'язатись"
     }
   },
-  "Elements": {
+  "Components": {
     "Breadcrumbs": {},
     "CareerItem": {
       "ButtonText": "Подробиці"
@@ -175,9 +175,7 @@
     "NavigationItem": {},
     "PortfolioCard": {
       "LinkText": "Детальніше"
-    }
-  },
-  "Forms": {
+    },
     "ContactUsForm": {
       "FieldsErrors": ["Обов'язкове поле", "Електронна адреса має бути дійсною"],
       "FileErrors": ["Дійсні формати .doc, .docx, .pdf, .txt", "Максимальний розмір файлу 8MB"],
@@ -193,14 +191,10 @@
       "DescriptionLabel": "Долучіть нас до свого проекту",
       "LinkDescription": "Ви також можете зв'язатись з нами через",
       "SubmitButtonText": "Надіслати"
-    }
-  },
-  "Layouts": {
+    },
     "SectionWrapper": {},
     "TitleSectionWrapper": {},
-    "WidthBox": {}
-  },
-  "Sections": {
+    "WidthBox": {},
     "AboutUsNumbers": {},
     "ContactList": {},
     "DropALine": {

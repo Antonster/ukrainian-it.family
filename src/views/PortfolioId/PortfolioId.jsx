@@ -1,13 +1,16 @@
-import { Breadcrumbs, Footer, Header } from '@components/elements';
-import { SectionWrapper, WidthBox } from '@components/layouts';
 import {
+  Breadcrumbs,
   DropALine,
+  Footer,
+  Header,
   ProjectDescription,
   ProjectDetails,
   ProjectPreview,
   ProjectResults,
   ProjectScreens,
-} from '@components/sections';
+  SectionWrapper,
+  WidthBox,
+} from '@components';
 import { useMediaQuery } from '@hooks';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';

@@ -2,12 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@api": ["./src/api/*"],
       "@views": ["./src/views/index.js"],
-      "@components/elements": ["./src/components/elements/index.js"],
-      "@components/layouts": ["./src/components/layouts/index.js"],
-      "@components/sections": ["./src/components/sections/index.js"],
-      "@components/forms": ["./src/components/forms/index.js"],
+      "@components": ["./src/components/index.js"],
       "@data": ["./src/data/index.js"],
       "@hooks": ["./src/hooks/index.js"],
       "@utils": ["./src/utils/index.js"],

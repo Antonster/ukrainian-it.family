@@ -1,13 +1,17 @@
-import { Breadcrumbs, Footer, Header } from '@components/elements';
-import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
 import {
   AboutUsNumbers,
+  Breadcrumbs,
+  Footer,
+  Header,
   History,
   OurLife,
   OurPartnerList,
   PrincipleList,
+  SectionWrapper,
   TestimonialList,
-} from '@components/sections';
+  TitleSectionWrapper,
+  WidthBox,
+} from '@components';
 import { testimonialListData } from '@data';
 import Head from 'next/head';
 import Image from 'next/image';

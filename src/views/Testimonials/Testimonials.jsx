@@ -1,6 +1,13 @@
-import { Breadcrumbs, Footer, Header } from '@components/elements';
-import { SectionWrapper, TitleSectionWrapper, WidthBox } from '@components/layouts';
-import { DropALine, TestimonialList } from '@components/sections';
+import {
+  Breadcrumbs,
+  DropALine,
+  Footer,
+  Header,
+  SectionWrapper,
+  TestimonialList,
+  TitleSectionWrapper,
+  WidthBox,
+} from '@components';
 import { testimonialListData } from '@data';
 import Head from 'next/head';
 import { useRouter } from 'next/router';

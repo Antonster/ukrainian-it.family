@@ -1,7 +1,12 @@
-import { Breadcrumbs, Footer, Header } from '@components/elements';
-import { ContactUsForm } from '@components/forms';
-import { WidthBox } from '@components/layouts';
-import { VacancyContent, VacancyDescription } from '@components/sections';
+import {
+  Breadcrumbs,
+  ContactUsForm,
+  Footer,
+  Header,
+  VacancyContent,
+  VacancyDescription,
+  WidthBox,
+} from '@components';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
