@@ -10,10 +10,8 @@ import {
   TestimonialList,
   WidthBox,
 } from '@components';
-import { portfolioListData, testimonialListData } from '@data';
-import { useMediaQuery, useOnScreen } from '@hooks';
+import { useMediaQuery, useOnScreen, useStore } from '@hooks';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import { memo, useMemo, useRef } from 'react';
 
@@ -21,11 +19,12 @@ import styles from './Home.module.scss';
 
 const Home = () => {
   const t = useTranslations('Views.Home');
-  const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const sectionHeaderRef = useRef();
   const sectionHeaderVisible = useOnScreen(sectionHeaderRef, '30px');
   const isTabletScreen = useMediaQuery('(max-width: 768px)');
+  const { servicesData, expertiseData, portfolioData, aboutUsNumbersData, testimonialsData } =
+    useStore();
 
   return (
     <div className={styles.container}>
@@ -48,49 +47,59 @@ const Home = () => {
         <MainSection sectionHeaderRef={sectionHeaderRef} />
       </WidthBox>
 
-      <WidthBox>
-        <SectionWrapper big name={t('ServicesName')} titles={[t('ServicesTitles')]}>
-          <ServiceList />
-        </SectionWrapper>
-      </WidthBox>
+      {servicesData && (
+        <WidthBox>
+          <SectionWrapper big name={t('ServicesName')} titles={[t('ServicesTitles')]}>
+            <ServiceList servicesData={servicesData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox filled="light">
-        <SectionWrapper
-          name={t('ExpertiseName')}
-          titles={[t('ExpertiseTitles.0'), t('ExpertiseTitles.1')]}
-        >
-          <ExpertiseList />
-        </SectionWrapper>
-      </WidthBox>
+      {expertiseData && (
+        <WidthBox filled="light">
+          <SectionWrapper
+            name={t('ExpertiseName')}
+            titles={[t('ExpertiseTitles.0'), t('ExpertiseTitles.1')]}
+          >
+            <ExpertiseList expertiseData={expertiseData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
-          <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
-        </SectionWrapper>
-      </WidthBox>
+      {portfolioData && (
+        <WidthBox>
+          <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
+            <PortfolioList portfolioData={portfolioData.slice(0, 4)} moreButton />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox filled="light">
-        <SectionWrapper
-          name={t('AboutUsNumbersName')}
-          titles={[t('AboutUsNumbersTitles')]}
-          link="/about"
-          linkText={t('AboutUsNumbersLinkText')}
-        >
-          <AboutUsNumbers />
-        </SectionWrapper>
-      </WidthBox>
+      {aboutUsNumbersData && (
+        <WidthBox filled="light">
+          <SectionWrapper
+            name={t('AboutUsNumbersName')}
+            titles={[t('AboutUsNumbersTitles')]}
+            link="/about"
+            linkText={t('AboutUsNumbersLinkText')}
+          >
+            <AboutUsNumbers aboutUsNumbersData={aboutUsNumbersData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper
-          big
-          name={t('TestimonialListName')}
-          titles={[t('TestimonialListTitles')]}
-          link="/testimonials"
-          linkText={t('TestimonialListLinkText')}
-        >
-          <TestimonialList data={testimonialListData[router.locale].slice(0, 3)} />
-        </SectionWrapper>
-      </WidthBox>
+      {testimonialsData && (
+        <WidthBox>
+          <SectionWrapper
+            big
+            name={t('TestimonialListName')}
+            titles={[t('TestimonialListTitles')]}
+            link="/testimonials"
+            linkText={t('TestimonialListLinkText')}
+          >
+            <TestimonialList testimonialsData={testimonialsData.slice(0, 3)} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <Footer />
     </div>

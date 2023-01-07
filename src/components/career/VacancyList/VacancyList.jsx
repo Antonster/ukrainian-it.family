@@ -1,16 +1,14 @@
 import { CareerItem } from '@components';
-import { careerData } from '@data';
 import { useDebounce } from '@hooks';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
+import PropTypes from 'prop-types';
 import { memo, useCallback, useEffect, useState } from 'react';
 
 import styles from './VacancyList.module.scss';
 
-const VacancyList = () => {
+const VacancyList = ({ careerData }) => {
   const t = useTranslations('Components.VacancyList');
-  const router = useRouter();
   const [searchValue, setSearchValue] = useState('');
   const [filteredCareerData, setFilteredCareerData] = useState();
 
@@ -30,7 +28,7 @@ const VacancyList = () => {
 
         setFilteredCareerData(newData);
       } else {
-        setFilteredCareerData(careerData[router.locale]);
+        setFilteredCareerData(careerData);
       }
     },
     1000,
@@ -38,8 +36,8 @@ const VacancyList = () => {
   );
 
   useEffect(() => {
-    setFilteredCareerData(careerData[router.locale]);
-  }, [router.locale]);
+    setFilteredCareerData(careerData);
+  }, [careerData]);
 
   return (
     <div className={styles.container}>
@@ -63,6 +61,34 @@ const VacancyList = () => {
       </div>
     </div>
   );
+};
+
+VacancyList.propTypes = {
+  careerData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+      time: PropTypes.string.isRequired,
+      items: PropTypes.arrayOf(
+        PropTypes.shape({
+          type: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired,
+          content: PropTypes.oneOfType([
+            PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+            PropTypes.string.isRequired,
+          ]).isRequired,
+        }).isRequired,
+      ).isRequired,
+      links: PropTypes.arrayOf(
+        PropTypes.shape({
+          text: PropTypes.string.isRequired,
+          href: PropTypes.string.isRequired,
+        }).isRequired,
+      ).isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default memo(VacancyList);

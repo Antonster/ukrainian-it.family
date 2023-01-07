@@ -1,8 +1,7 @@
 import { LanguageSelection, WidthBox } from '@components';
-import { footerLinksData, footerTermsData, socialLogoListData } from '@data';
+import { useStore } from '@hooks';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import { memo } from 'react';
 
@@ -10,7 +9,7 @@ import styles from './Footer.module.scss';
 
 const Footer = () => {
   const t = useTranslations('Components.Footer');
-  const router = useRouter();
+  const { footerLinks, footerTerms, footerSocialLogoList } = useStore();
 
   return (
     <WidthBox>
@@ -26,7 +25,7 @@ const Footer = () => {
             <div className={styles.main__description}>{t('Description')}</div>
 
             <div className={styles['main__social-links']}>
-              {socialLogoListData.map(({ link, image, alt }) => (
+              {footerSocialLogoList?.map(({ link, image, alt }) => (
                 <a
                   key={alt}
                   className={styles['main__social-item']}
@@ -43,7 +42,7 @@ const Footer = () => {
           </div>
 
           <div className={styles['main__links-container']}>
-            {footerLinksData[router.locale].map(({ title, list }) => (
+            {footerLinks?.map(({ title, list }) => (
               <div key={title} className={styles['main__links-container-item']}>
                 <div className={styles['main__links-container-title']}>{title}</div>
 
@@ -75,7 +74,7 @@ const Footer = () => {
           </a>
 
           <ul className={styles['terms__link-list']}>
-            {footerTermsData[router.locale].map(({ text, link }) => (
+            {footerTerms?.map(({ text, link }) => (
               <li key={text} className={styles['terms__link-item']}>
                 {link ? (
                   <Link href={link}>

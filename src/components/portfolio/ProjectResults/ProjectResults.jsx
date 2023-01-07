@@ -1,18 +1,15 @@
-import { testimonialListData } from '@data';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
 import { memo, useMemo } from 'react';
 
 import styles from './ProjectResults.module.scss';
 
-const ProjectResults = ({ resultList, feedbackId }) => {
+const ProjectResults = ({ testimonialsData, resultList, feedbackId }) => {
   const t = useTranslations('Components.ProjectResults');
-  const router = useRouter();
   const feedback = useMemo(
-    () => testimonialListData[router.locale].find(({ id }) => id === feedbackId),
-    [feedbackId, router.locale],
+    () => testimonialsData?.find(({ id }) => id === feedbackId),
+    [feedbackId, testimonialsData],
   );
 
   return (
@@ -76,6 +73,15 @@ const ProjectResults = ({ resultList, feedbackId }) => {
 };
 
 ProjectResults.propTypes = {
+  testimonialsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      company: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
   resultList: PropTypes.arrayOf(
     PropTypes.shape({
       value: PropTypes.string.isRequired,

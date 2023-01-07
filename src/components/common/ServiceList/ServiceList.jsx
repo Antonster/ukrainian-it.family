@@ -1,21 +1,19 @@
 import { MainButton } from '@components';
-import { serviceListData } from '@data';
 import { useMediaQuery } from '@hooks';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
+import { PropTypes } from 'prop-types';
 import { memo } from 'react';
 
 import styles from './ServiceList.module.scss';
 
-const ServiceList = () => {
+const ServiceList = ({ servicesData }) => {
   const t = useTranslations('Components.ServiceList');
-  const router = useRouter();
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
-      {serviceListData[router.locale].map(({ link, image, name, description }, index) => {
+      {servicesData.map(({ link, image, name, description }, index) => {
         const primary = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
 
         return (
@@ -50,6 +48,17 @@ const ServiceList = () => {
       })}
     </div>
   );
+};
+
+ServiceList.propTypes = {
+  servicesData: PropTypes.arrayOf(
+    PropTypes.shape({
+      link: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default memo(ServiceList);

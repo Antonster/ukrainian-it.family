@@ -4,9 +4,11 @@
     "paths": {
       "@views": ["./src/views/index.js"],
       "@components": ["./src/components/index.js"],
-      "@data": ["./src/data/index.js"],
       "@hooks": ["./src/hooks/index.js"],
       "@utils": ["./src/utils/index.js"],
+      "@services": ["./src/services/index.js"],
+      "@context": ["./src/context/index.js"],
+      "@store": ["./src/store/index.js"],
       "@styles/*": ["./src/styles/*"]
     }
   }

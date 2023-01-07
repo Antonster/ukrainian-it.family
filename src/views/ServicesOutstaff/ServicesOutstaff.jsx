@@ -11,9 +11,8 @@ import {
   WhyUs,
   WidthBox,
 } from '@components';
-import { portfolioListData, serviceOutstaffProcessData } from '@data';
+import { useStore } from '@hooks';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import { memo, useMemo } from 'react';
 
@@ -21,7 +20,6 @@ import styles from './ServicesOutstaff.module.scss';
 
 const ServicesOutstaff = () => {
   const t = useTranslations('Views.ServicesOutstaff');
-  const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(
     () => [
@@ -31,6 +29,7 @@ const ServicesOutstaff = () => {
     ],
     [t],
   );
+  const { serviceOutstaffProcessData, whyUsData, expertiseData, portfolioData } = useStore();
 
   return (
     <div className={styles.container}>
@@ -49,11 +48,13 @@ const ServicesOutstaff = () => {
         <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')} small />
       </WidthBox>
 
-      <WidthBox>
-        <SectionWrapper name={t('ServiceProcessName')} titles={[t('ServiceProcessTitles')]}>
-          <ServiceProcess data={serviceOutstaffProcessData[router.locale]} />
-        </SectionWrapper>
-      </WidthBox>
+      {serviceOutstaffProcessData && (
+        <WidthBox>
+          <SectionWrapper name={t('ServiceProcessName')} titles={[t('ServiceProcessTitles')]}>
+            <ServiceProcess serviceProcessData={serviceOutstaffProcessData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <WidthBox filled="light">
         <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>
@@ -66,26 +67,32 @@ const ServicesOutstaff = () => {
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
-        <SectionWrapper name={t('WhyUsName')} titles={[t('WhyUsTitles')]}>
-          <WhyUs />
-        </SectionWrapper>
-      </WidthBox>
+      {whyUsData && (
+        <WidthBox>
+          <SectionWrapper name={t('WhyUsName')} titles={[t('WhyUsTitles')]}>
+            <WhyUs whyUsData={whyUsData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox filled="light">
-        <SectionWrapper
-          name={t('ExpertiseListName')}
-          titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}
-        >
-          <ExpertiseList />
-        </SectionWrapper>
-      </WidthBox>
+      {expertiseData && (
+        <WidthBox filled="light">
+          <SectionWrapper
+            name={t('ExpertiseListName')}
+            titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}
+          >
+            <ExpertiseList expertiseData={expertiseData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
-          <PortfolioList data={portfolioListData[router.locale].slice(0, 4)} moreButton />
-        </SectionWrapper>
-      </WidthBox>
+      {portfolioData && (
+        <WidthBox>
+          <SectionWrapper big name={t('PortfolioName')} titles={[t('PortfolioTitles')]}>
+            <PortfolioList portfolioData={portfolioData.slice(0, 4)} moreButton />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <Footer />
     </div>

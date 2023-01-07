@@ -12,10 +12,9 @@ import {
   TitleSectionWrapper,
   WidthBox,
 } from '@components';
-import { testimonialListData } from '@data';
+import { useStore } from '@hooks';
 import Head from 'next/head';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import { memo, useMemo } from 'react';
 
@@ -23,9 +22,16 @@ import styles from './About.module.scss';
 
 const About = () => {
   const t = useTranslations('Views.About');
-  const router = useRouter();
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
+  const {
+    aboutUsNumbersData,
+    historyData,
+    ourLifeData,
+    principlesData,
+    testimonialsData,
+    ourPartnersData,
+  } = useStore();
 
   return (
     <div className={styles.container}>
@@ -46,46 +52,58 @@ const About = () => {
         </TitleSectionWrapper>
       </WidthBox>
 
-      <WidthBox filled="light">
-        <SectionWrapper name={t('AboutUsNumbersName')} titles={[t('AboutUsNumbersTitles')]}>
-          <AboutUsNumbers />
-        </SectionWrapper>
-      </WidthBox>
+      {aboutUsNumbersData && (
+        <WidthBox filled="light">
+          <SectionWrapper name={t('AboutUsNumbersName')} titles={[t('AboutUsNumbersTitles')]}>
+            <AboutUsNumbers aboutUsNumbersData={aboutUsNumbersData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper name={t('HistoryName')} titles={[t('HistoryTitles')]}>
-          <History />
-        </SectionWrapper>
-      </WidthBox>
+      {historyData && (
+        <WidthBox>
+          <SectionWrapper name={t('HistoryName')} titles={[t('HistoryTitles')]}>
+            <History historyData={historyData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox filled="light">
-        <SectionWrapper name={t('OurLifeName')} titles={[t('OurLifeTitles')]}>
-          <OurLife />
-        </SectionWrapper>
-      </WidthBox>
+      {ourLifeData && (
+        <WidthBox filled="light">
+          <SectionWrapper name={t('OurLifeName')} titles={[t('OurLifeTitles')]}>
+            <OurLife ourLifeData={ourLifeData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper name={t('PrincipleListName')} titles={[t('PrincipleListTitles')]}>
-          <PrincipleList />
-        </SectionWrapper>
-      </WidthBox>
+      {principlesData && (
+        <WidthBox>
+          <SectionWrapper name={t('PrincipleListName')} titles={[t('PrincipleListTitles')]}>
+            <PrincipleList principlesData={principlesData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper
-          name={t('TestimonialListName')}
-          titles={[t('TestimonialListTitles')]}
-          link="/testimonials"
-          linkText={t('TestimonialListLinkText')}
-        >
-          <TestimonialList data={testimonialListData[router.locale].slice(0, 3)} />
-        </SectionWrapper>
-      </WidthBox>
+      {testimonialsData && (
+        <WidthBox>
+          <SectionWrapper
+            name={t('TestimonialListName')}
+            titles={[t('TestimonialListTitles')]}
+            link="/testimonials"
+            linkText={t('TestimonialListLinkText')}
+          >
+            <TestimonialList testimonialsData={testimonialsData.slice(0, 3)} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox filled="light">
-        <SectionWrapper name={t('OurPartnerListName')} titles={[t('OurPartnerListTitles')]}>
-          <OurPartnerList />
-        </SectionWrapper>
-      </WidthBox>
+      {ourPartnersData && (
+        <WidthBox filled="light">
+          <SectionWrapper name={t('OurPartnerListName')} titles={[t('OurPartnerListTitles')]}>
+            <OurPartnerList ourPartnersData={ourPartnersData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <Footer />
     </div>

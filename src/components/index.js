@@ -20,6 +20,7 @@ export { default as PortfolioCard } from './common/PortfolioCard/PortfolioCard';
 export { default as PortfolioList } from './common/PortfolioList/PortfolioList';
 export { default as SectionWrapper } from './common/SectionWrapper/SectionWrapper';
 export { default as ServiceList } from './common/ServiceList/ServiceList';
+export { default as StoreProvider } from './common/StoreProvider/StoreProvider';
 export { default as TestimonialList } from './common/TestimonialList/TestimonialList';
 export { default as TitleSectionWrapper } from './common/TitleSectionWrapper/TitleSectionWrapper';
 export { default as WhyUs } from './common/WhyUs/WhyUs';

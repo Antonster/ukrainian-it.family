@@ -9,6 +9,7 @@ import {
   WhyUs,
   WidthBox,
 } from '@components';
+import { useStore } from '@hooks';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import { memo, useMemo } from 'react';
@@ -19,6 +20,7 @@ const Team = () => {
   const t = useTranslations('Views.Team');
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
+  const { teamData, whyUsData } = useStore();
 
   return (
     <div className={styles.container}>
@@ -33,17 +35,21 @@ const Team = () => {
         <Breadcrumbs crumbs={crumbs} centered />
       </WidthBox>
 
-      <WidthBox>
-        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
-          <TeamList />
-        </TitleSectionWrapper>
-      </WidthBox>
+      {teamData && (
+        <WidthBox>
+          <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
+            <TeamList teamData={teamData} />
+          </TitleSectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox>
-        <SectionWrapper name={t('WhyUsName')} titles={[t('WhyUsTitles')]}>
-          <WhyUs />
-        </SectionWrapper>
-      </WidthBox>
+      {whyUsData && (
+        <WidthBox>
+          <SectionWrapper name={t('WhyUsName')} titles={[t('WhyUsTitles')]}>
+            <WhyUs whyUsData={whyUsData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <WidthBox filled="light">
         <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>

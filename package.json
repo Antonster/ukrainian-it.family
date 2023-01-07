@@ -1,7 +1,7 @@
 {
-  "name": "ukrainian-it-family",
+  "name": "ukrainian-it.family",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,7 +18,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
-    "axios": "^1.2.2",
     "hamburger-react": "^2.5.0",
     "next": "12.3.1",
     "next-intl": "^2.9.1",
@@ -31,7 +30,8 @@
     "sass": "^1.55.0",
     "sharp": "^0.31.1",
     "swiper": "^8.4.4",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "zustand": "^4.2.0"
   },
   "devDependencies": {
     "eslint": "8.24.0",

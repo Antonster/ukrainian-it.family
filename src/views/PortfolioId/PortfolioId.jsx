@@ -11,7 +11,7 @@ import {
   SectionWrapper,
   WidthBox,
 } from '@components';
-import { useMediaQuery } from '@hooks';
+import { useMediaQuery, useStore } from '@hooks';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
@@ -44,6 +44,7 @@ const PortfolioId = ({
     [name, t],
   );
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
+  const { testimonialsData } = useStore();
 
   return (
     <div className={styles.container}>
@@ -84,11 +85,17 @@ const PortfolioId = ({
         </SectionWrapper>
       </WidthBox>
 
-      <WidthBox>
-        <SectionWrapper name={t('ProjectResultsName')} titles={[t('ProjectResultsTitles')]}>
-          <ProjectResults resultList={resultList} feedbackId={feedbackId} />
-        </SectionWrapper>
-      </WidthBox>
+      {testimonialsData && (
+        <WidthBox>
+          <SectionWrapper name={t('ProjectResultsName')} titles={[t('ProjectResultsTitles')]}>
+            <ProjectResults
+              testimonialsData={testimonialsData}
+              resultList={resultList}
+              feedbackId={feedbackId}
+            />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <WidthBox filled="light">
         <SectionWrapper name={t('DropALineName')} titles={[t('DropALineTitles')]}>

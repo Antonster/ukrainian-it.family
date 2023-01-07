@@ -8,6 +8,7 @@ import {
   TitleSectionWrapper,
   WidthBox,
 } from '@components';
+import { useStore } from '@hooks';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import { memo, useMemo } from 'react';
@@ -18,6 +19,7 @@ const Services = () => {
   const t = useTranslations('Views.Services');
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
+  const { servicesData, expertiseData } = useStore();
 
   return (
     <div className={styles.container}>
@@ -32,20 +34,24 @@ const Services = () => {
         <Breadcrumbs crumbs={crumbs} centered />
       </WidthBox>
 
-      <WidthBox>
-        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
-          <ServiceList />
-        </TitleSectionWrapper>
-      </WidthBox>
+      {servicesData && (
+        <WidthBox>
+          <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
+            <ServiceList servicesData={servicesData} />
+          </TitleSectionWrapper>
+        </WidthBox>
+      )}
 
-      <WidthBox filled="light">
-        <SectionWrapper
-          name={t('ExpertiseListName')}
-          titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}
-        >
-          <ExpertiseList />
-        </SectionWrapper>
-      </WidthBox>
+      {expertiseData && (
+        <WidthBox filled="light">
+          <SectionWrapper
+            name={t('ExpertiseListName')}
+            titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}
+          >
+            <ExpertiseList expertiseData={expertiseData} />
+          </SectionWrapper>
+        </WidthBox>
+      )}
 
       <Footer />
     </div>

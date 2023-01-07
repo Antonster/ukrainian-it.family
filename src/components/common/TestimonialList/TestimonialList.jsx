@@ -5,12 +5,12 @@ import { memo } from 'react';
 
 import styles from './TestimonialList.module.scss';
 
-const TestimonialList = ({ data }) => {
+const TestimonialList = ({ testimonialsData }) => {
   const t = useTranslations('Components.TestimonialList');
 
   return (
     <div className={styles.container}>
-      {data.map(({ id, image, name, company, description, link }) => (
+      {testimonialsData.map(({ id, image, name, company, description, link }) => (
         <div key={id} className={styles.item}>
           <Image className={styles.item__image} src={image} alt="figure" width={88} height={88} />
           <div className={styles['item__content-wrapper']}>
@@ -41,7 +41,7 @@ const TestimonialList = ({ data }) => {
 };
 
 TestimonialList.propTypes = {
-  data: PropTypes.arrayOf(
+  testimonialsData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,

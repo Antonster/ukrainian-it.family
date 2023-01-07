@@ -1,14 +1,14 @@
 import 'swiper/css';
 
-import { ourLifeListData } from '@data';
 import { useMediaQuery } from '@hooks';
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 import { memo, useMemo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import styles from './OurLife.module.scss';
 
-const OurLife = () => {
+const OurLife = ({ ourLifeData }) => {
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
   const isMobileScreen = useMediaQuery('(max-width: 480px)');
 
@@ -26,7 +26,7 @@ const OurLife = () => {
         slidesPerView={slidesPerView}
         grabCursor
       >
-        {ourLifeListData.map(({ id, images }) => {
+        {ourLifeData.map(({ id, images }) => {
           if (images.length === 2) {
             return (
               <SwiperSlide key={id}>
@@ -74,6 +74,15 @@ const OurLife = () => {
       </Swiper>
     </div>
   );
+};
+
+OurLife.propTypes = {
+  ourLifeData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      images: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default memo(OurLife);

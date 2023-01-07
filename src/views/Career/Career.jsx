@@ -8,6 +8,7 @@ import {
   VacancyList,
   WidthBox,
 } from '@components';
+import { useStore } from '@hooks';
 import Head from 'next/head';
 import { useTranslations } from 'next-intl';
 import { memo, useMemo } from 'react';
@@ -18,6 +19,7 @@ const Career = () => {
   const t = useTranslations('Views.Career');
   const headTitle = useMemo(() => `${t('HeadTitle')} | Ukrainian-IT.Family`, [t]);
   const crumbs = useMemo(() => [{ link: '/', text: t('Breadcrumbs.0') }, t('Breadcrumbs.1')], [t]);
+  const { careerData } = useStore();
 
   return (
     <div className={styles.container}>
@@ -32,11 +34,13 @@ const Career = () => {
         <Breadcrumbs crumbs={crumbs} centered />
       </WidthBox>
 
-      <WidthBox small>
-        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
-          <VacancyList />
-        </TitleSectionWrapper>
-      </WidthBox>
+      {careerData && (
+        <WidthBox small>
+          <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
+            <VacancyList careerData={careerData} />
+          </TitleSectionWrapper>
+        </WidthBox>
+      )}
 
       <WidthBox filled="light">
         <SectionWrapper question name={t('DropALineName')} titles={[t('DropALineTitles')]}>

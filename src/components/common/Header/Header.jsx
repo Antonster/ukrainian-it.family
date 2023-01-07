@@ -5,12 +5,11 @@ import {
   NavigationItem,
   WidthBox,
 } from '@components';
-import { hamburgerLinks, headerData } from '@data';
+import { useStore } from '@hooks';
 import { Dialog, styled, useMediaQuery } from '@mui/material';
 import { Squash as Hamburger } from 'hamburger-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
 import { memo, useCallback, useState } from 'react';
@@ -37,11 +36,11 @@ const MenuDialog = styled(Dialog)(() => ({
 
 const Header = ({ fixed }) => {
   const t = useTranslations('Components.Header');
-  const router = useRouter();
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
   const isTabletScreen = useMediaQuery('(max-width: 768px)');
   const [isOpenMenu, setOpenMenu] = useState(false);
   const [isOpenModal, setOpenModal] = useState(false);
+  const { headerLinks, hamburgerLinks } = useStore();
 
   const onOpenModal = useCallback(() => {
     setOpenModal(true);
@@ -73,7 +72,7 @@ const Header = ({ fixed }) => {
           {!isSmallScreen && (
             <nav>
               <ul className={styles.header__navigation}>
-                {headerData[router.locale].map((item) => (
+                {headerLinks?.map((item) => (
                   <NavigationItem key={item.text} item={item} />
                 ))}
 
@@ -114,7 +113,7 @@ const Header = ({ fixed }) => {
             <LanguageSelection />
 
             <ul className={styles['header__hamburger-navigation-links']}>
-              {hamburgerLinks[router.locale].map((item) => (
+              {hamburgerLinks?.map((item) => (
                 <NavigationItem key={item.text} item={item} />
               ))}
 

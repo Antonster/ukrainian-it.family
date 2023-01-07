@@ -7,13 +7,13 @@ import { memo } from 'react';
 
 import styles from './ServiceProcess.module.scss';
 
-const ServiceProcess = ({ data }) => {
+const ServiceProcess = ({ serviceProcessData }) => {
   const t = useTranslations('Components.ServiceProcess');
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
-      {data.map(({ image, title, content }, index) => {
+      {serviceProcessData.map(({ image, title, content }, index) => {
         const long = (index + 1) % 2 === 0;
 
         return (
@@ -81,7 +81,7 @@ const ServiceProcess = ({ data }) => {
 };
 
 ServiceProcess.propTypes = {
-  data: PropTypes.arrayOf(
+  serviceProcessData: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,

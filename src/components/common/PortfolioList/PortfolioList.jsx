@@ -7,14 +7,14 @@ import { memo } from 'react';
 
 import styles from './PortfolioList.module.scss';
 
-const PortfolioList = ({ data, moreButton }) => {
+const PortfolioList = ({ portfolioData, moreButton }) => {
   const t = useTranslations('Components.PortfolioList');
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className={styles.container}>
       <Masonry columns={isSmallScreen ? 1 : 2}>
-        {data.map(({ id, name, tags, description, smallPreviewImage }, index) => {
+        {portfolioData.map(({ id, name, tags, description, smallPreviewImage }, index) => {
           const big = (index + 1 - 2) % 4 === 0 || (index + 1 - 3) % 4 === 0;
 
           return (
@@ -48,7 +48,7 @@ const PortfolioList = ({ data, moreButton }) => {
 };
 
 PortfolioList.propTypes = {
-  data: PropTypes.arrayOf(
+  portfolioData: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,

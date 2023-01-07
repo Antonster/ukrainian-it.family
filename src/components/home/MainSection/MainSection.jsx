@@ -1,9 +1,8 @@
 import { ContactUsForm, LanguageSelection, MainButton, NavigationItem } from '@components';
-import { headerData } from '@data';
+import { useStore } from '@hooks';
 import { Dialog, styled, useMediaQuery } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import { useTranslations } from 'next-intl';
 import PropTypes from 'prop-types';
 import { memo, useCallback, useState } from 'react';
@@ -22,11 +21,11 @@ const FormDialog = styled(Dialog)(() => ({
 
 const MainSection = ({ sectionHeaderRef }) => {
   const t = useTranslations('Components.MainSection');
-  const router = useRouter();
   const [isOpenModal, setOpenModal] = useState(false);
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
   const isTabletScreen = useMediaQuery('(max-width: 768px)');
   const isMobileScreen = useMediaQuery('(max-width: 480px)');
+  const { headerLinks } = useStore();
 
   const onOpenModal = useCallback(() => {
     setOpenModal(true);
@@ -52,7 +51,7 @@ const MainSection = ({ sectionHeaderRef }) => {
 
               <nav className={styles['header__navigation-container']}>
                 <ul className={styles.header__navigation}>
-                  {headerData[router.locale].map((item) => (
+                  {headerLinks?.map((item) => (
                     <NavigationItem key={item.text} item={item} />
                   ))}
 
