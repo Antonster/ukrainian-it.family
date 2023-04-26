@@ -3,39 +3,39 @@
     {
       "id": "1",
       "name": "Project ownership",
-      "description": "We care about successful project result."
+      "description": "We care about successful project results."
     },
     {
       "id": "2",
-      "name": "High English level",
-      "description": "We know that usually there is a dilemma: either skills or sufficient English level. We provide both."
+      "name": "Advanced English",
+      "description": "We know there is usually a dilemma: either skills or sufficient English level. We can do both."
     },
     {
       "id": "3",
       "name": "Happy team",
-      "description": "We are honest with our team members."
+      "description": "We are honest with our team members, thus it provides clear communication and joyful relations."
     },
     {
       "id": "4",
       "name": "Continuous team growth",
-      "description": "We encourage studying and research stages to look for the best results."
+      "description": "We encourage studying and research stages to look for the best results eventually."
     }
   ],
   "uk": [
     {
       "id": "1",
       "name": "Відданість проекту",
-      "description": "Ми дбаємо про успішний результат проекту."
+      "description": "Ми дбаємо про успішні результати проекту."
     },
     {
       "id": "2",
       "name": "Високий рівень англійської",
-      "description": "Ми знаємо, що зазвичай є дилема: або навички, або достатній рівень англійської. Ми надаємо обидва."
+      "description": "Ми знаємо, що зазвичай стоїть дилема: або навички, або достатній рівень англійської. Ми можемо і те, і інше."
     },
     {
       "id": "3",
       "name": "Щаслива команда",
-      "description": "Ми чесні з членами нашої команди."
+      "description": "Ми чесні з членами нашої команди, що забезпечує чітке спілкування та радісні стосунки."
     },
     {
       "id": "4",

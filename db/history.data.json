@@ -9,7 +9,7 @@
       {
         "title": "😢 Apr 2014",
         "location": "Donetsk",
-        "description": "War started in Donetsk and we were forced to move to the West of Ukraine.",
+        "description": "The war started in Ukraine and we were forced to move from Donetsk to the West part of Ukraine.",
         "color": "secondary"
       },
       {
@@ -20,7 +20,7 @@
       },
       {
         "title": "Dec 2021",
-        "description": "We have branches in 7 cities of Ukraine.",
+        "description": "We have had branches in 7 cities in Ukraine.",
         "color": "primary"
       },
       {
@@ -43,18 +43,18 @@
       },
       {
         "title": "Dec 2014",
-        "description": "Hired the first remote developer before it became a COVID-mainstream.",
+        "description": "Hired the first remote developer before it became a COVID-mainstream tendency.",
         "color": "primary"
       },
       {
         "title": "Mar 2018",
-        "description": "Moved to new technologies, create Laravel, Vue.js and React departments.",
+        "description": "Moved to new technologies, and created Laravel, Vue.js, and React departments.",
         "color": "primary"
       },
       {
         "title": "😢 Feb 24, 2022",
         "location": "Ivano-Frankivsk",
-        "description": "Full-scale war started in Ukraine, we reform our business during it.",
+        "description": "The full-scale war started in Ukraine, thus we transformed our business.",
         "color": "yellow"
       }
     ]
@@ -69,7 +69,7 @@
       {
         "title": "😢 Квіт 2014",
         "location": "Донецьк",
-        "description": "У Донецьку почалася війна, і ми були змушені переїхати на захід України.",
+        "description": "В Україні почалася війна, і ми були змушені переїхати з Донецька на захід України.",
         "color": "secondary"
       },
       {
@@ -108,13 +108,13 @@
       },
       {
         "title": "Берез 2018",
-        "description": "Перейшли на нові технології, створив відділи Laravel, Vue.js і React.",
+        "description": "Перейшли на нові технології та створили відділи Laravel, Vue.js і React.",
         "color": "primary"
       },
       {
         "title": "😢 Лют 24, 2022",
         "location": "Івано-Франківськ",
-        "description": "В Україні почалася повномасштабна війна, під час неї ми реформуємо свій бізнес.",
+        "description": "В Україні почалася повномасштабна війна, тому ми трансформували свій бізнес.",
         "color": "yellow"
       }
     ]

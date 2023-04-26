@@ -95,6 +95,16 @@
   }
 }
 
+.description {
+  margin: 0 0 24px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #01669c;
+}
+
 @media screen and (max-width: 1024px) {
   .titles-wrapper {
     &__link {

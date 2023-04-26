@@ -7,9 +7,11 @@ const TitleSectionWrapper = ({ title, description, small, children }) => (
   <div className={`${styles.container} ${small ? styles.small : ''}`}>
     <div className={styles['title-wrapper']}>
       <h1 className={styles['title-wrapper__title']}>{title}</h1>
-      <div className={`${styles['title-wrapper__description']} ${small ? styles.small : ''}`}>
-        {description}
-      </div>
+      {description && (
+        <div className={`${styles['title-wrapper__description']} ${small ? styles.small : ''}`}>
+          {description}
+        </div>
+      )}
     </div>
 
     {children}
@@ -18,7 +20,7 @@ const TitleSectionWrapper = ({ title, description, small, children }) => (
 
 TitleSectionWrapper.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   small: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
 };

@@ -6,7 +6,17 @@ import { Fragment, memo } from 'react';
 
 import styles from './SectionWrapper.module.scss';
 
-const SectionWrapper = ({ big, question, name, titles, titleColor, link, linkText, children }) => {
+const SectionWrapper = ({
+  big,
+  question,
+  name,
+  titles,
+  description,
+  titleColor,
+  link,
+  linkText,
+  children,
+}) => {
   const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
@@ -25,7 +35,7 @@ const SectionWrapper = ({ big, question, name, titles, titleColor, link, linkTex
 
       <div className={styles['titles-wrapper']}>
         <div>
-          {titles.map((item) => (
+          {titles?.map((item) => (
             <Fragment key={item}>
               <h3
                 className={`
@@ -55,6 +65,8 @@ const SectionWrapper = ({ big, question, name, titles, titleColor, link, linkTex
         )}
       </div>
 
+      {description && <div className={styles.description}>{description}</div>}
+
       {children}
 
       {isSmallScreen && link && (
@@ -74,6 +86,7 @@ SectionWrapper.propTypes = {
   question: PropTypes.bool,
   name: PropTypes.string.isRequired,
   titles: PropTypes.arrayOf(PropTypes.string).isRequired,
+  description: PropTypes.string,
   titleColor: PropTypes.oneOf(['secondary']),
   link: PropTypes.string,
   linkText: PropTypes.string,

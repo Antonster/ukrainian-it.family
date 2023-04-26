@@ -15,14 +15,14 @@
     {
       "id": "3",
       "image": "/static/images/in-numbers-figure-3.svg",
-      "name": "+100",
-      "description": "Projects"
+      "name": "100+",
+      "description": "Successful projects"
     },
     {
       "id": "4",
       "image": "/static/images/in-numbers-figure-4.svg",
-      "name": "15",
-      "description": "Team members"
+      "name": "10+",
+      "description": "Countries with clients"
     }
   ],
   "uk": [
@@ -30,7 +30,7 @@
       "id": "1",
       "image": "/static/images/in-numbers-figure-1.svg",
       "name": "UA",
-      "description": "Душа і відданість"
+      "description": "Віддані розробники"
     },
     {
       "id": "2",
@@ -41,14 +41,14 @@
     {
       "id": "3",
       "image": "/static/images/in-numbers-figure-3.svg",
-      "name": "+100",
-      "description": "Проектів"
+      "name": "100+",
+      "description": "Успішних проектів"
     },
     {
       "id": "4",
       "image": "/static/images/in-numbers-figure-4.svg",
-      "name": "15",
-      "description": "Членів команди"
+      "name": "10+",
+      "description": "Країн з клієнтами"
     }
   ]
 }

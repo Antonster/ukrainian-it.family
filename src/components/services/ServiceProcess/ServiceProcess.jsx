@@ -13,7 +13,7 @@ const ServiceProcess = ({ serviceProcessData }) => {
 
   return (
     <div className={styles.container}>
-      {serviceProcessData.map(({ image, title, content }, index) => {
+      {serviceProcessData.map(({ image, title, linkRow, content }, index) => {
         const long = (index + 1) % 2 === 0;
 
         return (
@@ -56,7 +56,7 @@ const ServiceProcess = ({ serviceProcessData }) => {
 
               {content && content.length > 1 && (
                 <ul className={styles['process-item__list']}>
-                  {index === 0 && (
+                  {index === 0 && linkRow && (
                     <li className={styles['process-item__text']}>
                       {t('FirstRow.0')}{' '}
                       <Link href="/contacts">

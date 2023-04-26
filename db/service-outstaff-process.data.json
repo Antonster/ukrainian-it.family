@@ -3,10 +3,11 @@
     {
       "image": "/static/images/service-meeting-icon.svg",
       "title": "Getting acquainted",
+      "linkRow": true,
       "content": [
-        "First meeting. Let's get to know better.",
+        "First meeting. Let's get to know each other better.",
         "Tell us about your request.",
-        "Negotiating the outstaff."
+        "Negotiating about the outstaff developers."
       ]
     },
     {
@@ -14,17 +15,17 @@
       "title": "Kickoff meeting",
       "content": [
         "We introduce the developers to you.",
-        "Then we help developers onboard to your project."
+        "We help developers onboard to your project."
       ]
     },
     {
       "image": "/static/images/service-check-icon.svg",
-      "title": "First check in meeting",
+      "title": "First check-in meeting",
       "content": ["We want to know how your first sprint has been."]
     },
     {
       "image": "/static/images/service-double-check-icon.svg",
-      "title": "Second check in meetings",
+      "title": "Second check-in meeting",
       "content": ["Has your first month been successful?"]
     },
     {
@@ -36,8 +37,9 @@
     {
       "image": "/static/images/service-meeting-icon.svg",
       "title": "Знайомство",
+      "linkRow": true,
       "content": [
-        "Перша зустріч. Давайте познайомимось ближче.",
+        "Перша зустріч. Давайте познайомимося ближче.",
         "Розкажіть про свій запит.",
         "Переговори з приводу аутстафінгу."
       ]
@@ -47,7 +49,7 @@
       "title": "Стартова зустріч",
       "content": [
         "Представляємо вам розробників.",
-        "Тоді ми допоможемо розробникам підключитись до вашого проекту."
+        "Ми допомагаємо розробникам адаптуватися до вашого проекту."
       ]
     },
     {

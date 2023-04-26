@@ -3,64 +3,64 @@
     {
       "id": "1",
       "name": "Maximum value",
-      "description": "To bring maximum value to the client. Understand the project (niche) and help to make the client what will bring the maximum result."
+      "description": "Bringing maximum value to the client is our core principle. Understanding the project and assisting in delivering the maximum result to the client is what drives our company."
     },
     {
       "id": "2",
-      "name": "Openness",
-      "description": "Treat the case with understanding and openness. Try to understand the essence of the project and not just perform the written task. Try to convey your opinion to the client."
+      "name": "Transparency",
+      "description": "Treating the case with openness and clearness is what we appreciate the most. We try to understand the essence of the project and not just perform the written task."
     },
     {
       "id": "3",
       "name": "Friendly relations",
-      "description": "Build close, friendly relationships with customers. Do not do things that can have a bad impact on the relationship."
+      "description": "Building friendly relationships with clients is crucial. We do not create things that can have a bad impact on our cooperation."
     },
     {
       "id": "4",
-      "name": "Development",
-      "description": "Constantly develop the company and everything related to it."
+      "name": "Quality development",
+      "description": "Constantly developing the company and our department helps us improve our development excellence."
     },
     {
       "id": "5",
       "name": "Honesty",
-      "description": "Be honest with yourself."
+      "description": "Be honest with yourself, team members, and clients."
     },
     {
       "id": "6",
       "name": "Respect",
-      "description": "Respect all participants of the process."
+      "description": "Honoring all participants in the process is a decisive point for our company."
     }
   ],
   "uk": [
     {
       "id": "1",
       "name": "Цінність",
-      "description": "Нести максимальну цінність клієнту. Зрозуміти проект(нішу) і допомогти зробити клієнту то шо принесе максимальний результат."
+      "description": "Надання максимальної цінності клієнту є нашим основним принципом. Розуміння проекту та допомога в досягненні максимального результату для клієнта – це те, що рухає нашою компанією."
     },
     {
       "id": "2",
-      "name": "Відкритість",
-      "description": "Відноситись до справи з розумінням та відкритістю. Намагатися зрозуміти суть проекту, а не просто виконувати написане завдання. Намагатися донести клієнту свою думку."
+      "name": "Прозорість",
+      "description": "Найбільше ми цінуємо прозорість і чіткість розгляду справи. Ми намагаємося зрозуміти суть проекту, а не просто виконувати письмове завдання."
     },
     {
       "id": "3",
       "name": "Дружні зв'язки",
-      "description": "Будувати тісні, дружні зв'язки з клієнтами. Не робити того шо може погано вплинути на відносини."
+      "description": "Побудова дружніх відносин з клієнтами має вирішальне значення. Ми не створюємо речі, які можуть погано вплинути на нашу співпрацю."
     },
     {
       "id": "4",
-      "name": "Розвиток",
-      "description": "Постійно розвивати компанію і все шо з нею пов'язано."
+      "name": "Якісний розвиток",
+      "description": "Постійний розвиток компанії та нашого відділу допомагає нам покращувати нашу досконалість у розробці."
     },
     {
       "id": "5",
       "name": "Чесність",
-      "description": "Бути чесним перед собою."
+      "description": "Бути чесним перед собою, членами команди та клієнтами."
     },
     {
       "id": "6",
       "name": "Повага",
-      "description": "Поважати всіх учасників процесу."
+      "description": "Повага до всіх учасників процесу є вирішальним моментом для нашої компанії."
     }
   ]
 }

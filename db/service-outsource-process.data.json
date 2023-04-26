@@ -2,11 +2,12 @@
   "en": [
     {
       "image": "/static/images/service-meeting-icon.svg",
-      "title": "Meeting the project",
+      "title": "Introduction to the project",
+      "linkRow": true,
       "content": [
-        "First meeting. Let's get to know better.",
+        "First meeting. Let's get to know each other better.",
         "Tell us about your request.",
-        "Keeping everything transparent from the very beginning. Let's negotiate all organizational questions."
+        "Keeping transparent processes from the very beginning. Negotiating all the organizational questions."
       ]
     },
     {
@@ -16,7 +17,7 @@
         "Briefing.",
         "We brainstorm the best solutions for your project.",
         "Assigning a team.",
-        "Presenting you the plan."
+        "Presenting you with the plan."
       ]
     },
     {
@@ -43,10 +44,11 @@
     {
       "image": "/static/images/service-meeting-icon.svg",
       "title": "Знайомство з проектом",
+      "linkRow": true,
       "content": [
         "Перша зустріч. Давайте познайомимось ближче.",
         "Розкажіть про свій запит.",
-        "Тримайте все прозорим із самого початку. Обговорюємо всі організаційні питання."
+        "Дотримання прозорості процесів із самого початку. Обговорення всіх організаційних питань."
       ]
     },
     {
@@ -56,7 +58,7 @@
         "Брифінг.",
         "Ми шукаємо найкращі рішення для вашого проекту.",
         "Призначення команди.",
-        "Представлення вам плану."
+        "Представлення Вам плану."
       ]
     },
     {

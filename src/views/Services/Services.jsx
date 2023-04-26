@@ -47,6 +47,7 @@ const Services = () => {
           <SectionWrapper
             name={t('ExpertiseListName')}
             titles={[t('ExpertiseListTitles.0'), t('ExpertiseListTitles.1')]}
+            description={t('ExpertiseDescription')}
           >
             <ExpertiseList expertiseData={expertiseData} />
           </SectionWrapper>

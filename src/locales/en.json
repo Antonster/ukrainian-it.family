@@ -3,8 +3,7 @@
     "About": {
       "HeadTitle": "About",
       "Breadcrumbs": ["Homepage", "About us"],
-      "PageTitle": "We are Ukrainian IT Family",
-      "PageDescription": "A little more about us",
+      "PageTitle": "Top-notch software engineers from Ukraine",
       "AboutUsNumbersName": "About us",
       "AboutUsNumbersTitles": "In numbers",
       "HistoryName": "Our history",
@@ -13,7 +12,7 @@
       "OurLifeTitles": "Not only code",
       "PrincipleListName": "Our values",
       "PrincipleListTitles": "Principles we follow",
-      "TestimonialListName": "Testimonials",
+      "TestimonialListName": "Client Reviews",
       "TestimonialListTitles": "Our partners say",
       "TestimonialListLinkText": "See all",
       "OurPartnerListName": "Our partners",
@@ -37,24 +36,25 @@
     "Contacts": {
       "HeadTitle": "Contacts",
       "Breadcrumbs": ["Homepage", "Contacts"],
-      "PageTitle": "Get in touch with UITF",
-      "PageDescription": "Drop us a line and we'll contact you as soon as possible",
+      "PageTitle": "Get in touch with us",
+      "PageDescription": "Share the details of your project. We will thoroughly study them and will contact you as soon as possible",
       "ContactUsFormFileLabel": "Brief",
-      "ContactUsFormDescription": "Drop us a line and we'll contact you as soon as possible",
+      "ContactUsFormDescription": "Share the details of your project. We will thoroughly study them and will contact you as soon as possible",
       "ContactUsFormLabel": "Or Fill the form"
     },
     "Home": {
       "HeadTitle": "Home",
-      "ServicesName": "Services",
-      "ServicesTitles": "This is what we do best",
+      "ServicesName": "Core services",
+      "ServicesTitles": "That ensure business sustainability",
       "ExpertiseName": "Expertise",
       "ExpertiseTitles": ["You have an idea", "We have a solution"],
+      "ExpertiseDescription": "We deliver best-fitted solutions for sustainable software development",
       "PortfolioName": "Case studies",
       "PortfolioTitles": "Portfolio",
       "AboutUsNumbersName": "About us",
       "AboutUsNumbersTitles": "In numbers",
       "AboutUsNumbersLinkText": "Read about us",
-      "TestimonialListName": "Testimonials",
+      "TestimonialListName": "Client Reviews",
       "TestimonialListTitles": "Our partners say",
       "TestimonialListLinkText": "See all"
     },
@@ -65,7 +65,7 @@
       "PageTitle": "Our case studies",
       "PageDescription": "Projects we have worked on",
       "DropALineName": "Drop a line",
-      "DropALineTitles": "Credit us your project",
+      "DropALineTitles": "Send us your project",
       "DropALineFileLabel": "Brief",
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
@@ -79,7 +79,7 @@
       "ProjectResultsName": "What the client got",
       "ProjectResultsTitles": "Results",
       "DropALineName": "Drop a line",
-      "DropALineTitles": "Credit us your project",
+      "DropALineTitles": "Send us your project",
       "DropALineFileLabel": "Brief",
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
@@ -90,24 +90,26 @@
       "PageTitle": "This is what we do best",
       "PageDescription": "See how we can become partners",
       "ExpertiseListName": "Expertise",
-      "ExpertiseListTitles": ["You have an idea", "We have a solution"]
+      "ExpertiseListTitles": ["You have an idea", "We have a solution"],
+      "ExpertiseDescription": "We deliver best-fitted solutions for sustainable software development"
     },
     "ServicesOutsource": {
       "HeadTitle": "Outsource Service",
       "Breadcrumbs": ["Homepage", "Services", "Outsource"],
       "PageTitle": "Let us be your outsource team",
-      "PageDescription": "Credit us a project and let's become partners",
+      "PageDescription": "Submit your project and let's cooperate",
       "ServiceProcessName": "Process",
       "ServiceProcessTitles": "How projects get done",
       "DropALineName": "Drop a line",
-      "DropALineTitles": "Credit us your project",
+      "DropALineTitles": "Send us your project",
       "DropALineFileLabel": "Brief",
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible",
       "WhyUsName": "Why us",
-      "WhyUsTitles": "Why us",
+      "WhyUsTitles": "Why choose the Ukrainian IT Family",
       "ExpertiseListName": "Expertise",
       "ExpertiseListTitles": ["You have an idea", "We have a solution"],
+      "ExpertiseDescription": "We deliver best-fitted solutions for sustainable software development",
       "PortfolioName": "Case studies",
       "PortfolioTitles": "Portfolio"
     },
@@ -119,14 +121,15 @@
       "ServiceProcessName": "Process",
       "ServiceProcessTitles": "How outstaff works",
       "DropALineName": "Drop a line",
-      "DropALineTitles": "Credit us your project",
+      "DropALineTitles": "Send us your project",
       "DropALineFileLabel": "Brief",
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible",
       "WhyUsName": "Why us",
-      "WhyUsTitles": "Why us",
+      "WhyUsTitles": "Why choose the Ukrainian IT Family",
       "ExpertiseListName": "Expertise",
       "ExpertiseListTitles": ["You have an idea", "We have a solution"],
+      "ExpertiseDescription": "We deliver best-fitted solutions for sustainable software development",
       "PortfolioName": "Case studies",
       "PortfolioTitles": "Portfolio"
     },
@@ -136,20 +139,20 @@
       "PageTitle": "Ukrainian talent in one place",
       "PageDescription": "Our team of Ukrainian IT talents",
       "WhyUsName": "Why us",
-      "WhyUsTitles": "Why us",
+      "WhyUsTitles": "Why choose the Ukrainian IT Family",
       "DropALineName": "Drop a line",
-      "DropALineTitles": "Credit us your project",
+      "DropALineTitles": "Send us your project",
       "DropALineFileLabel": "Brief",
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
     "Testimonials": {
-      "HeadTitle": "Testimonials",
-      "Breadcrumbs": ["Homepage", "Testimonials"],
+      "HeadTitle": "Client Reviews",
+      "Breadcrumbs": ["Homepage", "Client Reviews"],
       "PageTitle": "Our partners say",
       "PageDescription": "Hear what company like yours say",
       "DropALineName": "Drop a line",
-      "DropALineTitles": "Credit us your project",
+      "DropALineTitles": "Send us your project",
       "DropALineFileLabel": "Brief",
       "DropALineFormLabel": "Contact Us",
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
@@ -161,7 +164,7 @@
       "ButtonText": "Details"
     },
     "Footer": {
-      "Description": "Ukrainian IT Family leverages exceptional Ukrainian engineering talent to digitalize small and medium businesses."
+      "Description": "Ukrainian IT Family uses exceptional software engineering to digitalize small and medium businesses."
     },
     "Header": {
       "GetInTouch": "Get in touch",
@@ -208,9 +211,9 @@
       "Title": "Bravery",
       "Subtitle": "To develop responsibly",
       "Description": [
-        "Ukrainian IT Family leverages",
-        "exceptional Ukrainian engineering",
-        "talent to digitalize small and medium businesses."
+        "Ukrainian IT Family uses",
+        "exceptional software engineering",
+        "to digitalize small and medium businesses."
       ],
       "ButtonText": "Arrange a meeting",
       "ContactUsFormLabel": "Contact Us",

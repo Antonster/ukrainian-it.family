@@ -47,7 +47,7 @@ const About = () => {
       </WidthBox>
 
       <WidthBox small>
-        <TitleSectionWrapper title={t('PageTitle')} description={t('PageDescription')}>
+        <TitleSectionWrapper title={t('PageTitle')}>
           <Image src="/static/images/ukraine-map.svg" alt="ukraine map" width={874} height={583} />
         </TitleSectionWrapper>
       </WidthBox>

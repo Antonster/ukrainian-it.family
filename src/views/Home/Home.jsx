@@ -60,6 +60,7 @@ const Home = () => {
           <SectionWrapper
             name={t('ExpertiseName')}
             titles={[t('ExpertiseTitles.0'), t('ExpertiseTitles.1')]}
+            description={t('ExpertiseDescription')}
           >
             <ExpertiseList expertiseData={expertiseData} />
           </SectionWrapper>
