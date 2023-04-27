@@ -13,7 +13,7 @@
       "PrincipleListName": "Наші цінності",
       "PrincipleListTitles": "Принципи, яких ми дотримуємося",
       "TestimonialListName": "Відгуки",
-      "TestimonialListTitles": "Кажуть наші партнери",
+      "TestimonialListTitles": "Відгуки клієнтів",
       "TestimonialListLinkText": "Переглянути всі",
       "OurPartnerListName": "Наші партнери",
       "OurPartnerListTitles": "Нам довіряють"
@@ -44,8 +44,8 @@
     },
     "Home": {
       "HeadTitle": "Головна",
-      "ServicesName": "Основні послуги",
-      "ServicesTitles": "Які забезпечують стійкість бізнесу",
+      "ServicesName": "Послуги",
+      "ServicesTitles": "Основні послуги",
       "ExpertiseName": "Компетентність",
       "ExpertiseTitles": ["У вас є ідея", "У нас є рішення"],
       "ExpertiseDescription": "Ми пропонуємо найкращі рішення для сталого розвитку програмного забезпечення",
@@ -55,7 +55,7 @@
       "AboutUsNumbersTitles": "У цифрах",
       "AboutUsNumbersLinkText": "Читайте про нас",
       "TestimonialListName": "Відгуки",
-      "TestimonialListTitles": "Кажуть наші партнери",
+      "TestimonialListTitles": "Відгуки клієнтів",
       "TestimonialListLinkText": "Переглянути всі"
     },
     "PageNotFound": {},
@@ -87,7 +87,7 @@
     "Services": {
       "HeadTitle": "Послуги",
       "Breadcrumbs": ["Головна", "Послуги"],
-      "PageTitle": "Це те, що ми робимо найкраще",
+      "PageTitle": "Основні послуги",
       "PageDescription": "Подивіться, як ми можемо стати партнерами",
       "ExpertiseListName": "Компетентність",
       "ExpertiseListTitles": ["У вас є ідея", "У нас є рішення"],
@@ -149,7 +149,7 @@
     "Testimonials": {
       "HeadTitle": "Відгуки",
       "Breadcrumbs": ["Головна", "Відгуки"],
-      "PageTitle": "Кажуть наші партнери",
+      "PageTitle": "Відгуки клієнтів",
       "PageDescription": "Послухайте, що говорять такі компанії, як ваша",
       "DropALineName": "Зв'язатись",
       "DropALineTitles": "Надішліть нам свій проект",

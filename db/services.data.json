@@ -2,14 +2,14 @@
   "en": [
     {
       "link": "/services/outsource",
-      "name": "Outsourcing team",
-      "description": "Have an idea? Rely on us with finding the best solution.",
+      "name": "Outsourcing teams",
+      "description": "If you have an idea, rely on us to find the best-fit solution: cost-efficiently and within tight deadlines. We will increase your development by ramping up your team with high-performing experts.",
       "image": "/static/images/logo.svg"
     },
     {
       "link": "/services/outstaff",
       "name": "Outstaff developers",
-      "description": "Outstaffing is a type of remote employments when a hired person carries out all the job duties.",
+      "description": "Our outstaffing will feel like you’ve expanded your staff without the headaches of taking on long-term employees. We deliver domain-experienced professionals and stress-free communication.",
       "image": "/static/images/outstaff-icon.svg"
     }
   ],
@@ -17,13 +17,13 @@
     {
       "link": "/services/outsource",
       "name": "Команда аутсорсингу",
-      "description": "Є ідея? Покладіться на нас у пошуку найкращого рішення.",
+      "description": "Якщо у вас є ідея, покладіться на нас, щоб знайти найкраще рішення: економічно ефективно та в стислі терміни. Ми прискоримо ваш розвиток, нарощуючи вашу команду високоефективними експертами.",
       "image": "/static/images/logo.svg"
     },
     {
       "link": "/services/outstaff",
-      "name": "Команда аутстафінгу",
-      "description": "Аутстаффінг – це різновид дистанційної роботи, коли всі посадові обов'язки виконує наймана особа.",
+      "name": "Аутстафф розробники",
+      "description": "Наш аутстафінг створить враження, що ви розширили свій штат без головного болю, пов’язаного з наймом довгострокових співробітників. Ми надаємо професіоналів із досвідом роботи та безтурботне спілкування.",
       "image": "/static/images/outstaff-icon.svg"
     }
   ]

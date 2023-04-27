@@ -12,8 +12,8 @@
       "OurLifeTitles": "Not only code",
       "PrincipleListName": "Our values",
       "PrincipleListTitles": "Principles we follow",
-      "TestimonialListName": "Client Reviews",
-      "TestimonialListTitles": "Our partners say",
+      "TestimonialListName": "Testimonials",
+      "TestimonialListTitles": "Client reviews",
       "TestimonialListLinkText": "See all",
       "OurPartnerListName": "Our partners",
       "OurPartnerListTitles": "We are trusted by"
@@ -44,8 +44,8 @@
     },
     "Home": {
       "HeadTitle": "Home",
-      "ServicesName": "Core services",
-      "ServicesTitles": "That ensure business sustainability",
+      "ServicesName": "Services",
+      "ServicesTitles": "Core services",
       "ExpertiseName": "Expertise",
       "ExpertiseTitles": ["You have an idea", "We have a solution"],
       "ExpertiseDescription": "We deliver best-fitted solutions for sustainable software development",
@@ -54,8 +54,8 @@
       "AboutUsNumbersName": "About us",
       "AboutUsNumbersTitles": "In numbers",
       "AboutUsNumbersLinkText": "Read about us",
-      "TestimonialListName": "Client Reviews",
-      "TestimonialListTitles": "Our partners say",
+      "TestimonialListName": "Testimonials",
+      "TestimonialListTitles": "Client reviews",
       "TestimonialListLinkText": "See all"
     },
     "PageNotFound": {},
@@ -87,7 +87,7 @@
     "Services": {
       "HeadTitle": "Services",
       "Breadcrumbs": ["Homepage", "Services"],
-      "PageTitle": "This is what we do best",
+      "PageTitle": "Core services",
       "PageDescription": "See how we can become partners",
       "ExpertiseListName": "Expertise",
       "ExpertiseListTitles": ["You have an idea", "We have a solution"],
@@ -147,9 +147,9 @@
       "DropALineFormDescription": "Drop us a line and we'll contact you as soon as possible"
     },
     "Testimonials": {
-      "HeadTitle": "Client Reviews",
-      "Breadcrumbs": ["Homepage", "Client Reviews"],
-      "PageTitle": "Our partners say",
+      "HeadTitle": "Testimonials",
+      "Breadcrumbs": ["Homepage", "Testimonials"],
+      "PageTitle": "Client reviews",
       "PageDescription": "Hear what company like yours say",
       "DropALineName": "Drop a line",
       "DropALineTitles": "Send us your project",
